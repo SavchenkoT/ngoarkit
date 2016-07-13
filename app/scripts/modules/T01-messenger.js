@@ -28,7 +28,7 @@ module.exports = function(vars) {
 	//page id init (Auth.html)
   $("#authpage").each(function(){
 		console.log('%c T01-messenger init! ', 'background: #A3C5E9; color: white');
-		pagealerts(this,'Allert message','in Auth page!, remove or edit this message in modules/T01-messenger/ #authpage','alert-success');
+		pagealerts(this,'Allert message','in Auth page!, remove or edit this message in modules/T01-messenger/ #authpage, curent branch develop!','alert-success');
   });
 
 };
