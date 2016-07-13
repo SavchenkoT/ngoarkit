@@ -1,7 +1,5 @@
 window.$ = window.jQuery = require('jquery');
-require("bootstrap");
-require("bootstrap-carousel-swipe");
-require("matchHeight");
+//require("bootstrap");
 
 module.exports = function(vars) {
 
