@@ -1,0 +1,86 @@
+mixin accordion-all-s(name,checkname)
+	.accordion-all
+		.title.pull-left= name
+		.checkbox.text-right
+			label 
+				input(type="checkbox")
+				= checkname
+
+mixin accordion-tabs-panel()
+	.accordion-tabs-panel
+		.row
+			.col-xs-7.col-md-4
+				+btngroupform("btn-group",[
+					{text:"All Funds"},
+					{text:"Prices"}
+				])(role='radio')
+
+			.col-xs-3.col-md-8.text-right
+				a.btn.btn-link(href="#") 
+					span.ico-pdf
+					span Print
+				a.btn.btn-link(href="#") 
+					span.ico-users
+					span Share
+			
+//- accordion
+mixin accordion(id)
+	.panel-group(id="accordion#{id}", role="tablist", aria-multiselectable="true" class="collapse-container")
+		block
+
+//- accordion-item
+mixin accordion-item(type,title,parent,expanded)
+	-var id = title.replace(/\s+/g,"")
+	.panel(class="panel-#{type}")
+		.panel-heading(role="tab", id="heading#{title}")
+			h4.panel-title
+				a(role="button", data-toggle="collapse", data-parent="#accordion#{parent}", href="#collapse#{id}", aria-expanded="#{expanded}" ,aria-controls="collapseOne#{id}")
+					= title
+		unless expanded == 'true'
+			.panel-collapse.collapse(id="collapse#{id}", role="tabpanel", aria-labelledby="heading#{title}")
+				.panel-body
+					block
+		else
+			.panel-collapse.collapse.in(id="collapse#{id}", role="tabpanel", aria-labelledby="heading#{title}")
+				.panel-body
+					block
+
+//- accordion-item-base
+mixin accordion-item-base(title,parent,expanded)
+	+accordion-item("base",title,parent,expanded)
+		block
+
+//- accordion-item-table
+mixin accordion-item-table(title,parent,expanded)
+	+accordion-item("default panel-table",title,parent,expanded)
+		block
+        
+//- accordion-item-default
+mixin accordion-item-default(title,parent,expanded)
+	+accordion-item("default",title,parent,expanded)
+		block
+		
+//- accordion-item-primary
+mixin accordion-item-primary(title,parent,expanded)
+	+accordion-item("primary",title,parent,expanded)
+		block
+
+//- accordion-item-info
+mixin accordion-item-info(title,parent,expanded)
+	+accordion-item("info",title,parent,expanded)
+		block
+
+//- accordion-item-success
+mixin accordion-item-success(title,parent,expanded)
+	+accordion-item("success",title,parent,expanded)
+		block
+		
+//- accordion-item-warning
+mixin accordion-item-warning(title,parent,expanded)
+	+accordion-item("warning",title,parent,expanded)
+		block
+		
+//- accordion-item-danger
+mixin accordion-item-danger(title,parent,expanded)
+	+accordion-item("danger",title,parent,expanded)
+		block

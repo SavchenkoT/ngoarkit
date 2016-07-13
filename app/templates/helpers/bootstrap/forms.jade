@@ -1,0 +1,160 @@
+mixin bsForm(options)
+	- var options = options || {};
+	form(id=options.id)
+		.bsValidationSummary
+		.bsSubmitSummary
+		if block
+			block
+
+mixin bsSection(options)
+	- var options = options || {};
+	- if( options.legend )
+	.page-header
+		span!= options.legend
+	p.bsSectionUsefulInfo!= options.usefulInfo || ""
+
+mixin bsFooter(options)
+	- var options = options || {};
+	- options.name = options.name || options.id;
+	- options.submitMessage = options.submitMessage || "Submit"
+	.form-submit-border
+		//- if (options.label)
+		//	label.bsSingleLineTextLabel(for=options.id)!= options.label
+		//- if (options.fch)
+		//	- var label = options.fch || ""
+		//	+checkbox({label})
+		input.btn.btn-default(type='submit', value=options.submitMessage, id=options.id)
+		
+mixin bsInput(options)
+	- var options = options || {};
+	- options.id = options.id || "content_0_form_" + chance.hash();
+	- options.name = options.name || options.id;
+	- options.type = options.type || "text";
+	- options.validator = options.validator || ["Error message"];
+	- if(typeof options.validator === 'string') { options.validator = [options.validator]; }
+	- options.required = options.required || "";
+	- options.placeholder = options.placeholder || "";
+
+	.form-group(id=options.wrapperId, class!=attributes.class)
+		- if (options.label)
+			label.control-label(for=options.id)!= options.label
+		input.form-control.text-box.single-line(value=options.value, disabled=options.disabled id=options.id, name=options.name, type=options.type, maxlength='256', placeholder=options.placeholder)
+		input(type='hidden')
+		- if (options.info)
+			.help-block!= options.info
+		- if (options.required || options.validator.length)
+			- each v in options.validator
+				span.field-validation-valid.help-block!= v
+
+//- textarea / scfMultipleLineTextBorder
+mixin bsTextarea(options)
+	- var options = options || {};
+	- options.id = options.id || "content_0_form_" + chance.hash();
+	- options.name = options.name || options.id;
+	- options.validator = options.validator || "Error message";
+	- options.required = options.required || false;
+	- options.placeholder = options.placeholder || "";
+	.form-group(id=options.wrapperId, class!=attributes.class)
+		- if (options.label)
+			label.control-label(for=options.id)!= options.label
+		textarea.form-control.text-box.single-line(rows='8', cols='20', id=options.id, name=options.name, maxlength='256', placeholder=options.placeholder)
+		input(type='hidden')
+		- if (options.info)
+			.help-block!= options.info
+		- if (options.required)
+			span.field-validation-valid.help-block(style='display:none;')!= options.validator
+
+mixin bsDropList(options)
+	- var options = options || {};
+	- options.id = options.id || "content_0_form_" + chance.hash();
+	- options.name = options.name || options.id;
+	- options.validator = options.validator || "Error message";
+	- options.required = options.required || false;
+	.form-group(id=options.wrapperId, class!=attributes.class)
+		- if (options.label)
+			label.control-label(for=options.id)!= options.label
+		select.form-control(id=options.id name=options.name)
+			block
+		- if (options.info)
+			span.help-block!= options.info
+		input(type='hidden')
+		- if (options.required)
+			span.field-validation-valid.help-block!= options.validator
+
+mixin input(type,id,placeholder,label,name)
+	.form-group
+		label(for="#{id}") #{label}
+		input.form-control(type="#{type}",id="#{id}",placeholder="#{placeholder}",name="#{name}")
+
+mixin input-simple(type,id,placeholder,label)
+	input.form-control(type="#{type}",id="#{id}",placeholder="#{placeholder}")
+
+mixin checkbox(options)
+	- var options = options || {};
+	- options.name = options.name || options.id;
+	.checkbox(class!=attributes.class)
+		- if (options.label)
+			label
+				input(type="checkbox")
+				!= options.label
+
+mixin checkbox-inline(text)
+	.checkbox-inline
+		input(type="checkbox")
+		= text
+
+mixin radio(text)
+	.radio
+		label
+			input(type="radio")
+			= text
+
+mixin radio-inline(text)
+	.radio-inline
+		input(type="radio")
+		= text
+
+mixin submit(text)
+	.form-group
+		button.btn.btn-default(type="submit")= text
+
+mixin input-group(prepend,append)
+	.form-group
+		.input-group
+			unless !prepend
+				.input-group-addon
+					= prepend
+					
+			block
+			unless !append
+				.input-group-addon
+					= append
+
+mixin icon-btn(icon)
+	button.btn.btn-default(type="button",aria-label="#{icon}")
+		+icon(icon)
+
+mixin badge(text)
+	span.badge= text
+
+mixin formgroup-wr(label,has,help)
+	- label = label || ''
+	- has = has || ''
+	- help = help || ''
+	.form-group(class='#{has}')
+		if label
+			label.control-label(class!=attributes.requiredgroup)=label
+		if block
+			block
+		if help
+			span.help-block=help
+			
+mixin btngroupform(type,items)
+	- type = type || ''
+	if attributes.role
+		.btn-group.btn-group-justified(data-toggle='buttons')
+			- var args = Array.prototype.slice.call(arguments)
+			for item in args[1]
+				label.btn.btn-default
+					input(type!=attributes.role, autocomplete='off')
+					span= item.text

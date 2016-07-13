@@ -1,0 +1,266 @@
+/*!******************************
+
+  Grid
+
+********************************/
+
+$grid-direction = left // switch to 'right' for rtl
+$grid-gutter = 20px // can be px, em, or %
+$letter-spacing = -0.31em // can be different for each font
+
+$container-gutter = 20px
+$container-wdth = 1701px + $container-gutter
+$container-wdth-center = 1171px + $container-gutter
+
+container()
+  box-sizing border-box
+  margin 0 auto
+  width $container-wdth
+  max-width 100%
+  //border 1px solid red
+  padding 0 $container-gutter
+  &.-center
+    width $container-wdth-center
+
+._container
+    container()
+
+
+gcf($a, $b)
+    if $b == 0
+        $a
+    else
+        gcf($b, $a % $b)
+
+cell-width($i,$n)
+    // Initialize variables
+    $i-r = 0
+    $n-r = 0
+
+    // Find the greatest common factor
+    $g = gcf($i, $n)
+    if $g > 1
+        // Reduced value of $i
+        $i-r = $i / $g
+        // Reduced value of $n
+        $n-r = $n / $g
+
+    percent($i, $n)
+
+
+
+/* Grid core
+   ========================================================================== */
+/**
+ * Grid container
+ * Must only contain `.grid` or `.grid__cell` components as children.
+ *
+ * 1. Adjustment for child element margins.
+ * 2. Ensure consistent default alignment/
+ * 3. Remove inter-unit whitespace that appears between `inline-block` child
+ *    elements. Work for all non-monospace font-families.  If you're using a
+ *    monospace base font, you will need to set the `grid` font-family to
+ *   `sans-serif` and then redeclare the monospace font on the `grid__cell`
+ *    objects.
+ * 4. Protect against WebKit bug with optimizelegibility.
+ */
+
+grid($align=$grid-direction, $ggutter=$grid-gutter)
+    display: block
+    padding: 0
+    margin: 0 -0.5 * $ggutter // 1
+    text-align: $align // 2
+    letter-spacing: $letter-spacing // 3
+    text-rendering: optimizespeed // 4
+    if ( $grid-debug )
+        outline 1px solid red
+
+._grid
+    grid()
+
+/**
+ * Opera hack
+ */
+.opera:-o-prefocus//,.grid
+    word-spacing: -0.43em // 3
+
+/**
+ * Child `grid` object adjustments
+ * Used for more complex fixed-fluid hybrid grids.
+ */
+/*
+.grid > .grid
+    overflow: hidden
+    margin-right: 0
+    margin-left: 0
+*/
+
+
+/**
+ * Grid units
+ * No explicit width by default. Apply `.unit-x-y` classes.
+ *
+ * 1. Fundamentals of the non-float grid layout mechanism.
+ * 2. Apply grid gutter.
+ * 3. Controls vertical positioning of units.
+ * 4. Keeps content correctly aligned with the grid direction.
+ * 5. Reset text defaults.
+ */
+cell(i=1,n=1, $align=left, $mp="padding", $ggutter=$grid-gutter)
+    box-sizing: border-box
+    margin: 0
+    display: inline-block // 1
+    if ( $grid-debug )
+        outline 1px solid green
+
+    if($mp == "padding")
+        padding-left 0.5 * $ggutter // 2
+        padding-right @padding-left // 2
+    else
+        margin-left 0.5 * $ggutter
+        margin-right @margin-left
+
+    vertical-align: top // 3
+    text-align: $align // 4
+    letter-spacing: normal // 5
+    word-spacing: normal // 5
+    text-rendering: auto // 5
+    if( $mp == "padding" )
+        width cell-width(i,n)
+    else
+        width calc(cell-width(i,n) \- $ggutter)
+
+
+    .android-native &
+        if( $mp == "padding" )
+            width cell-width(i,n) * 0.99
+        else
+            width calc(cell-width(i,n) \- $ggutter) * 0.99
+
+._grid
+    .cell
+    .cell-1-1
+        cell()
+
+    .cell-half
+    .cell-one-half
+    .cell-1-2
+    .cell-2-4
+    .cell-3-6
+        cell(1,2)
+
+    .cell-third
+    .cell-one-third
+    .cell-1-3
+        cell(1,3)
+
+    .cell-two-third
+    .cell-two-thirds
+    .cell-2-3
+        cell(2,3)
+
+    .cell-quarter
+    .cell-one-quarter
+    .cell-1-4
+        cell(1,4)
+
+    .cell-tree-quarter
+    .cell-tree-quarters
+    .cell-3-4
+        cell(3,4)
+
+    .cell-sixth
+    .cell-one-sixth
+    .cell-1-6
+        cell(1,6)
+
+    .cell-five-sixth
+    .cell-5-6
+        cell(5,6)
+
+    .cell-4-5
+        cell(4,5)
+
+    .cell-1-8
+        cell(6,8)
+
+
+/* Grid cells alpha & omega
+   ========================================================================== */
+
+alpha()
+    padding-left 0
+
+omega()
+    padding-right 0
+
+._grid
+    .cell-alpha
+        alpha()
+
+    .cell-omega
+        omega()
+
+
+/* Grid modifiers
+   ========================================================================== */
+/**
+ * Modifier: horizontally center all grid units
+ * Allows for automatic unit centering irrespective of the number of
+ * units in the grid.
+ */
+._grid.grid--center
+    text-align: center
+
+/**
+ * Modifier: align horizontally all grid units to the left
+ */
+._grid.grid--left
+    text-align: left
+
+/**
+ * Modifier: align horizontally all grid units to the right
+ */
+._grid.grid--right
+    text-align: right
+
+/* Grid cell modifiers
+   ========================================================================== */
+/**
+ * Modifier: horizontally center one unit
+ * Set a specific unit to be horizontally centered. Doesn't affect
+ * any other units. Can still contain a child `grid` object.
+ */
+cell-center()
+    display: block
+    margin: 0 auto
+
+._grid
+    .cell-center
+        cell-center()
+
+/**
+ * Modifier: align horizontally one unit to the left
+ * Set a specific unit to be horizontally on the left. Doesn't affect
+ * any other units. Can still contain a child `grid` object.
+ */
+cell-left()
+    display: block
+    margin-right: auto
+
+._grid
+    .cell-left
+        cell-left()
+
+/**
+ * Modifier: align horizontally one unit to the right
+ * Set a specific unit to be horizontally on the right. Doesn't affect
+ * any other units. Can still contain a child `grid` object.
+ */
+cell-right()
+    display: block
+    margin-left: auto
+
+._grid
+    .cell-right
+        cell-right()

@@ -1,0 +1,254 @@
+// TODO: flex normalizer https://github.com/radubrehar/stylus-normalizer/blob/master/index.styl
+
+
+//-- Clearfix
+//-----------------------------
+clearfix()
+  *zoom 1
+  &:before,
+  &:after
+    content " "
+    display table
+  &:after
+    clear both
+
+//-- Cirscle shape
+//-----------------------------
+circle($radius=false)
+  border-radius(100%)
+  if($radius != false)
+    size $radius
+
+//-- scrollbars
+//-- works just for Webkit;
+//-----------------------------
+scrollbars($size=8px, $thumb=#3a4149, $track=#eee, $radius=50px, $buttonPull='false')
+  -webkit-overflow-scrolling touch
+  &::-webkit-scrollbar
+    size $size $size
+  &::-webkit-scrollbar-thumb
+    background-color $thumb
+    border-radius $radius
+    border 2px solid $track
+  //&::-webkit-scrollbar-button
+  //  size $buttonPull
+
+  &::-webkit-scrollbar-track
+    //border-radius $r
+    border-radius $radius
+    border 2px solid $track
+    if ( $track == 'false' )
+      background-color #EEE
+    else
+      background-color $track
+
+  ///* IE fallback */
+  //MSIEScrollbars($thumb, $track, $track)
+
+
+//-- scrollbars
+//-- works just for IE;
+//-----------------------------
+//MSIEScrollbars($base, $track, $arrow)
+//  scrollbar-base-color: $base
+//  scrollbar-3dlight-color: $base
+//  scrollbar-highlight-color: $base
+//  scrollbar-track-color: $track
+//  scrollbar-arrow-color: $arrow
+//  scrollbar-shadow-color: $base
+//  scrollbar-dark-shadow-color: $base
+
+
+//-- Reset Lists (UL,OL)
+//-----------------------------
+reset-ul()
+  padding 0
+  margin 0
+  list-style none
+  > li
+    padding 0
+    margin 0
+
+
+//-- backround image fullsize
+//-----------------------------
+cover-image($position=center center)
+  background-position $position
+  background-size cover
+  background-repeat no-repeat
+  > img
+     opacity 0
+
+
+//-- centering element inside another
+//-------------------------------------
+center()
+  absolute 50% auto auto 50%
+  transform translate(-50%, -50%)
+
+
+//-- reset center styles
+//-----------------------------
+remove-center()
+  relative auto false false auto
+  transform translate(0, 0);
+
+
+//-- background-image including retina
+//-- Usage: retina-image-image 'logo', 32px 16px, left center
+retina-image($file, $size, $position=center center, $repeat=no-repeat, $type='png' )
+  background-image url($imgDir + $file + '.' + $type)
+  background-size $size
+
+  if ($position != false)
+    background-position $position
+
+  if($repeat != false)
+    background-repeat $repeat
+
+  +retina()
+    background-image url($imgDir + $file + '@2x.' + $type)
+
+backgroundImage($file, $width, $height, $position=center center, $repeat=no-repeat)
+  retina-image($file, $width $height, $position, $repeat)
+
+
+//-- shortcut for url() for images
+//-- uses $imgDir from variables
+//---------------------------------
+img(url="")
+  url($imgDir + url)
+
+//-- transition with will-change
+//-----------------------------
+trans(param=all, duration=.3s)
+  transition param duration
+  if (param != all)
+    will-change param
+
+//-- greyscale images & any other elements (will not work in some IEs)
+//--------------------------------------------------------------------
+greyscale(onoff=true)
+  if (onoff == true)
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter gray /* IE6-9 */
+    -webkit-filter grayscale(100%) /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  else
+    filter url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale")
+    -webkit-filter grayscale(0%)
+
+
+//-- shortcur for max-width & max-height
+//--------------------------------------
+max-size($w=-1,$h=-1)
+  if($w>=0)
+    max-width $w
+  if($h >=0)
+    max-height $h
+  else
+    max-height $w
+
+//-- shortcur for min-width & min-height
+//--------------------------------------
+min-size($w=-1,$h=-1)
+  if($w>=0)
+    min-width $w
+  if($h >=0)
+    min-height $h
+  else
+    min-height $w
+
+
+//-- after & before shortcuts
+after($content = "")
+  &::after
+    content s('"%s"', unquote($content))
+    {block}
+
+before($content = "")
+  &::before
+    content s('"%s"', unquote($content))
+    {block}
+
+pseudo($content = "")
+  &::before,
+  &::after
+    content s('"%s"', unquote($content))
+    {block}
+
+// CSS 3 toggle effect
+toggle($direction = true, $duration=.3s)
+  transition height $duration linear, padding-top $duration linear, padding-bottom $duration linear, border-top-width $duration linear, border-bottom-width $duration linear
+  overflow hidden
+  padding-top 0
+  padding-bottom 0
+  height 0
+  border-top-width 0
+  border-bottom-width 0
+
+//-- triangle (https://github.com/juice49/fa-triangle/blob/master/index.styl)
+//-------------------------------------------------------------------------------
+triangle(width = 10px, height = 10px, direction = 'bottom', color = #000)
+
+	// Base triangle styles
+	width 0
+	height 0
+	background 0
+	border-style solid
+
+	// Styles for each direction
+	directions = {
+		top: {
+			border-width: 0 (width * .5) height (width * .5),
+			border-color: transparent transparent color transparent
+		},
+		topRight: {
+			border-width: 0 width height 0,
+			border-color: transparent color transparent transparent
+		},
+		right: {
+			border-width: (height * .5) 0 (height *.5) width,
+			border-color: transparent transparent transparent color
+		},
+		bottomRight: {
+			border-width: 0 0 height width,
+			border-color: transparent transparent color transparent
+		},
+		bottom: {
+			border-width: height (width * .5) 0 (width * .5),
+			border-color: color transparent transparent transparent
+		},
+		bottomLeft: {
+			border-width: width 0 0 height,
+			border-color: transparent transparent transparent color
+		},
+		left: {
+			border-width: (height * .5) width (height * .5) 0,
+			border-color: transparent color transparent transparent
+		},
+		topLeft: {
+			border-width: height width 0 0,
+			border-color: color transparent transparent transparent
+		}
+	}
+
+	// Mixin styles for passed direction
+	styles = directions[direction]
+	{styles}
+  
+
+//-- placeholder
+//--------------------------------------
+placeholder-color(color)
+  &::-webkit-input-placeholder 
+     color color !important
+  &:-moz-placeholder  /* Firefox 18- */
+     color color !important
+  &::-moz-placeholder  /* Firefox 19+ */
+     color color !important
+  &:-ms-input-placeholder  
+     color color !important
+
+header-size()
+  height $header-size
+  padding 8px 12px

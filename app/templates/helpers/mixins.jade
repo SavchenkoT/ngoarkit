@@ -1,0 +1,40 @@
+//- scripts ----------------------------
+mixin script(scripts)
+    each src in scripts
+        //- src = /^(https?:)?\/\//.test(src) ? src : page.assets + 'scripts/' + src;
+        script(src='scripts/'+src)
+
+
+//- breadcrumbs ----------------------------
+mixin breadcrumb(items, divider)
+    - each item, key in items
+        - if (key == items.length-1)
+            =item
+        - else
+            a(href='#')= item
+            span= " " + divider + " "
+
+//- Phone Link --------------------------
+mixin phoneLink(phoneString)
+    - var cleanPhone = phoneString.replace(/\(|\)|\s|\-/g, '')
+    a(href="tel:#{cleanPhone}")= phoneString
+
+include bootstrap/accordion.jade
+include bootstrap/alerts.jade
+include bootstrap/bootswatch.jade
+include bootstrap/buttons.jade
+include bootstrap/carousel.jade
+include bootstrap/dropdowns.jade
+include bootstrap/forms.jade
+include bootstrap/icons.jade
+include bootstrap/images.jade
+include bootstrap/labels.jade
+include bootstrap/list-groups.jade
+include bootstrap/modal.jade
+include bootstrap/navbar.jade
+include bootstrap/navs.jade
+include bootstrap/panels.jade
+include bootstrap/tables.jade
+include bootstrap/tabs.jade
+include bootstrap/toggle.jade
+include bootstrap/tooltips.jade

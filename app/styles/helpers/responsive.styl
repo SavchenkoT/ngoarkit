@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Responsive Styl
+   a tool for making simple responsive styles
+
+   uses variables from variables.styl:
+     $mqDesktop
+     $mqTablet
+     $mqPhone
+     $imgDir
+
+   inspired by https://github.com/vslinko-archive/stylus-responsive
+
+   using
+
+    .logo
+        responsive width 100px same 50px
+        responsive height 100px 80px 50px
+        phone display block
+
+    compiles to
+
+      .logo {
+          width: 100px;
+          height: 100px;
+      }
+
+      @media (max-width: 979px) {
+          .logo {
+              height: 80px;
+          }
+      }
+
+      @media (max-width: 767px) {
+          .logo {
+              width: 50px;
+              height: 50px;
+              display: block;
+          }
+      }
+
+   ========================================================================== */
+
+same = false
+
+//== Images ====================================
+
+-image(name)
+    background-image url($imgDir + name + ".png")
+
+-image-2x(name)
+    size = image-size($imgDir + name + ".png")
+
+    .backgroundsize &
+        background-image url($imgDir + name + "_2x.png")
+        background-size size[0] size[1]
+
+-image-desktop(name)
+    -image name
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+        -image-2x name
+
+-image-tablet(name)
+    @media all and (max-width: 979px)
+        -image name
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 979px)
+        -image-2x name
+
+-image-phone(name)
+    @media all and (max-width: 767px)
+        -image name
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px)
+        -image-2x name
+
+image(name)
+    -image-desktop name
+
+-image-responsive(desktop-value, tablet-value, phone-value = same)
+    -image-desktop desktop-value
+
+    if tablet-value is not same and tablet-value != desktop-value
+        -image-tablet tablet-value
+
+    if phone-value is not same and phone-value != tablet-value
+        -image-phone phone-value
+
+
+svg(name)
+  .svg &
+    background-image url($imgDir + name + ".svg") !important
+    background-size 100%
+
+
+//== Responsive styles ====================================
+  
+desktop(name, value)  // == desktopOnly
+  @media (min-width: $mqTablet)
+    add-property name, value
+
+desktopOnly(name, value)
+  desktop(name, value)
+
+tablet(name, value)
+    @media (max-width: $mqTablet)
+        add-property name, value
+
+tabletOnly(name, value)
+  @media (max-width: $mqTablet) and (min-width: $mqPhone)
+    add-property name, value
+
+phone(name, value)
+    @media (max-width: $mqPhone)
+        add-property name, value
+
+responsive(name, desktop-value, tablet-value, phone-value = same)
+    if s("%s", name) == "image"
+        -image-responsive desktop-value tablet-value phone-value
+    else
+        //desktop name desktop-value
+        add-property name, desktop-value
+
+        if tablet-value is not same and tablet-value != desktop-value
+            tablet name tablet-value
+
+        if phone-value is not same and phone-value != tablet-value
+            phone name phone-value

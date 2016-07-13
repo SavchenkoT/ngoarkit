@@ -1,0 +1,10 @@
+include ../helpers/variables
+include ../helpers/mixins
+
+doctype html
+html
+	block vars
+	include ../partials/head
+	body(id="#{page.bodyid}")
+		block content
+

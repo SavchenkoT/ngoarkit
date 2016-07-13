@@ -1,0 +1,27 @@
+//- Tabs
+mixin tab-list(tabs,ids,active)
+	ul.nav.nav-tabs(role="tablist")
+		each item,index in tabs
+			- var id = ids[index]
+			if (index === active)
+				li.active
+					a(href="#tab_#{id}",role="tab",data-toggle="tab")= item
+			else
+				li
+					a(href="#tab_#{id}",role="tab",data-toggle="tab")= item
+		//li.mobile-tab
+			//a.ico-dots-centered(href="#",role="tab")
+			//,data-toggle="modal",data-target="#mobileTab"
+
+	.tab-content
+		block
+		
+
+//- Tab pane
+mixin tab(id,active)
+	if(active)
+		.tab-pane.active(id="tab_#{id}")
+			block
+	else
+		.tab-pane(id="tab_#{id}")
+			block

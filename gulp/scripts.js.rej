@@ -1,0 +1,13 @@
+diff a/html/gulp/scripts.js b/html/gulp/scripts.js	(rejected hunks)
+@@ -72,6 +72,11 @@
+                     depends: {
+                         jquery: 'jquery'
+                     }
++                },
++                'typeahead.js': {
++                    path: 'bower_components/typeahead.js/dist/typeahead.bundle.js',
++                    exports: 'typeahead.js'
++
+                 }
+             }
+         })

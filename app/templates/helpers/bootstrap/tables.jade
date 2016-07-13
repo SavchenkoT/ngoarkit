@@ -1,0 +1,92 @@
+//- table mixins
+mixin table(captions,tfoots,header,data,type,cols)
+    - var type = type || ""
+    table.table(class="#{type}" data-type!=attributes.datatype id!=attributes.id data-action!=attributes.dataaction)
+        //if (cols.length)
+        //    each v, i in cols
+        //        col(width="#{v.w}")
+                            
+        if (captions.length)
+            thead(class="captions")
+                tr
+                    each caption, i in captions
+                        each v, i in caption
+                            th(colspan="#{v.colspan}") #{v.title}
+        if (tfoots.length)
+            tfoot(class="table-striped")
+                each tfoot, i in tfoots
+                    tr
+                        each v, i in tfoot
+                            if v.colspan
+                              td(colspan="#{v.colspan}") #{v.td}
+                            else
+                              td #{v.td}
+        
+        if (header.length)
+            thead
+                tr
+                    each head, i in header
+                        if head.span
+                            th(data-col="span") #{head.span}
+                        else if head.thselect
+                            th
+                                span(data-toggle="tooltip" data-placement="bottom" title="It is a long established fact that a reader will be distracted by the readable content") #{head.thselect}
+                        else if head.tcheckbox
+                            th.th-tcheckbox
+                                div(class="#{head.tcheckbox}" data-toggle="tooltip" data-placement="right" title="Select All")
+                                    label
+                                        input(type="checkbox")
+
+                        else if head.plsmall
+                            th.td-small
+                                | #{head.plsmall}
+                                small #{head.plsmalltxt}
+                        
+                        else
+                            th #{head}
+
+        if (data.length)
+            tbody
+                each row,j in data
+                    tr
+                        each col,k in row
+                            if col.scope
+                                th(scope="row") #{col.scope}
+                            else if col.span
+                                td(data-col="span") #{col.span}
+                            else if col.ticon
+                                td(align="center") 
+                                  div(class="#{col.ticon}") 
+                            else if col.tcheckbox
+                              td.td-tcheckbox
+                                div(class="#{col.tcheckbox}" data-toggle="tooltip" data-placement="right" title="Select row")
+                                  label
+                                    input(type="checkbox")
+                            
+                            else
+                                td #{col}
+
+
+mixin text-description(title,text)
+
+    h5 #{title}
+    if text
+        p.text-description #{text}
+    if block
+        block
+        
+mixin table-striped(header,data)
+    +table(header,data,"table-striped")
+    
+mixin table-striped(header,data)
+    +table(header,data,"table-striped")
+
+mixin table-bordered(header,data)
+    +table(header,data,"table-bordered")
+
+mixin table-hover(header,data)
+    +table(header,data,"table-hover")
+
+mixin table-condensed(header,data)
+    +table(header,data,"table-condensed")
+

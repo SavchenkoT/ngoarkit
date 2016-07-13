@@ -1,0 +1,44 @@
+/*!******************************
+
+  Fonts
+
+********************************/
+
+
+/*
+$fonts = Calibre-Regular, Calibre-Medium, Calibre-Light, Calibre-Semibold, Calibre-Bold
+for $font in $fonts
+  font-face( $font, "fonts/Calibre/" + $font, normal, formats: woff otf eot )
+
+$fonts2 = TiemposText-Regular, TiemposText-Medium, TiemposText-RegularItalic
+for $font in $fonts2
+  font-face( $font, "fonts/Tiempos/" + $font, normal, formats: woff otf eot )
+*/
+
+$helveticaneue = OpenSans-Regular, OpenSans-Light, OpenSans-Bold, OpenSans-Semibold
+for $font in $helveticaneue
+  font-face( $font, "fonts/opensans/" + $font, normal, formats: woff otf eot )
+
+Font($fontSize=false,$lineHeight=false,$letterSpacing=false)
+  if($fontSize != false)
+    font-size $fontSize
+  if($lineHeight != false)
+    line-height $lineHeight
+  if($letterSpacing != false)
+    letter-spacing $letterSpacing
+
+openSansregular($fontSize=false,$lineHeight=false,$letterSpacing=false)
+  font-family: 'OpenSans-Regular', Arial, sans-serif
+  Font($fontSize,$lineHeight,$letterSpacing)
+
+opensanslight($fontSize=false,$lineHeight=false,$letterSpacing=false)
+  font-family: 'OpenSans-Light', Arial, sans-serif
+  Font($fontSize,$lineHeight,$letterSpacing)
+
+opensansbold($fontSize=false,$lineHeight=false,$letterSpacing=false)
+  font-family: 'OpenSans-Bold', Arial, sans-serif
+  Font($fontSize,$lineHeight,$letterSpacing)
+  
+opensanssemibold($fontSize=false,$lineHeight=false,$letterSpacing=false)
+  font-family: 'OpenSans-Semibold', Arial, sans-serif
+  Font($fontSize,$lineHeight,$letterSpacing)

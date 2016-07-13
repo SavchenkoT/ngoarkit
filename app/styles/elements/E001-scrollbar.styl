@@ -1,0 +1,41 @@
+/*!******************************
+ *
+ *   E003-scrollbar
+ *
+ ******************************/
+
+tinyScroll()
+  overflow auto
+  scrollbars(12px, rgba($charcoal,1), rgba($grey,1), 50px)
+    
+._scrollable
+  tinyScroll()
+  //overflow hidden
+
+._scrollable.mCustomScrollbar
+  .mCSB_scrollTools
+    opacity 1
+  .mCSB_draggerContainer
+    .mCSB_draggerRail
+      background none
+    .mCSB_dragger,
+    .mCSB_dragger_bar
+      background $charcoal
+      width 10px
+      //border 1px solid $grey 
+      border-radius 50px
+
+  &.filter-options-list
+    //height 120px
+  .mCSB_draggerContainer
+    background $grey
+    border 2px solid $grey
+    border-radius 50px
+    width 12px
+    .mCSB_dragger
+      background transparent
+      width auto
+      left 0
+      right 0
+      .mCSB_dragger_bar
+        width auto
