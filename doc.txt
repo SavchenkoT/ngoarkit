@@ -4,4 +4,3 @@ bower install or sudo bower install --allow-root
 git fetch && git checkout master
 //development
 git fetch && git checkout develop
-//test
