@@ -1,3 +1,9 @@
+//*!******************************
+//-*
+//-*   Home.jade
+//-*
+//-******************************/
+
 extends layouts/default
 block vars
   - page.title = 'Homepage'
@@ -6,7 +12,7 @@ block vars
 block content
 
   include modules/M01-nav
-  .container
-    include modules/M03-youfrontmodul
+  .container-fluid
+    include modules/M03-inspection
   
   include modules/M04-sticky-footer
