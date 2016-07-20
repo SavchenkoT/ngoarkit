@@ -6,7 +6,9 @@
 
 #accordion.panel-group
   margin-bottom 10px
-
+  border-radius 0
+.panel-group .panel
+  border-radius 0
 .panel-heading, .input-group.pull-right
   clearfix()
 .panel-title
@@ -84,14 +86,14 @@ button.btn.btn-default.status
   .link_list
     margin-left none
 
-//.form-group
-//  .form-control
-//  &:last-child
-//    border-top-left-radius 0
-//    border-bottom-left-radius 0
-//    border-bottom-left-radius 0
-//    border-bottom-left-radius 0
-//    border-bottom-left-radius 0
+.form-group,
+.form-control
+  &:last-child
+    border-top-left-radius 0
+    border-bottom-left-radius 0
+    border-bottom-left-radius 0
+    border-bottom-left-radius 0
+    border-bottom-left-radius 0
 
 //@media screen and (min-width: 768px)
 //  #adv-search

@@ -17,7 +17,7 @@
         .panel-body
           .row
             .col-md-12.col-lg-12
-              form#login-form(action='http://phpoll.com/login/process', method='post', role='form', style='display: block;')
+              form#login-form(action='#', method='post', role='form', style='display: block;')
                 .form-group
                   input#username.form-control(type='text', name='username', tabindex='1', placeholder='* Type your login name or email', value='')
                 .form-group
@@ -33,8 +33,8 @@
                   .row
                     .col-md-12
                       .text-left
-                        a.forgot-password(href='http://phpoll.com/recover', tabindex='5') Forgot Password?
-              form#register-form(action='http://phpoll.com/register/process', method='post', role='form', style='display: none;')
+                        a.forgot-password(href='#', tabindex='5') Forgot Password?
+              form#register-form(action='#', method='post', role='form', style='display: none;')
                 .col-md-6
                   .form-group
                     input#username.form-control(type='text', name='username', tabindex='1', placeholder='* Name', value='')
