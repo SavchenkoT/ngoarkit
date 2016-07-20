@@ -11,6 +11,7 @@
   border-radius 0
 .panel-heading, .input-group.pull-right
   clearfix()
+  margin-bottom 20px
 .panel-title
   #plusToPanel
     display inline-block
@@ -18,8 +19,14 @@
   display inline-block
 p.name_colection
   display inline-block
-  margin 0 23px
   font-size 20px
+  margin-right 40px
+.panel-default>.panel-heading
+  margin-bottom 30px
+  background-color #808184
+.panel-default
+  border transparent
+  background-color #e6e7e8
 
 ul.link_list
   display inline-block
@@ -32,9 +39,16 @@ ul.link_list
     li
       &a:hover
         text-decoration none
-i.fa.fa-chevron-down
+.input-group.pull-right
+  text-align right
+i.fa.fa-chevron-down,
+i.fa.fa-ellipsis-v
   color #fff
   transform rotateY(180deg)
+  &:hover
+    transform none
+    transition 0
+    -webkit-transition 0
 #adv-search.input-group.pull-right
   width 270px
 .link_list
@@ -104,4 +118,3 @@ button.btn.btn-default.status
 //      position static !important
 //    .dropdown-menu
 //      min-width 500px
-

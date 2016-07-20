@@ -13,10 +13,15 @@ body#homepage
 .wrapper
   max-width 2050px
   margin 0 auto
+.container-fluid
+  padding-left 0
+  padding-right 0
 .input-group-btn
   padding 0
   margin 0
 
+.navbar
+  margin-bottom 0
 .navbar.navbar-default,
 .navbar-brand.foto,
 .navbar-brand.setting,
@@ -34,8 +39,7 @@ body#homepage
 .navbar-default.navbar-static-top
   border-color transparent
 
-.navbar-brand.text.text-right
-  display block
+.navbar-brand.text.text-right,
 .collapse.navbar-collapse
   margin-left 125px
 img.navbar-brand.logo
@@ -69,12 +73,20 @@ img.navbar-brand.logo
       .btn[type="submit"]
         border-top-left-radius 4px
         border-bottom-left-radius 4px
-
-//  .form-horizontal
-//    .form-group
-//      display block
-//      margin-left 0
-//      margin-right 0
+.card
+  canvas#header-blur.header-bg
+    border 2px solid #4c4c4d
+    border-radius 4px
+.nav >li>a
+  padding 0
+.navbar-nav>li>a
+  padding-top 15px
+  padding-bottom 15px
+//.form-horizontal
+//  .form-group
+//    display block
+//    margin-left 0
+//    margin-right 0
 
 //  .form-group
 //    .form-control
@@ -86,11 +98,14 @@ img.img-responsive
   height 60px
   display inline-block
   box-sizing border-box
-//.form-group
-//  display block
-//  margin 0 30px
-//  vertical-align middle
-  
+.form-group
+  display inline-block
+  margin 0 30px
+  vertical-align middle
+  a
+    color #26a9e0
+    text-decoration none
+    font-weight bold
 @media screen and (min-width: 768px)
   #adv-search
     width 270px

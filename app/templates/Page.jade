@@ -8,12 +8,12 @@
 extends layouts/default
 block vars
   - page.title = 'Page title'
-  - page.bodyid = ''
+  - page.bodyid = 'pagebody'
 
 block content
 
   include modules/M01-nav
-  .container-fluid
+  .container
     include modules/M05-tables
   
   include modules/M04-sticky-footer
