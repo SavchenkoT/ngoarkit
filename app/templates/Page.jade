@@ -11,9 +11,8 @@ block vars
   - page.bodyid = 'pagebody'
 
 block content
-
-  include modules/M01-nav
-  .container
-    include modules/M05-tables
-  
+  .wrapper
+    include modules/M01-nav
+    include modules/M12-buttons
+  include modules/M03-inspection
   include modules/M04-sticky-footer

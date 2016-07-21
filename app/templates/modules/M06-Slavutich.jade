@@ -7,7 +7,7 @@
 
 .panel.panel-default.list-col
   .colection-info
-    p.name_colection Slavutich 
+    p.name_colection Slavutich
       #adv-search.input-group.pull-right
         .input-group-btn
           .btn-group.show-panel(role='group')
@@ -17,10 +17,18 @@
 
         .btn-group
           button.btn.btn-link.dropdown-toggle(type='button', data-toggle='dropdown')
-            Dropdown 
+            Dropdown
             i.fa.fa-ellipsis-v(aria-hidden='true')
           ul.dropdown-menu
             li
-              a(href='#') Add 
+              a(href='#') Add
             li
-              a(href='#') Delete 
+              a(href='#') Delete
+  //#sidebar
+    .container-fluid
+      .row
+        .col-md-4
+          .left-sidebar
+            include M13-sidebar
+        .col-md-8
+          .right-sidebar

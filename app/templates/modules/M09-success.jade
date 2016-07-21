@@ -1,50 +1,69 @@
-//*!******************************
- *
- *   M09- success.jade
- *
- ******************************/
-
 .col-lg-4.col-md-6.col-sm-6.col-xs-12
-  .panel.panel-success
-    .panel-heading
-      a
-        i.fa.fa-plus.colgrey(aria-hidden='true')
-      p.name_colection Inspection
-        .dropdown.inline.pull-right
-          button#dropdownMenu1.btn.btn-link.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-          i.fa.fa-ellipsis-v.pull-right.colgrey(aria-hidden='true')
-            ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-              li
-                a(href='#') Action
-              li
-                a(href='#') Another action
-              li
-                a(href='#') Something else here
-              li.divider(role='separator')
-              li
-                a(href='#') Separated link
-    .panel-body.nonepadding
-      table.table.table-condensed.table-striped
-        thead
-          tr.success1
-            th Status
-            th Quantity
-        tbody
-          tr.success2
-            td(scope='row').success2 Не определено
-            td.success3 1
-          tr.success2
-            td ОК
-            td 68
-          tr.success2
-            td Внимание
-            td 2
-          tr.success2
-            td Критично
-            td 3
-          tr.success2
-            td Не корректно
-            td 0
-          tr.success2
-            td Без оценки
-            td 0
+   .alert.alert-success
+     a
+       i.fa.fa-plus.colgrey(aria-hidden='true')
+     | Inspection
+     btn.btn-link
+       i.fa.fa-ellipsis-v.pull-right.colgrey(aria-hidden='true')
+   .alert.alert-success(style='display:none;')
+     span.glyphicon.glyphicon-ok
+     |  Drag table row and cange Order
+   table.table
+     thead
+       tr
+         th
+           | Column heading
+         th
+           | Column heading
+         th
+           | Column heading
+     tbody
+       tr.active
+         td
+           | Column content
+         td
+           | Column content
+         td
+           | Column content
+       tr
+         td
+           | Column content
+         td
+           | Column content
+         td
+           | Column content
+       tr.success
+         td
+           | Column content
+         td
+           | Column content
+         td
+           | Column content
+       tr
+         td
+           | Column content
+         td
+           | Column content
+         td
+           | Column content
+       tr.warning
+         td
+           | Column content
+         td
+           | Column content
+         td
+           | Column content
+       tr
+         td
+           | Column content
+         td
+           | Column content
+         td
+           | Column content
+       tr.danger
+         td
+           | Column content
+         td
+           | Column content
+         td
+           | Column content
