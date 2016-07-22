@@ -4,32 +4,17 @@
  *
  ******************************/
 
+
+
 #accordion.panel-group
-  .panel.panel-default
+  .panel.panel-info
     .panel-heading
-      .panel-title
-        #plusToPanel
-          button.btn.btn-link
-            i.fa.fa-plus.colwhite(aria-hidden='true')
+      h3.panel-title 
         p.name_colection Collect №1
         p.name_colection Management
-        #adv-search.input-group.pull-right
-          input.form-control(type='text', placeholder='Search for snippets')
-          .input-group-btn
-            .btn-group.show-panel(role='group')
-              button.btn.btn-link(type='button', data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom')
-                span(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
-                  i.fa.fa-chevron-down(aria-hidden='true')
-
-          .btn-group
-            button.btn.btn-link.dropdown-toggle(type='button', data-toggle='dropdown')
-              Dropdown
-              i.fa.fa-ellipsis-v(aria-hidden='true')
-            ul.dropdown-menu
-              li
-                a(href='#') Add
-              li
-                a(href='#') Delete
-    include M06-Slavutich
-    include M07-Korsun
-    include M08-OSBB
+      span.pull-right.clickable
+        i.glyphicon.glyphicon-chevron-up
+    .panel-body 
+      include M06-Slavutich
+      include M07-Korsun
+      include M08-OSBB

@@ -1,69 +1,76 @@
 .col-lg-4.col-md-6.col-sm-6.col-xs-12
-  .alert.alert-info
-    a
-      i.fa.fa-plus.colgrey(aria-hidden='true')
-    | Inspection
-    btn.btn-link
-      i.fa.fa-ellipsis-v.pull-right.colgrey(aria-hidden='true')
-  .alert.alert-success(style='display:none;')
-    span.glyphicon.glyphicon-ok
-    |  Drag table row and cange Order
-  table.table
-    thead
-      tr
-        th
-          | Column heading
-        th
-          | Column heading
-        th
-          | Column heading
-    tbody
-      tr.active
-        td
-          | Column content
-        td
-          | Column content
-        td
-          | Column content
-      tr
-        td
-          | Column content
-        td
-          | Column content
-        td
-          | Column content
-      tr.success
-        td
-          | Column content
-        td
-          | Column content
-        td
-          | Column content
-      tr
-        td
-          | Column content
-        td
-          | Column content
-        td
-          | Column content
-      tr.warning
-        td
-          | Column content
-        td
-          | Column content
-        td
-          | Column content
-      tr
-        td
-          | Column content
-        td
-          | Column content
-        td
-          | Column content
-      tr.danger
-        td
-          | Column content
-        td
-          | Column content
-        td
-          | Column content
+    .panel.panel-info
+        .panel-heading
+            a
+                i.fa.fa-plus.colgrey(aria-hidden='true')
+            p.name_colection To Do list
+                .dropdown.inline.pull-right
+                  button#dropdownMenu1.btn.btn-link.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                    i.fa.fa-ellipsis-v.pull-right.colgrey(aria-hidden='true')
+                      ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider(role='separator')
+                        li
+                          a(href='#') Separated link
+        .panel-body.nonepadding
+            table.table.table-condensed.table-striped
+                thead
+                    tr
+                        th
+                            i.fa.fa-check-square-o(aria-hidden='true')
+                        th Часовые
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                    tr
+                        th
+                            i.fa.fa-check-square-o(aria-hidden='true')
+                        th Дневные
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                    tr
+                        th
+                            i.fa.fa-check-square-o(aria-hidden='true')
+                        th Недельные
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                    tr
+                        th
+                            i.fa.fa-check-square-o(aria-hidden='true')
+                        th Месячные
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                    tr
+                        th
+                            i.fa.fa-check-square-o(aria-hidden='true')
+                        th Неназначеные
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                    tr
+                        th
+                            i.fa.fa-check-square-o(aria-hidden='true')
+                        th Оперативные
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255
+                        th 2255 
