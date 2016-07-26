@@ -1,10 +1,13 @@
-//*!******************************
- *
- *   M08-OSBB.jade
- *
- ******************************/
+//M08-OSBB.jade
 
-
-.panel.panel-default
-  .colection-info
-    p.name_colection OSBB 
+#accordion.panel-group
+  .panel.panel-default.list-col
+    .panel-heading
+      h3.panel-title 
+        p.name_colection OSBB
+      span.pull-right.clickable
+        i.fa.fa-chevron-down(aria-hidden='true')
+    .panel-body
+      include M09-success
+      include M10-info
+      include M11-danger

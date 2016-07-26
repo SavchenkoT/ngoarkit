@@ -1,14 +1,12 @@
-/*!******************************
- *
- *   M03- inspection.styl
- *
- ******************************/
+//M03- inspection.styl
 
 #accordion.panel-group
   margin-bottom 10px
   border-radius 0
 .panel-group .panel
   border-radius 0
+.panel-heading
+  background-color #808184
 .panel-heading, .input-group.pull-right
   clearfix()
 .panel-title
@@ -20,7 +18,7 @@
 .alert
   padding 10px
   border-radius 0
-.panel.panel-default.list-col
+.list-col
   background-color #e6e7e8
   .colection-info
       padding 10px 25px 10px 40px
@@ -31,15 +29,15 @@ p.name_colection
   display inline-block
   font-size 20px
   margin-right 40px
-.panel-default>.panel-heading
-  margin-bottom 30px
-  background-color #808184
+.panel-info> .panel-heading
+  color #fff
+.panel-default > .panel-heading
+  background-color #e6e7e8
 .panel-heading
   border-top-right-radius 0
   border-top-left-radius 0
 .panel-default
   border transparent
-
 ul.link_list
   display inline-block
   list-style none
@@ -69,7 +67,7 @@ i.fa.fa-ellipsis-v
   color #fff
 .colgrey
   color #58595b
-input.form-control
+input.form-control.login
   background url("images/search.png")
   background-repeat no-repeat
 button.btn.btn-default.status
@@ -150,12 +148,7 @@ button.btn.btn-default.status
 
 .form-group,
 .form-control
-  &:last-child
-    border-top-left-radius 0
-    border-bottom-left-radius 0
-    border-bottom-left-radius 0
-    border-bottom-left-radius 0
-    border-bottom-left-radius 0
+  border-radius 0
 
 @media screen and (min-width: 768px)
   #adv-search

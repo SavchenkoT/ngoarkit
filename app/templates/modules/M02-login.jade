@@ -1,76 +1,45 @@
-//*!******************************
- *
- *   M02-login.jade
- *
- ******************************/
-
 .container-fluid
-  .row
-    .col-md-8.col-md-offset-2
+  .row.row-no-padding
+    .col-md-6.col-md-offset-3
       .panel.panel-login
         .panel-heading
-          .row
-            .col-xs-6
-              a#login-form-link.active(href='#') Log in
-            .col-xs-6
-              a#register-form-link(href='#') Register 222
+          .col-xs-6
+            a#login-form-link.active(href='#') Login
+          .col-xs-6
+            a#register-form-link(href='#') Register
         .panel-body
-          .row
-            .col-md-12.col-lg-12
-              form#login-form(action='#', method='post', role='form', style='display: block;')
-                .form-group
+            .col-md-12
+              form#login-form(action='http://phpoll.com/login/process', method='post', role='form', style='display: block;')
+                .col-md-12.register
                   input#username.form-control(type='text', name='username', tabindex='1', placeholder='* Type your login name or email', value='')
-                .form-group
+                .col-md-12.register
                   input#password.form-control(type='password', name='password', tabindex='2', placeholder='* Type your password')
-                .form-group.text-left
-                  input#remember(type='checkbox', tabindex='3', name='remember')
-                  label(for='remember')  Remember Me
-                .form-group
-                  .row
-                    .col-md-12
-                      input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log In')
-                .form-group
-                  .row
-                    .col-md-12
-                      .text-left
-                        a.forgot-password(href='#', tabindex='5') Forgot Password?
-              form#register-form(action='#', method='post', role='form', style='display: none;')
-                .col-md-6
-                  .form-group
-                    input#username.form-control(type='text', name='username', tabindex='1', placeholder='* Name', value='')
-                .col-md-6
-                  .form-group
-                    input#email.form-control(type='email', name='email', tabindex='1', placeholder='* Surname', value='')
                 .col-md-12
-                  .form-group
-                    input#password.form-control(type='password', name='password', tabindex='2', placeholder='* Login name')
+                  input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log In')
                 .col-md-12
-                  .form-group
-                    input#confirm-password.form-control(type='password', name='confirm-password', tabindex='2', placeholder='* E-mail')
-                .col-md-6
-                  .form-group
-                    input#username.form-control(type='text', name='username', tabindex='1', placeholder='* Type your password', value='')
-                .col-md-6
-                  .form-group
-                    input#email.form-control(type='email', name='email', tabindex='1', placeholder='* Reype your password', value='')
-                .col-md-12
-                  .form-group
-                    .row
-                      .col-md-12
-                        input#register-submit.form-control.btn.btn-register(type='submit', name='register-submit', tabindex='4', value='Register Now')
                   .form-group.text-left
                     input#remember(type='checkbox', tabindex='3', name='remember')
                     label(for='remember')  Remember Me
-
-
-//form.form-signin
-  h2.form-signin-heading Please sign in
-  label.sr-only(for='inputEmail') Email address
-  input#inputEmail.form-control(type='email', placeholder='Email address', required='', autofocus='')
-  label.sr-only(for='inputPassword') Password
-  input#inputPassword.form-control(type='password', placeholder='Password', required='')
-  .checkbox
-    label
-      input(type='checkbox', value='remember-me')
-      |  Remember me
-  button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+                .col-md-12
+                  .form-group.text-left
+                    a.forgot-password(href='#', tabindex='5') Forgot Password?
+              form#register-form(action='#', method='post', role='form', style='display: none;')
+                .form-group
+                  .col-md-12.register
+                    .col-md-6.register.username
+                      input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='')
+                    .col-md-6.register
+                      input#email.form-control(type='email', name='email', tabindex='1', placeholder='Email Address', value='')
+                  .col-md-12.register
+                    input#password.form-control(type='password', name='password', tabindex='2', placeholder='Password')
+                  .col-md-12.register
+                    input#confirm-password.form-control(type='password', name='confirm-password', tabindex='2', placeholder='Confirm Password')
+                  .col-md-12.register
+                    input#register-submit.form-control.btn.btn-register(type='submit', name='register-submit', tabindex='4', value='Register')
+                  .col-md-12
+                    .form-group.text-left
+                      input#remember(type='checkbox', tabindex='3', name='remember')
+                      label(for='remember')  Remember Me
+                  .col-md-12
+                    .form-group.text-left
+                      a.forgot-password(href='#', tabindex='5') Forgot Password?

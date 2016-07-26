@@ -1,76 +1,56 @@
+// M10-info.jade
+
 .col-lg-4.col-md-6.col-sm-6.col-xs-12
-    .panel.panel-info
-        .panel-heading
-            a
-                i.fa.fa-plus.colgrey(aria-hidden='true')
-            p.name_colection To Do list
-                .dropdown.inline.pull-right
-                  button#dropdownMenu1.btn.btn-link.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-                    i.fa.fa-ellipsis-v.pull-right.colgrey(aria-hidden='true')
-                      ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-                        li
-                          a(href='#') Action
-                        li
-                          a(href='#') Another action
-                        li
-                          a(href='#') Something else here
-                        li.divider(role='separator')
-                        li
-                          a(href='#') Separated link
-        .panel-body.nonepadding
-            table.table.table-condensed.table-striped
-                thead
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Часовые
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Дневные
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Недельные
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Месячные
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Неназначеные
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Оперативные
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255
-                        th 2255 
+   .panel.panel-info
+     .panel-heading
+       .panel-title 
+         a
+           i.fa.fa-plus.colgrey(aria-hidden='true')
+         p.name_colection To Do list
+       span.pull-right.clickable
+         i.fa.fa-chevron-down(aria-hidden='true')
+     .panel-body 
+       table.table.table-condensed.table-striped
+           thead
+               tr
+                   th
+                       i.fa.fa-check-square-o(aria-hidden='true')
+                   th.text-left Часовые
+                   th 2255
+                   th 2255
+                   th 2255
+               tr
+                   th
+                       i.fa.fa-check-square-o(aria-hidden='true')
+                   th.text-left Дневные
+                   th 2255
+                   th 2255
+                   th 2255
+               tr
+                   th
+                       i.fa.fa-check-square-o(aria-hidden='true')
+                   th.text-left Недельные
+                   th 2255
+                   th 2255
+                   th 2255
+               tr
+                   th
+                       i.fa.fa-check-square-o(aria-hidden='true')
+                   th.text-left Месячные
+                   th 2255
+                   th 2255
+                   th 2255
+               tr
+                   th
+                       i.fa.fa-check-square-o(aria-hidden='true')
+                   th.text-left Неназначеные
+                   th 2255
+                   th 2255
+                   th 2255
+               tr
+                   th
+                       i.fa.fa-check-square-o(aria-hidden='true')
+                   th.text-left Оперативные
+                   th 2255
+                   th 2255
+                   th 2255
