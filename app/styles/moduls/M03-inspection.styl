@@ -9,7 +9,11 @@
 //   background-color #808184
 .panel-heading, .input-group.pull-right
   clearfix()
+.input-group
+  display inline-block
+  background-color #fff
 .panel-title
+  display inline-block
   #plusToPanel
     display inline-block
 // .collapse
@@ -17,9 +21,11 @@
 .panel-body
   display none
   padding 15px 0
-.panel-body.open
-  display block
-  padding 15px 0
+  &.open
+    display block
+    padding 15px 0
+.panel-heading span
+  margin-bottom 0
 .alert
   padding 10px
   border-radius 0
@@ -27,9 +33,16 @@
   .colection-info
     padding 10px 25px 10px 40px
     margin-bottom 20px
+btn.btn-link.circle
+  border-radius 50%
+  background-color #fff
+i.fa.fa-check-circle-o
+  display inline-block
+  padding 5px
+  color green
 .panel-info > .panel-heading
   background-color #808184
-i.fa.fa-plus.colgrey
+btn.btn-link
   padding 10px
 p.name_colection
   display inline-block
@@ -74,9 +87,7 @@ i.fa.fa-ellipsis-v
   color #fff
 .colgrey
   color #58595b
-input.form-control.login
-  background url("images/search.png")
-  background-repeat no-repeat
+
 button.btn.btn-default.status
   min-width 270px
   #custom-search-form
@@ -107,13 +118,16 @@ button.btn.btn-default.status
       -webkit-border-radius 3px
       -moz-border-radius 3px
       border-radius 3px
-
   .search-query
     &:focus
       width 260px
       & + button
         z-index 3
-
+.btn.btn-default
+  border none
+.input-group .form-control:last-child
+  border none
+  width 80%
 .dropdown
   &.dropdown-lg
     .dropdown-menu

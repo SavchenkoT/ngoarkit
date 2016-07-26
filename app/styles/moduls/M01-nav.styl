@@ -72,9 +72,9 @@ img.navbar-brand.logo
   canvas#header-blur.header-bg
     border 2px solid #4c4c4d
     border-radius 4px
-.nav >li>a
+.nav > li> a
   padding 0
-.navbar-nav>li>a
+.navbar-nav> li> a
   padding-top 15px
   padding-bottom 15px
 
@@ -86,10 +86,16 @@ img.img-responsive
 .form-group
   display inline-block
   vertical-align middle
+  &.phone
+    margin-right 40px
+  &.envelope,
+  &.phone
+    margin-bottom 0
   a
     color #26a9e0
     text-decoration none
     font-weight bold
+
 @media screen and (max-width: 768px)
   #adv-search
     width 270px

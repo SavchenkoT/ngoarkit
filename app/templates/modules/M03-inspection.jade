@@ -7,8 +7,34 @@
       h3.panel-title 
         p.name_colection Collect №1
         p.name_colection Management
+      .form-horizontal.pull-right
+        btn.btn-link.circle
+          i.fa.fa-check-circle-o.fa-lg(aria-hidden='true')
+        .input-group
+          button.btn.btn-default(type='submit')
+            i.fa.fa-search(aria-hidden='true')
+          input.form-control(type='text', placeholder='Search', name='q')
+        btn.btn-link.pull-right.clickable
+          i.fa.fa-chevron-down(aria-hidden='true')
+        btn.btn-link.pull-right
+          i.fa.fa-ellipsis-v(aria-hidden='true')
+
+    .panel-body 
+      include M06-Slavutich
+      include M07-Korsun
+      include M08-OSBB
+
+
+
+//#accordion.panel-group
+  .panel.panel-info
+    .panel-heading
+      h3.panel-title 
+        p.name_colection Collect №1
+        p.name_colection Management
       span.pull-right.clickable
         i.fa.fa-chevron-down(aria-hidden='true')
+
     .panel-body 
       include M06-Slavutich
       include M07-Korsun

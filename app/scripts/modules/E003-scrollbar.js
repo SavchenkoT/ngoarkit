@@ -27,7 +27,7 @@ module.exports = function(vars) {
 
 	$(".clickable").on("click", function(){
 	 var $this = $(this)
-	 $this.parent().parent().find('.panel-body').toggleClass("open");
+	 $this.parent().parent().parent().find('.panel-body').toggleClass("open");
 	 $this.find('i.fa').toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
 	});
 

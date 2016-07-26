@@ -6,167 +6,31 @@ block vars
   - page.bodyid = 'authpage'
 
 block content
-  .container-fluid
+  .container
     .row
-.col-lg-4.col-md-6.col-sm-6.col-xs-12
-  .panel.panel-success
-    .panel-heading
-      .panel-title 
-        a
-          i.fa.fa-plus.colgrey(aria-hidden='true')
-        p.name_colection To Do list
-      span.pull-right.clickable
-        i.fa.fa-chevron-down(aria-hidden='true')
-    .panel-body 
-      table.table.table-condensed.table-striped
-          thead
-              tr
-                  th
-                      i.fa.fa-check-square-o(aria-hidden='true')
-                  th Часовые
-                  th 2255
-                  th 2255
-                  th 2255
-              tr
-                  th
-                      i.fa.fa-check-square-o(aria-hidden='true')
-                  th Дневные
-                  th 2255
-                  th 2255
-                  th 2255
-              tr
-                  th
-                      i.fa.fa-check-square-o(aria-hidden='true')
-                  th Недельные
-                  th 2255
-                  th 2255
-                  th 2255
-              tr
-                  th
-                      i.fa.fa-check-square-o(aria-hidden='true')
-                  th Месячные
-                  th 2255
-                  th 2255
-                  th 2255
-              tr
-                  th
-                      i.fa.fa-check-square-o(aria-hidden='true')
-                  th Неназначеные
-                  th 2255
-                  th 2255
-                  th 2255
-              tr
-                  th
-                      i.fa.fa-check-square-o(aria-hidden='true')
-                  th Оперативные
-                  th 2255
-                  th 2255
-                  th 2255
-      .col-lg-4.col-md-6.col-sm-6.col-xs-12
-        .panel.panel-success
+      .col-md-6
+        .panel.with-nav-tabs.panel-default
           .panel-heading
-            .panel-title 
-              a
-                i.fa.fa-plus.colgrey(aria-hidden='true')
-              p.name_colection To Do list
-            span.pull-right.clickable
-              i.fa.fa-chevron-down(aria-hidden='true')
-          .panel-body 
-            table.table.table-condensed.table-striped
-                thead
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Часовые
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Дневные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Недельные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Месячные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Неназначеные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Оперативные
-                        th 2255
-                        th 2255
-                        th 2255 
-      .col-lg-4.col-md-6.col-sm-6.col-xs-12
-        .panel.panel-success
-          .panel-heading
-            .panel-title 
-              a
-                i.fa.fa-plus.colgrey(aria-hidden='true')
-              p.name_colection To Do list
-            span.pull-right.clickable
-              i.fa.fa-chevron-down(aria-hidden='true')
-          .panel-body 
-            table.table.table-condensed.table-striped
-                thead
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Часовые
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Дневные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Недельные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Месячные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Неназначеные
-                        th 2255
-                        th 2255
-                        th 2255
-                    tr
-                        th
-                            i.fa.fa-check-square-o(aria-hidden='true')
-                        th Оперативные
-                        th 2255
-                        th 2255
-                        th 2255 
+            ul.nav.nav-tabs
+              li.active
+                a(href='#tab1default', data-toggle='tab') Default 1
+              li
+                a(href='#tab2default', data-toggle='tab') Default 2
+              li
+                a(href='#tab3default', data-toggle='tab') Default 3
+              li.dropdown
+                a(href='#', data-toggle='dropdown')
+                  | Dropdown 
+                  span.caret
+                ul.dropdown-menu(role='menu')
+                  li
+                    a(href='#tab4default', data-toggle='tab') Default 4
+                  li
+                    a(href='#tab5default', data-toggle='tab') Default 5
+          .panel-body
+            .tab-content
+              #tab1default.tab-pane.fade.in.active Default 1
+              #tab2default.tab-pane.fade Default 2
+              #tab3default.tab-pane.fade Default 3
+              #tab4default.tab-pane.fade Default 4
+              #tab5default.tab-pane.fade Default 5
