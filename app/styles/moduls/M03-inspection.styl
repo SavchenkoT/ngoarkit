@@ -5,24 +5,30 @@
   border-radius 0
 .panel-group .panel
   border-radius 0
-.panel-heading
-  background-color #808184
+// .panel-heading
+//   background-color #808184
 .panel-heading, .input-group.pull-right
   clearfix()
 .panel-title
   #plusToPanel
     display inline-block
-.collapse
-  display inline-block
-
+// .collapse
+//   display inline-block
+.panel-body
+  display none
+  padding 15px 0
+.panel-body.open
+  display block
+  padding 15px 0
 .alert
   padding 10px
   border-radius 0
 .list-col
-  background-color #e6e7e8
   .colection-info
-      padding 10px 25px 10px 40px
-      margin-bottom 20px
+    padding 10px 25px 10px 40px
+    margin-bottom 20px
+.panel-info > .panel-heading
+  background-color #808184
 i.fa.fa-plus.colgrey
   padding 10px
 p.name_colection
@@ -33,6 +39,7 @@ p.name_colection
   color #fff
 .panel-default > .panel-heading
   background-color #e6e7e8
+
 .panel-heading
   border-top-right-radius 0
   border-top-left-radius 0
@@ -143,14 +150,17 @@ button.btn.btn-default.status
           tr
             th
               font-size 12px
-  .link_list
+  ul.link_list
     margin-left none
 
 .form-group,
 .form-control
   border-radius 0
 
-@media screen and (min-width: 768px)
+@media screen and (max-width: 768px)
+  .panel-group .panel
+    border-radius 0
+    margin-bottom 10px
   #adv-search
     width 500px
     margin 0 auto
