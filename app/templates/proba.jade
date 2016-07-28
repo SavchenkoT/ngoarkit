@@ -6,30 +6,46 @@ block vars
   - page.bodyid = 'authpage'
 
 block content
-  .container
-    .row.centered-form
-      .col-xs-12.col-sm-8.col-md-4.col-sm-offset-2.col-md-offset-4
-        .panel.panel-default
-          .panel-heading
-            h3.panel-title
-              | Please sign up for Bootsnipp 
-              small It's free!
-          .panel-body
-            form(role='form')
-              .row
-                .col-xs-6.col-sm-6.col-md-6
-                  .form-group
-                    input#first_name.form-control.input-sm.floatlabel(type='text', name='first_name', placeholder='First Name')
-                .col-xs-6.col-sm-6.col-md-6
-                  .form-group
-                    input#last_name.form-control.input-sm(type='text', name='last_name', placeholder='Last Name')
-              .form-group
-                input#email.form-control.input-sm(type='email', name='email', placeholder='Email Address')
-              .row
-                .col-xs-6.col-sm-6.col-md-6
-                  .form-group
-                    input#password.form-control.input-sm(type='password', name='password', placeholder='Password')
-                .col-xs-6.col-sm-6.col-md-6
-                  .form-group
-                    input#password_confirmation.form-control.input-sm(type='password', name='password_confirmation', placeholder='Confirm Password')
-              input.btn.btn-info.btn-block(type='submit', value='Register')
+  //- .col-md-6.col-md-offset-3
+  //-   .panel.panel-login
+  //-     .panel-heading
+  //-       ul.nav.nav-tabs
+  //-         li.col-md-6.active
+  //-           a#login-form-link.active(href='#') Login
+  //-         li.col-md-6
+  //-           a#register-form-link(href='#') Register
+  //-     .panel-body.login
+  //-         .col-md-12
+  //-           form#login-form(action='#', method='post', role='form', style='display: block;')
+  //-             .col-md-12.register
+  //-               input#username.form-control(type='text', name='username', tabindex='1', placeholder='* Type your login name or email', value='')
+  //-             .col-md-12.register
+  //-               input#password.form-control(type='password', name='password', tabindex='2', placeholder='* Type your password')
+  //-             .col-md-12
+  //-               input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log In')
+  //-             .col-md-12
+  //-               .form-group.text-left
+  //-                 input#remember(type='checkbox', tabindex='3', name='remember')
+  //-                 label(for='remember')  Remember my password
+  //-             .col-md-12
+  //-               .form-group.text-left
+  //-                 a.forgot-password(href='#', tabindex='5') Forgot Password?
+  //-           form#register-form(action='#', method='post', role='form', style='display: none;')
+  //-               .col-md-6
+  //-                 input#username.form-control(type='text', name='name', tabindex='1', placeholder=' * Name', value='')
+  //-               .col-md-6
+  //-                 input#surname.form-control(type='email', name='surname', tabindex='1', placeholder=' * Surname', value='')
+  //-               .col-md-12.register
+  //-                 input#loginname.form-control(type='loginname', name='loginname', tabindex='2', placeholder='Login name')
+  //-               .col-md-12.register
+  //-                 input#email.form-control(type='email', name='email', tabindex='2', placeholder=' * E-mail')
+  //-               .col-md-6
+  //-                 input#password.form-control(type='password', name='password', tabindex='1', placeholder=' * password', value='')
+  //-               .col-md-6
+  //-                 input#username.form-control(type='text', name='name', tabindex='1', placeholder=' * Reype your password', value='')
+  //-               .col-md-12.register
+  //-                 input#register-submit.form-control.btn.btn-register(type='submit', name='register-submit', tabindex='4', value='Register')
+  //-               .col-md-12
+  //-                 .form-group.text-left
+  //-                   input#remember(type='checkbox', tabindex='3', name='remember')
+  //-                   label(for='remember')  Remember my password

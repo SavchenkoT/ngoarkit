@@ -5,29 +5,14 @@
     .panel-heading
       h3.panel-title 
         p.name_colection Slavutich
-      span.pull-right.clickable
-        i.fa.fa-chevron-down(aria-hidden='true')
+      .form-group.pull-right
+        btn.btn-link
+          i.fa.fa-print(aria-hidden='true')
+        btn.btn-link
+          i.fa.fa-share-square-o(aria-hidden='true')
+        btn.btn-link.pull-right.clickable
+          i.fa.fa-chevron-down(aria-hidden='true')
     .panel-body
-      include M09-success
+      include M09-primary
       include M10-info
-      include M11-danger
-
-//.panel.panel-default.list-col
-  //- .colection-info
-  //-   p.name_colection Slavutich
-  //-     #adv-search.input-group.pull-right
-  //-       .input-group-btn
-  //-         .btn-group.show-panel(role='group')
-  //-           button.btn.btn-link(type='button', data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom')
-  //-             span(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
-  //-               i.fa.fa-chevron-down(aria-hidden='true')
-  //- 
-  //-       .btn-group
-  //-         button.btn.btn-link.dropdown-toggle(type='button', data-toggle='dropdown')
-  //-           Dropdown
-  //-           i.fa.fa-ellipsis-v(aria-hidden='true')
-  //-         ul.dropdown-menu
-  //-           li
-  //-             a(href='#') Add
-  //-           li
-  //-             a(href='#') Delete
+      include M11-warning

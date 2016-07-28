@@ -18,12 +18,21 @@
     display inline-block
 // .collapse
 //   display inline-block
+h3.panel-title
+  color #fff
 .panel-body
   display none
   padding 15px 0
   &.open
     display block
     padding 15px 0
+  .table.table
+    thead
+      tr
+        th
+
+          text-align left
+          font-size 12px
 .panel-heading span
   margin-bottom 0
 .alert
@@ -33,15 +42,16 @@
   .colection-info
     padding 10px 25px 10px 40px
     margin-bottom 20px
-btn.btn-link.circle
-  border-radius 50%
-  background-color #fff
+btn.btn-link
+  &.circle
+    border-radius 50%
+  &.addcollection
+    color #fff
 i.fa.fa-check-circle-o
   display inline-block
   padding 5px
   color green
-.panel-info > .panel-heading
-  background-color #808184
+
 btn.btn-link
   padding 10px
 p.name_colection
@@ -51,7 +61,7 @@ p.name_colection
 .panel-info> .panel-heading
   color #fff
 .panel-default > .panel-heading
-  background-color #e6e7e8
+  background-color #bbbdbf
 
 .panel-heading
   border-top-right-radius 0
