@@ -8,11 +8,10 @@
           .panel-heading
             ul.nav.nav-tabs
               li.col-md-6.active
-                a#login-form-link.active(href='#') Log in
+                a#login-form-link.active(href='#') Login
               li.col-md-6
                 a#register-form-link(href='#') Register
           .panel-body.login
-            .row
               .col-md-12
                 form#login-form(action='#', method='post', role='form', style='display: block;')
                   .col-md-12.register
@@ -24,7 +23,7 @@
                   .col-md-12
                     .form-group.text-left
                       input#remember(type='checkbox', tabindex='3', name='remember')
-                      label(for='remember')  Remember Me
+                      label(for='remember')  Remember my password
                   .col-md-12
                     .form-group.text-left
                       a.forgot-password(href='#', tabindex='5') Forgot Password?
@@ -33,19 +32,24 @@
                     .col-md-12.register
                       .row 
                         .col-md-6
-                          input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='')
+                          input#username.form-control(type='text', name='name', tabindex='1', placeholder=' * Name', value='')
                         .col-md-6
-                          input#email.form-control(type='email', name='email', tabindex='1', placeholder='Email Address', value='')
+                          input#surname.form-control(type='email', name='surname', tabindex='1', placeholder=' * Surname', value='')
                     .col-md-12.register
-                      input#password.form-control(type='password', name='password', tabindex='2', placeholder='Password')
+                      input#loginname.form-control(type='loginname', name='loginname', tabindex='2', placeholder='Login name')
                     .col-md-12.register
-                      input#confirm-password.form-control(type='password', name='confirm-password', tabindex='2', placeholder='Confirm Password')
+                      input#email.form-control(type='email', name='email', tabindex='2', placeholder=' * E-mail')
+                    .form-group
+                      .col-md-6
+                        input#password.form-control(type='password', name='password', tabindex='1', placeholder=' * password', value='')
+                      .col-md-6
+                        input#username.form-control(type='text', name='name', tabindex='1', placeholder=' * Reype your password', value='')
                     .col-md-12.register
                       input#register-submit.form-control.btn.btn-register(type='submit', name='register-submit', tabindex='4', value='Register')
                     .col-md-12
                       .form-group.text-left
                         input#remember(type='checkbox', tabindex='3', name='remember')
-                        label(for='remember')  Remember Me
-                    .col-md-12
-                      .form-group.text-left
-                        a.forgot-password(href='#', tabindex='5') Forgot Password?
+                        label(for='remember')  Remember my password
+                    //- .col-md-12
+                    //-   .form-group.text-left
+                    //-     a.forgot-password(href='#', tabindex='5') Remember my password
