@@ -15,9 +15,9 @@ for $font in $fonts2
   font-face( $font, "fonts/Tiempos/" + $font, normal, formats: woff otf eot )
 */
 
-$helveticaneue = OpenSans-Regular, OpenSans-Light, OpenSans-Bold, OpenSans-Semibold
+$helveticaneue = Roboto-Regular, Roboto-Light, Roboto-Bold, Roboto-Semibold
 for $font in $helveticaneue
-  font-face( $font, "fonts/opensans/" + $font, normal, formats: woff otf eot )
+  font-face( $font, "fonts/roboto/" + $font, normal, formats: woff otf eot )
 
 Font($fontSize=false,$lineHeight=false,$letterSpacing=false)
   if($fontSize != false)
@@ -28,17 +28,17 @@ Font($fontSize=false,$lineHeight=false,$letterSpacing=false)
     letter-spacing $letterSpacing
 
 openSansregular($fontSize=false,$lineHeight=false,$letterSpacing=false)
-  font-family: 'OpenSans-Regular', Arial, sans-serif
+  font-family: 'Roboto-Regular', Arial, sans-serif
   Font($fontSize,$lineHeight,$letterSpacing)
 
 opensanslight($fontSize=false,$lineHeight=false,$letterSpacing=false)
-  font-family: 'OpenSans-Light', Arial, sans-serif
+  font-family: 'Roboto-Light', Arial, sans-serif
   Font($fontSize,$lineHeight,$letterSpacing)
 
 opensansbold($fontSize=false,$lineHeight=false,$letterSpacing=false)
-  font-family: 'OpenSans-Bold', Arial, sans-serif
+  font-family: 'Roboto-Bold', Arial, sans-serif
   Font($fontSize,$lineHeight,$letterSpacing)
-  
+
 opensanssemibold($fontSize=false,$lineHeight=false,$letterSpacing=false)
-  font-family: 'OpenSans-Semibold', Arial, sans-serif
+  font-family: 'Roboto-Semibold', Arial, sans-serif
   Font($fontSize,$lineHeight,$letterSpacing)

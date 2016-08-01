@@ -1,42 +1,77 @@
-// M11-danger.jade
+// M10-info.jade
 
 .col-lg-4.col-md-6.col-sm-6.col-xs-12
   .panel.panel-warning
     .panel-heading
       .panel-title 
-        p.name_colection Качество объектов
-      span.pull-right.clickable
-        i.fa.fa-chevron-down(aria-hidden='true')
+        a
+          i.fa.fa-plus.colgrey(aria-hidden='true')
+        p.name_colection Состояние по типам инспекций
+        btn.btn-link.pull-right
+          i.fa.fa-ellipsis-v(aria-hidden='true')
     .panel-body 
       table.table.table-condensed.table-striped
         thead
-          tr 
-              th Часовые
-              th 
-              th 
-              th 
           tr
-              th Дневные
-              th 
-              th 
-              th 
+            th тип / состояние
+            th 
+              i.fa.fa-calendar-o(aria-hidden='true')
+            th 
+              i.fa.fa-calendar-plus-o(aria-hidden='true')
+            th 
+              i.fa.fa-calendar-check-o(aria-hidden='true')
+            th 
+              i.fa.fa-calendar-times-o(aria-hidden='true')
+            th
+              i.fa.fa-calendar-minus-o(aria-hidden='true')
+            th
+              
+        tbody
           tr
-              th Недельные
-              th 
-              th 
-              th 
+            th Часовые
+            th 
+            th 
+            th 
+            th 
+            th 
+            th  
           tr
-              th Месячные
-              th 
-              th 
-              th 
+            th Дневные
+            th 
+            th 
+            th 
+            th 
+            th 
+            th 
           tr
-              th Неназначеные
-              th 
-              th 
-              th 
+            th Недельные
+            th 
+            th 
+            th 
+            th 
+            th 
+            th  
           tr
-              th Оперативные
-              th 
-              th 
-              th 
+            th Месячные
+            th 
+            th 
+            th 
+            th 
+            th 
+            th 
+          tr
+            th Неназначеные
+            th 
+            th 
+            th 
+            th 
+            th 
+            th  
+          tr
+            th Оперативные
+            th 
+            th 
+            th 
+            th 
+            th 
+            th  

@@ -47,6 +47,8 @@ btn.btn-link
     border-radius 50%
   &.addcollection
     color #fff
+  &:hover
+    border-color transparent
 i.fa.fa-check-circle-o
   display inline-block
   padding 5px
@@ -54,10 +56,11 @@ i.fa.fa-check-circle-o
 
 btn.btn-link
   padding 10px
+  color #fff
+  display inline-block
 p.name_colection
   display inline-block
   font-size 20px
-  margin-right 40px
 // .panel-info> .panel-heading
 //   color #fff
 
@@ -66,17 +69,6 @@ p.name_colection
   border-top-left-radius 0
 .panel-default
   border transparent
-ul.link_list
-  display inline-block
-  list-style none
-  li
-    display inline-block
-    margin-right 75px
-    &:last-child
-      margin-right 0
-    li
-      &a:hover
-        text-decoration none
 .input-group.pull-right
   text-align right
 i.fa.fa-chevron-down,
@@ -126,13 +118,15 @@ button.btn.btn-default.status
       -webkit-border-radius 3px
       -moz-border-radius 3px
       border-radius 3px
+      &(type='submit')
+        border none
   .search-query
     &:focus
       width 260px
       & + button
         z-index 3
 .btn.btn-default
-  border none
+  border 1px solid #707071
 .input-group .form-control:last-child
   border none
   width 80%
@@ -148,11 +142,11 @@ button.btn.btn-default.status
 
 .btn-group
   .btn
-    border-radius 0
-    margin-left -1px
+    border-radius 3px
+    //margin-left -1px
     &:last-child
-      border-top-right-radius 0
-      border-bottom-right-radius 0
+      border-top-right-radius 3px
+      border-bottom-right-radius 3px
   .form-horizontal
     .btn[type="submit"]
       border-top-left-radius 0
