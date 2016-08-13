@@ -1,8 +1,8 @@
-//M03- inspection.styl
-
 #accordion.panel-group
   margin-bottom 10px
   border-radius 0
+  
+  
 .panel-group .panel
   border-radius 0
 // .panel-heading
@@ -14,12 +14,13 @@
   background-color #fff
 .panel-title
   display inline-block
+  > h3
+    color #fff
   #plusToPanel
     display inline-block
 // .collapse
 //   display inline-block
-h3.panel-title
-  color #fff
+
 .panel-body
   display none
   padding 15px 0
@@ -30,7 +31,6 @@ h3.panel-title
     thead
       tr
         th
-
           text-align left
           font-size 12px
 .panel-heading span
@@ -43,6 +43,9 @@ h3.panel-title
     padding 10px 25px 10px 40px
     margin-bottom 20px
 btn.btn-link
+  padding 10px
+  color #fff
+  display inline-block
   &.circle
     border-radius 50%
   &.addcollection
@@ -53,11 +56,6 @@ i.fa.fa-check-circle-o
   display inline-block
   padding 5px
   color green
-
-btn.btn-link
-  padding 10px
-  color #fff
-  display inline-block
 p.name_colection
   display inline-block
   font-size 20px
@@ -185,3 +183,4 @@ button.btn.btn-default.status
       position static !important
     .dropdown-menu
       min-width 500px
+
