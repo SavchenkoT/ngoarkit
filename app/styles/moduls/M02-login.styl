@@ -12,7 +12,7 @@
 
   input#login-submit.form-control.btn.btn-login,
   input#register-submit.form-control.btn.btn-register
-    margin 60px 0 25px 0
+    margin 20px 0 25px 0
     font-size 20px
     font-family 'robotoregular'
 
@@ -34,33 +34,32 @@
     padding 0
   .panel-login
     border-color #ccc
-    //-webkit-box-shadow 0px 2px 3px 0px rgba(0,0,0,0.2)
-    //-moz-box-shadow 0px 2px 3px 0px rgba(0,0,0,0.2)
-    //box-shadow 0px 2px 3px 0px rgba(0,0,0,0.2)
     & >.panel-heading
       color #00415d
       background-color #fff
       text-align center
       a
         text-decoration none
-        color #666
+        //color #666
         font-weight bold
-        font-size 15px
+        font-size 18px
         //-webkit-transition all 0.1s linear
         //-moz-transition all 0.1s linear
         //transition all 0.1s linear
         &.active
           color #029f5b
           font-size 18px
-  .panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"]
+  .panel-login input[type="text"],
+  .panel-login input[type="email"],
+  .panel-login input[type="password"]
     height 45px
     border 1px solid #ddd
     font-size 16px
     //-webkit-transition all 0.1s linear
     //-moz-transition all 0.1s linear
     //transition all 0.1s linear
-  li.col-md-6
-    text-transform uppercase
+  // li.col-md-6
+  //   text-transform uppercase
   .panel-login input:hover,
   .panel-login input:focus
     outline none
@@ -79,21 +78,24 @@
     padding 12px 0
     text-transform uppercase
     border-color #9ea97b
-
-  .btn-login:hover,
-  .btn-login:focus
-    color #fff
-    background-color #88926a
-    border-color #88926a
+    &:hover
+      color #fff
+      background-color #88926a
+      border-color #88926a
+    &:focus
+      color #fff
+      background-color #88926a
+      border-color #88926a
 
   .forgot-password
     text-decoration underline
     color #888
-
-  .forgot-password:hover,
-  .forgot-password:focus
-    text-decoration underline
-    color #666
+    &:hover
+      text-decoration underline
+      color #666
+    &:focus
+      text-decoration underline
+      color #666
 
   .btn-register
     background-color #25a8e0
@@ -105,12 +107,14 @@
     padding 12px 0
     text-transform uppercase
     box-shadow #25a8e0
-
-  .btn-register:hover,
-  .btn-register:focus
-    color #fff
-    background-color #2face4
-    border-color #2face4
+    &:hover
+      color #fff
+      background-color #2face4
+      border-color #2face4
+    &:focus
+      color #fff
+      background-color #2face4
+      border-color #2face4
   .register
     margin 15px 0
     .username

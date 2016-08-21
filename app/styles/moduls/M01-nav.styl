@@ -1,20 +1,16 @@
-//M01- login.styl
-
-
-
-
-// .input-group-btn
-//   padding 0
-//   margin 0
-
+/*!******************************
+ *
+ *   M01- login.styl
+ *
+ ******************************/
 .navbar
   margin-bottom 0
-.navbar.navbar-default,
-.navbar-brand.foto,
-.navbar-brand.setting,
-.form.navbar-form,
-.navbar-brand.text
-  clearfix()
+// .navbar-default,
+// .navbar-brand.foto,
+// .navbar-brand.setting,
+// .form.navbar-form,
+// .navbar-brand.text
+//   clearfix()
 
 .navbar-brand.setting,
 .form.navbar-form
@@ -29,27 +25,28 @@
     padding 0
     .logo
       padding 0
+    > .foto,
+    > .setting,
+    > .text
+      clearfix()
 
 
 .navbar-default
   background-color #fff
   .navbar-static-top
     border-color transparent
-
-.navbar-brand.text.text-right,
-.collapse.navbar-collapse
-  margin-left 125px
-img.navbar-brand
-
-
-.navbar-brand.logo
-  padding 0
-  clearfix()
-  .dropdown
-    &.dropdown-lg
-    .dropdown-menu
-      margin-top -1px
-      padding 6px 20px
+  .navbar-brand
+    height auto
+    padding 0
+    > .text.text-right
+      margin-left 125px
+    > .logo
+      padding 0
+      clearfix()
+.dropdown
+  .dropdown-menu
+    margin-top -1px
+    padding 6px 20px
 
   .input-group-btn
     .btn-group
