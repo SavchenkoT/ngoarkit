@@ -13,21 +13,19 @@
     [class*="col-"]
       padding-left 0 !important
       padding-right 0 !important
-  .panel-login
-    height 555px
 
-  input#login-submit.form-control.btn.btn-login,
-  input#register-submit.form-control.btn.btn-register
-    margin 20px 0 25px 0
-    font-size 20px
-    font-family 'robotoregular'
-
-  form#login-form,form#register-form
+  form#login-form,
+  form#register-form
     font-family 'robotothin_italic'
+    margin-top 33px
+
 
   .nav.nav-tabs.nav-justified
     position relative
     //margin-top -47px
+    li
+      a
+        padding 7px 0
 
   .panel-body.login
     display block
@@ -38,41 +36,34 @@
     border-bottom none
   .register-form
     padding 0
+
   .panel-login
-    border-color #ccc
+    max-height 555px
     & >.panel-heading
       color #00415d
       background-color #fff
       text-align center
       a
         text-decoration none
-        //color #666
+        text-transform uppercase
         font-weight bold
         font-size 18px
-        //-webkit-transition all 0.1s linear
-        //-moz-transition all 0.1s linear
-        //transition all 0.1s linear
         &.active
           color #029f5b
           font-size 18px
-  .panel-login input[type="text"],
-  .panel-login input[type="email"],
-  .panel-login input[type="password"]
-    height 45px
-    border 1px solid #ddd
-    font-size 16px
-    //-webkit-transition all 0.1s linear
-    //-moz-transition all 0.1s linear
-    //transition all 0.1s linear
-  // li.col-md-6
-  //   text-transform uppercase
-  .panel-login input:hover,
-  .panel-login input:focus
-    outline none
-    -webkit-box-shadow none
-    -moz-box-shadow none
-    box-shadow none
-    border-color #ccc
+    //> input[type="text"],
+    //> input[type="email"],
+    //> input[type="password"]
+      //height 45px
+      //border 1px solid #ddd
+      //font-size 16px
+      //&:hover,
+      //&:focus
+        //outline none
+        //-webkit-box-shadow none
+        //-moz-box-shadow none
+        //box-shadow none
+        //border-color #ccc
 
   .btn-login
     background-color #9ea97b
@@ -111,7 +102,6 @@
     height auto
     font-weight normal
     padding 12px 0
-    text-transform uppercase
     box-shadow #25a8e0
     &:hover
       color #fff
@@ -122,6 +112,16 @@
       background-color #2face4
       border-color #2face4
   .register
-    margin 15px 0
+    margin-bottom 22px
+
+    > input
+      border-radius 4px
     .username
       margin-right 15px
+
+input#login-submit.form-control.btn.btn-login,
+input#register-submit.form-control.btn.btn-register
+  margin 20px 0 25px 0
+  font-size 20px
+  font-family 'robotoregular'
+  padding 7px

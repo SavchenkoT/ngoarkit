@@ -23,6 +23,8 @@
   .navbar-brand
     text-align center
     padding 0
+    max-width 181px
+    font-size 15px
     .logo
       padding 0
     > .foto,
@@ -30,9 +32,14 @@
     > .text
       clearfix()
 
+  .navbar-brand.text
+    .form-group.phone
+      font-size 15px
+
 
 .navbar-default
   background-color #fff
+  border none
   .navbar-static-top
     border-color transparent
   .navbar-brand
@@ -82,12 +89,18 @@ img.img-responsive
   box-sizing border-box
 .form-group
   display inline-block
-  vertical-align middle
+  margin-left 125px
+  &:last-child
+    margin-left 0
   &.phone
-    margin-right 40px
+    margin-right 24px
   &.envelope,
   &.phone
     margin-bottom 0
+    font-size 15px
+    display inline-block
+    vertical-align middle
+    padding-top 11px
   a
     color #26a9e0
     text-decoration none
