@@ -23,18 +23,19 @@
                 .control-group
                   .row
                     .col-md-12
-                    input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log In')
+                      input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log in')
                 .control-group
                   .row
                     .col-md-12
                       .form-group.text-left
-                        input#remember(type='checkbox', tabindex='3', name='remember')
+                        i.fa.fa-check-square-o(aria-hidden='true')
+                        //input#remember(type='checkbox', tabindex='3', name='remember')
                         label(for='remember')  Remember my password
                 .conrtol-group
                   .row
                     .col-md-12
                       .form-group.text-left
-                        a.forgot-password(href='#', tabindex='5') Forgot Password?
+                        a.forgot-password(href='#', tabindex='5') Forgot my Password?
               form#register-form(data-toggle='validator', role='form', action='#', method='post', style='display: none;')
                   .row
                     .col-md-6.col-sm-6.col-xs-12.register
@@ -58,5 +59,6 @@
                   .row
                     .col-md-12
                       .form-group.text-left
-                      input#remember(type='checkbox', tabindex='3', name='remember')
-                      label(for='remember')  Remember my password
+                        i.fa.fa-check-square-o(aria-hidden='true')
+                        //input#remember(type='checkbox', tabindex='3', name='remember')
+                        label(for='remember')  Remember my password
