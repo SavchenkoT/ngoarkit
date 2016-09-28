@@ -1,25 +1,21 @@
-#accordion.panel-group
-  margin-bottom 10px
-  border-radius 0
-  
-  
-.panel-group .panel
-  border-radius 0
-// .panel-heading
-//   background-color #808184
+#accordion
+  .panel-group
+    .panel
+      margin-bottom 20px
+
 .panel-heading, .input-group.pull-right
   clearfix()
+
+.panel-heading
+  .panel-title
+    display inline-block
+    > h3
+      color #fff
+    #plusToPanel
+      display inline-block
 .input-group
   display inline-block
   background-color #fff
-.panel-title
-  display inline-block
-  > h3
-    color #fff
-  #plusToPanel
-    display inline-block
-// .collapse
-//   display inline-block
 
 .panel-body
   display none
@@ -37,7 +33,7 @@
   margin-bottom 0
 .alert
   padding 10px
-  border-radius 0
+  //border-radius 0
 .list-col
   .colection-info
     padding 10px 25px 10px 40px
@@ -58,13 +54,10 @@ i.fa.fa-check-circle-o
   color green
 p.name_colection
   display inline-block
-  font-size 20px
-// .panel-info> .panel-heading
-//   color #fff
+  font-size 15px
+  color #fff
 
-.panel-heading
-  border-top-right-radius 0
-  border-top-left-radius 0
+
 .panel-default
   border transparent
 .input-group.pull-right
@@ -79,8 +72,7 @@ i.fa.fa-ellipsis-v
     -webkit-transition 0
 #adv-search.input-group.pull-right
   width 270px
-// .link_list
-//   margin-left 125px
+
 .colwhite
   color #fff
 .colgrey
@@ -116,7 +108,7 @@ button.btn.btn-default.status
       -webkit-border-radius 3px
       -moz-border-radius 3px
       border-radius 3px
-      &(type='submit')
+      &[type='submit']
         border none
   .search-query
     &:focus
@@ -183,4 +175,3 @@ button.btn.btn-default.status
       position static !important
     .dropdown-menu
       min-width 500px
-
