@@ -29,7 +29,7 @@
     var tasks = {
 
         complieStylus: {
-            watch: ['app/styles/**/*.*', 'bower_components/**/*.css'],
+            watch: ['app/styles/**/*.*', 'bower_components/**/*.*'],
             input: ['app/styles/*.styl'],
             output: 'dist/css/',
             concatFilename: false,
