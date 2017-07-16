@@ -3,9 +3,20 @@
   Common styles
 
 ********************************/
+$table-cells-spacing = 6px
+$table-cells-spacing-big = 30px
 
 html
 body
-  //min-height 100vh
-  //min-width 320px
-  //text-size-adjust: none
+  min-width 320px
+
+
+.btn
+  background-image none // remove default bootstrap button-arr.svg styling
+h1, h2, h3, h4, h5, h6, label
+  font-weight normal !important //remove default bootstrap font-weight
+label
+  font-family ttm-regular
+input:focus, textarea:focus // remove default bootstrap input outlines
+  outline 0 !important
+  box-shadow none !important

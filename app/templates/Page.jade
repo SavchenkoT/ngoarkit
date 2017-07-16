@@ -1,12 +1,14 @@
+//Page.jade
+
 extends layouts/default
 block vars
   - page.title = 'Page title'
-  - page.bodyid = ''
+  - page.bodyid = 'pagebody'
 
 block content
-
-  include modules/M01-nav
-  .container
-    include modules/M03-youfrontmodul
-  
-  include modules/M04-sticky-footer
+  .wrapper
+    include modules/M01-nav
+    include modules/M12-buttons
+    include modules/M12-buttons
+    include modules/M12-buttons
+  include modules/M03-inspection

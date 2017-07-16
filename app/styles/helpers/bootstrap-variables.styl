@@ -14,11 +14,12 @@ $gray ?=                lighten($gray-base, 33.5) // #555
 $gray-light ?=          lighten($gray-base, 46.7) // #777
 $gray-lighter ?=        lighten($gray-base, 93.5) // #eee
 
-$brand-primary ?=       darken(#428bca, 6.5) // #337ab7
+$brand-primary ?=       #839eb2 //darken(#428bca, 6.5) // #337ab7
 $brand-success ?=       #5cb85c
-$brand-info ?=          #5bc0de
-$brand-warning ?=       #f0ad4e
+$brand-info ?=          #bbbdbf
+$brand-warning ?=       #c1b49a
 $brand-danger ?=        #d9534f
+$brand-default ?=       #b7c19f
 
 
 //== Scaffolding
@@ -37,12 +38,21 @@ $link-hover-color ?=      darken($link-color, 15)
 //** Link hover decoration.
 $link-hover-decoration ?= underline
 
+//== Typography
+//
+@font-face
+  font-family 'robotoregular'
+  src url('fonts/roboto/Roboto-Regular.eot')
+  src url('fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/roboto/Roboto-Regular.woff') format('woff'), url('fonts/roboto/Roboto-Regular.ttf') format('truetype'), url('fonts/roboto/Roboto-Regular.svg#robotoregular') format('svg')
+  font-weight normal
+  font-style normal
+
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-
-$font-family-sans-serif ?= "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-family-sans-robotoregular ?= "robotoregular", Helvetica, Arial, sans-serif
+$font-family-sans-serif ?= "robotoblack", Helvetica, Arial, sans-serif
 $font-family-serif ?=      Georgia, "Times New Roman", Times, serif
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace ?=  Menlo, Monaco, Consolas, "Courier New", monospace
@@ -703,10 +713,11 @@ $list-group-link-heading-color ?= #333
 //##
 
 $panel-bg ?=                  #fff
-$panel-body-padding ?=        15px
-$panel-heading-padding ?=     10px 15px
+$panel-body-padding ?=        5px //15px
+$panel-heading-padding ?=     5px
 $panel-footer-padding ?=      $panel-heading-padding
-$panel-border-radius ?=       $border-radius-base
+$panel-border-radius ?=       0px
+//$border-radius-base
 
 //** Border color for elements within panels
 $panel-inner-border ?=        #ddd

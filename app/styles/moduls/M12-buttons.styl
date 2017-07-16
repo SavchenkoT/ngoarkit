@@ -1,0 +1,48 @@
+/*!******************************
+ *
+ *   M12- buttons.styl
+ *
+ ******************************/
+
+
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn + .dropdown-toggle
+  background-color #26a9e0
+  border-color #26a9e0
+  color #fff
+ul.dropdown-menu
+  position relative
+ul.link_list
+  display inline-block
+  list-style none
+  padding 0
+  li
+    display inline-block
+    list-style none
+    margin-right 25px
+    &:last-child
+      margin-right 0
+    a
+      color #979797
+      font-size 25px
+      &:hover
+        color #26a9e0
+        text-decoration none
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn + .dropdown-toggle
+  background-color #fff
+  border 1px solid #707071
+  color #404041
+.btn.btn-default.dropdown-toggle
+  border-left none
+
+.panel-heading:before, .input-group.pull-right:before, .panel-heading:after, .input-group.pull-right:after
+    display block
+
+.panel-default > .panel-heading
+  background-color #b7c19f
+
+
+@media screen and (max-width: 768px)
+  ul.link_list
+    margin-left none
