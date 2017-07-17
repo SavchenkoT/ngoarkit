@@ -1,43 +1,47 @@
-#accordion.panel-group
-  margin-bottom 10px
-  border-radius 0
-
-.panel-group .panel
-  border-radius 0
-// .panel-heading
-//   background-color #808184
-
 #accordion
   .panel-group
+      margin-bottom 10px
+      border-radius 0
     .panel
+      border-radius 0
       margin-bottom 20px
+  .panel-heading
+    background-color #b7c19f
+    border-top-right-radius 0
+    border-top-left-radius 0
+    padding-left 40px
+    font-size 15px
+    color #fff
 
-.panel-heading, .input-group.pull-right
+    .panel-title
+      display inline-block
+      > h3
+        color #fff
+      #plusToPanel
+        display inline-block
+
+  .panel-body
+      display none
+      padding 15px 0
+      &.open
+        display block
+        padding 15px 0
+      .table.table
+        thead
+          tr
+            th
+              text-align left
+              font-size 12px
+
+.panel-heading,
+.input-group.pull-right
   clearfix()
 
-.panel-heading
-  .panel-title
-    display inline-block
-    > h3
-      color #fff
-    #plusToPanel
-      display inline-block
 .input-group
   display inline-block
   background-color #fff
 
-.panel-body
-  display none
-  padding 15px 0
-  &.open
-    display block
-    padding 15px 0
-  .table.table
-    thead
-      tr
-        th
-          text-align left
-          font-size 12px
+
 .panel-heading span
   margin-bottom 0
 .alert
@@ -69,13 +73,9 @@ p.name_colection
 // .panel-info> .panel-heading
 //   color #fff
 
-.panel-heading
-  border-top-right-radius 0
-  border-top-left-radius 0
-  padding 0 40px
-  font-size 15px
-  color #fff
-
+.list-inspection
+  display inline-block
+  padding 0
 .panel-default
   border transparent
 .input-group.pull-right
