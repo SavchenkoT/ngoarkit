@@ -76,3 +76,19 @@ $(function () {
         $('#display-json').html(JSON.stringify(checkedItems, null, '\t'));
     });
 });
+
+$(document).ready(function(){
+
+  $(":checkbox").click(function(){
+
+      if ($(this).is(':checked'))
+
+          $('label').css("color", "#000000");
+
+      else
+
+          $('label').css("color", "#e32121");
+
+        });
+
+  });
