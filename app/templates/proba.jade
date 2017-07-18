@@ -6,69 +6,45 @@ block vars
   - page.bodyid = 'authpage'
 
 block content
-    
-  .container-fluid
-    .row-fluid
-      .wrapper
-          include modules/M01-nav
-          .col-md-3
-            .btn-group
-              button.btn.btn-default.select(type='button') KDMA OSBB fund
-              button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
-                i.fa.fa-angle-down.fa-lg(aria-hidden='true')
-              ul.dropdown-menu
-                li
-                  a(href='#') Action
-                li
-                  a(href='#') Another action
-                li
-                  a(href='#') Something else here
-                li.divider
-                li
-                  a(href='#') Separated link
-            ul.dropdown-menu
-              li
-                a(href='#') Action
-              li
-                a(href='#') Another action
-              li
-                a(href='#') Something else here
-              li.divider(role='separator')
-              li
-                a(href='#') Separated link
-          .col-md-9
-                button.btn.btn-link(type='button')  OBJECTS 
-                button.btn.btn-link(type='button')  INSPECTIONS 
-                button.btn.btn-link(type='button')  USERS 
-                button.btn.btn-link(type='button')  TEMPLATES 
-                button.btn.btn-link(type='button')  DICTIONARY
-            
-          include modules/M03-inspection
-          include modules/M06-Slavutich
-          include modules/M03-inspectsidebar
-          
+  include modules/M01-nav
+  .container
+    .row
+      .col-md-3
+        .btn-group
+          button.btn.btn-default.select(type='button') KDMA OSBB fund
+          button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
+            i.fa.fa-angle-down.fa-lg(aria-hidden='true')
+          ul.dropdown-menu
+            li
+              a(href='#') Action
+            li
+              a(href='#') Another action
+            li
+              a(href='#') Something else here
+            li.divider
+            li
+              a(href='#') Separated link
+        ul.dropdown-menu
+          li
+            a(href='#') Action
+          li
+            a(href='#') Another action
+          li
+            a(href='#') Something else here
+          li.divider(role='separator')
+          li
+            a(href='#') Separated link
+      .col-md-9
+          button.btn.btn-link(type='button')  OBJECTS 
+          button.btn.btn-link(type='button')  INSPECTIONS 
+          button.btn.btn-link(type='button')  USERS 
+          button.btn.btn-link(type='button')  TEMPLATES 
+          button.btn.btn-link(type='button')  DICTIONARY
+        
+      //include modules/M03-inspection
+      //include modules/M06-Slavutich
+      //include modules/M03-inspectsidebar
+      
       include modules/M14-filters-inspection
       include modules/M15-filters-object
-    
-    
-          .container-fluid
-            .container
-              .example
-                nav
-                  ul.pagination
-                    li.disabled
-                      a(href='#', aria-label='Previous')
-                        span(aria-hidden='true') «
-                    li.active
-                      a(href='#') 1
-                    li
-                      a(href='#') 2
-                    li
-                      a(href='#') 3
-                    li
-                      a(href='#') 4
-                    li
-                      a(href='#') 5
-                    li
-                      a(href='#', aria-label='Next')
-                        span(aria-hidden='true') »
+      include modules/M17-pagination

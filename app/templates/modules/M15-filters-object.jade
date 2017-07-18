@@ -1,8 +1,16 @@
 //M15-filters-object.jade
 
 .float-grid-columns
-    .cell-list__title--blue
+  .top-filters
+    .cell-list
+      .cell-list__blutitle
         h3.panel-title.colwhite Объекты
+        
+    .btn-group
+        button.btn.btn-default.select(type='button' placeholder='Введите название') 
+        button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
+          i.fa.fa-angle-down.fa-lg(aria-hidden='true')
+
     .cell-list.f-title
       p Базовые          
         .cell__group 
