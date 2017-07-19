@@ -35,18 +35,20 @@ block content
           li
             a(href='#') Separated link
       .col-md-9
-          button.btn.btn-link(type='button')  OBJECTS 
-          button.btn.btn-link(type='button')  INSPECTIONS 
-          button.btn.btn-link(type='button')  USERS 
-          button.btn.btn-link(type='button')  TEMPLATES 
-          button.btn.btn-link(type='button')  DICTIONARY
+        button.btn.btn-link(type='button')  OBJECTS 
+        button.btn.btn-link(type='button')  INSPECTIONS 
+        button.btn.btn-link(type='button')  USERS 
+        button.btn.btn-link(type='button')  TEMPLATES 
+        button.btn.btn-link(type='button')  DICTIONARY
         
+    .row
+      .col-md-3
+        include modules/M14-filters-inspection
+        include modules/M15-filters-object
+      
+      .col-md-9
+        include modules/M16-inspection-for-object
+        include modules/M17-pagination
       //include modules/M03-inspection
       //include modules/M06-Slavutich
       //include modules/M03-inspectsidebar
-      
-      include modules/M14-filters-inspection
-      include modules/M15-filters-object
-      
-      include modules/M05-tables
-      include modules/M17-pagination
