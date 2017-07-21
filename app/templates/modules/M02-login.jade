@@ -1,64 +1,65 @@
 #authpage
+  .container
     .row
-        .col-md-6.col-md-offset-3
-            .panel.panel-login
-                .panel-heading
-                    ul.nav.nav-tabs.nav-justified
-                        li.active
-                            a#login-form-link.active(href='#') Log In
-                        li
-                            a#register-form-link(href='#') Register
-                .panel-body.login
+      .col-md-6.col-md-offset-3
+        .panel.panel-login
+          .panel-heading
+            ul.nav.nav-tabs.nav-justified
+              li.active
+                a#login-form-link.active(href='#') Log In
+              li
+                a#register-form-link(href='#') Register
+          .panel-body.login
+            .row
+              .col-md-12
+                form#login-form(data-toggle='validator', role='form', action='#', method='post', style='display: block;')
+                  .control-group
                     .row
-                        .col-md-12
-                            form#login-form(data-toggle='validator', role='form', action='#', method='post', style='display: block;')
-                                .control-group
-                                    .row
-                                        .col-md-12.register
-                                            input#username.form-control(type='text', name='username', tabindex='1', placeholder="∗ Type your login name or email", value='')
-                                .control-group
-                                    .row
-                                        .col-md-12.register
-                                            input#password.form-control(type='password', name='password', tabindex='2', placeholder="∗ Type your password")
-                                .control-group
-                                    .row
-                                        .col-md-12
-                                            input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log in')
-                                .control-group
-                                    .row
-                                        .col-md-12                                                
-                                            .form-group.text-left
-                                                    label.checkbox
-                                                        input(type='checkbox', name='remember', value='1')
-                                                        |    Remember my password
-                                .conrtol-group
-                                    .row
-                                        .col-md-12
-                                            .form-group.text-left
-                                                a.forgot-password(href='#', tabindex='5') Forgot my password?
-                            form#register-form(data-toggle='validator', role='form', action='#', method='post', style='display: none;')
-                                    .row
-                                        .col-md-6.col-sm-6.col-xs-12.register
-                                            input#username.form-control(type='text', name='name', tabindex='1', placeholder='∗ Name', value='')
-                                        .col-md-6.col-sm-6.col-xs-12.register
-                                            input#surname.form-control(type='email', name='surname', tabindex='1', placeholder='∗Surname', value='')
-                                    .row
-                                        .col-md-12.register
-                                            input#email.form-control(type='email', name='email', tabindex='2', placeholder='∗ Login name')
-                                    .row
-                                        .col-md-12.register
-                                            input#email.form-control(type='email', name='email', tabindex='2', placeholder='∗ E-mail')
-                                    .row
-                                        .col-md-6.col-sm-6.col-xs-12.register
-                                            input#password.form-control(type='password', name='password', tabindex='1', placeholder='* Type your password', value='')
-                                        .col-md-6.col-sm-6.col-xs-12.register
-                                            input#username.form-control(type='text', name='name', tabindex='1', placeholder='* Reype your password', value='')
-                                    .row
-                                        .col-md-12.register
-                                            input#register-submit.form-control.btn.btn-register(type='submit', name='register-submit', tabindex='4', value='Register')
-                                    .row
-                                        .col-md-12
-                                            .form-group.text-left
-                                                    label.checkbox
-                                                        input(type='checkbox', name='remember', value='1')
-                                                        |    Remember my password
+                      .col-md-12.register
+                        input#username.form-control(type='text', name='username', tabindex='1', placeholder="∗ Type your login name or email", value='')
+                  .control-group
+                    .row
+                      .col-md-12.register
+                        input#password.form-control(type='password', name='password', tabindex='2', placeholder="∗ Type your password")
+                  .control-group
+                      .row
+                          .col-md-12
+                              input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log in')
+                  .control-group
+                      .row
+                          .col-md-12                                                
+                              .form-group.text-left
+                                      label.checkbox
+                                          input(type='checkbox', name='remember', value='1')
+                                          |    Remember my password
+                  .conrtol-group
+                      .row
+                          .col-md-12
+                              .form-group.text-left
+                                  a.forgot-password(href='#', tabindex='5') Forgot my password?
+              form#register-form(data-toggle='validator', role='form', action='#', method='post', style='display: none;')
+                      .row
+                          .col-md-6.col-sm-6.col-xs-12.register
+                              input#username.form-control(type='text', name='name', tabindex='1', placeholder='∗ Name', value='')
+                          .col-md-6.col-sm-6.col-xs-12.register
+                              input#surname.form-control(type='email', name='surname', tabindex='1', placeholder='∗Surname', value='')
+                      .row
+                          .col-md-12.register
+                              input#email.form-control(type='email', name='email', tabindex='2', placeholder='∗ Login name')
+                      .row
+                          .col-md-12.register
+                              input#email.form-control(type='email', name='email', tabindex='2', placeholder='∗ E-mail')
+                      .row
+                          .col-md-6.col-sm-6.col-xs-12.register
+                              input#password.form-control(type='password', name='password', tabindex='1', placeholder='* Type your password', value='')
+                          .col-md-6.col-sm-6.col-xs-12.register
+                              input#username.form-control(type='text', name='name', tabindex='1', placeholder='* Reype your password', value='')
+                      .row
+                          .col-md-12.register
+                              input#register-submit.form-control.btn.btn-register(type='submit', name='register-submit', tabindex='4', value='Register')
+                      .row
+                          .col-md-12
+                              .form-group.text-left
+                                      label.checkbox
+                                          input(type='checkbox', name='remember', value='1')
+                                          |    Remember my password
