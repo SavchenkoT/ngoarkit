@@ -4,11 +4,11 @@ extends layouts/default
 block vars
   - page.title = 'Login'
   - page.bodyid = 'authpage'
+  
 block content    
   .container
-    .row
+    .row      
       include modules/M01-nav
-      include modules/M01-nav-login
       include modules/M12-buttons
       include modules/M01a-nav-test
       include modules/M02-login
@@ -16,4 +16,5 @@ block content
       include modules/M03-inspectsidebar
       include modules/M04-calendar
       include modules/M05-tables
+      include modules/M18-inspection-for-object
       
