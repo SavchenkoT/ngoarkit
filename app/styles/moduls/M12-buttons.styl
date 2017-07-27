@@ -5,13 +5,64 @@
  ******************************/
 
 
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn + .dropdown-toggle
-  background-color #26a9e0
-  border-color #26a9e0
-  color #fff
-      // ul.dropdown-menu
-      //   position relative
+  // .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+  // .btn-group > .btn + .dropdown-toggle
+  //   background-color #26a9e0
+  //   border-color #26a9e0
+  //   color #fff
+        // ul.dropdown-menu
+        //   position relative
+
+
+.wrapper-select
+  position: relative
+  display: inline-block
+  z-index: 10
+  cursor: pointer
+
+
+.wrapper-select select
+  position: absolute
+  opacity: 0
+  z-index: -1
+
+
+.select-list
+  display: none
+  position: absolute
+
+
+
+.select-btn
+  width: 100%
+  padding-left: 20px
+  text-align: left
+  border-radius: 10px
+  outline: none
+  border: 1px solid #8f8f8f
+  background-color: #ffffff
+  color: #000000
+  cursor: pointer
+
+
+.select-list .select-btn:hover
+  color: brown
+
+
+.box-arrow
+  position: absolute
+  right: 15px
+  top: 12px
+
+
+.wrapper-select button
+  width: 100%
+  text-transform: uppercase
+  padding-top: 15px
+  padding-bottom: 15px
+
+
+
 ul.link_list
   display inline-block
   list-style none
@@ -36,8 +87,20 @@ ul.link_list
 .btn.btn-default.dropdown-toggle
   border-left none
 
-.panel-heading:before, .input-group.pull-right:before, .panel-heading:after, .input-group.pull-right:after
-    display block
+.btn-glyphicon
+  padding:8px;
+  background:#ffffff;
+  margin-right:4px;
+
+.icon-btn
+  padding: 1px 15px 3px 2px;
+  border-radius:50px;
+
+.panel-heading:before,
+.input-group.pull-right:before,
+.panel-heading:after,
+.input-group.pull-right:after
+  display block
 
 .panel-default > .panel-heading
   background-color #b7c19f

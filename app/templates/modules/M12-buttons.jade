@@ -2,19 +2,20 @@
 
 .col-md-2
   .btn-group
-    button.btn.btn-default.select(type='button') KDMA OSBB fund
-    button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
-      i.fa.fa-angle-down.fa-lg(aria-hidden='true')
-    ul.dropdown-menu
-      li
-        a(href='#') Action
-      li
-        a(href='#') Another action
-      li
-        a(href='#') Something else here
-      li.divider
-      li
-        a(href='#') Separated link
+    .wrapper-select
+      select
+        option(value='', hidden='') KDMA OSBB fund
+        option Test
+        option Test
+        option Test
+      button.select-btn.main-btn(type='button')
+        span.text-change Option
+      .box-arrow
+        i.fa.fa-chevron-down(aria-hidden='true')
+      .select-list
+        button.select-btn(type='button', value='Option') Option
+        button.select-btn(type='button', value='Test1') Test1
+        button.select-btn(type='button', value='Test2') Test2
     ul.dropdown-menu
       li
         a(href='#') Action

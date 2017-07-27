@@ -1,0 +1,24 @@
+//*!******************************
+//-*   M001-example.jade
+//-******************************/
+.row
+  .btn-group
+    .wrapper-select
+      select
+        option(value='', hidden='') KDMA OSBB fund
+        option Test
+        option Test
+        option Test
+      button.select-btn.main-btn(type='button')
+        span.text-change Option
+      .box-arrow
+        i.fa.fa-chevron-down(aria-hidden='true')
+      .select-list
+        button.select-btn(type='button', value='Option') Option
+        button.select-btn(type='button', value='Test1') Test1
+        button.select-btn(type='button', value='Test2') Test2
+.row
+  .btn-group
+    a.btn.icon-btn.btn-primary(href='#')
+      i.fa.fa-clock-o(aria-hidden='true')
+        | Like
