@@ -3,44 +3,35 @@
 .col-md-2
   .btn-group
     .wrapper-select
-      select
-        option(value='', hidden='') KDMA OSBB fund
-        option Test
-        option Test
-        option Test
-      button.select-btn.main-btn(type='button')
-        span.text-change Option
-      .box-arrow
-        i.fa.fa-chevron-down(aria-hidden='true')
-      .select-list
-        button.select-btn(type='button', value='Option') Option
-        button.select-btn(type='button', value='Test1') Test1
-        button.select-btn(type='button', value='Test2') Test2
-    ul.dropdown-menu
-      li
-        a(href='#') Action
-      li
-        a(href='#') Another action
-      li
-        a(href='#') Something else here
-      li.divider(role='separator')
-      li
-        a(href='#') Separated link
+      span.wrapper-select_default Выберете пункт
+      ul.wrapper-select_list
+        li.wrapper-select_item
+          | Не определено
+        li.wrapper-select_item
+          | Ок
+        li.wrapper-select_item
+          | Внимание
+        li.wrapper-select_item
+          | Критично
+        li.wrapper-select_item
+          | Не корректно
+        li.wrapper-select_item
+          | Без оценки
+
+      ul.dropdown-menu
+        li
+          a(href='#') Action
+        li
+          a(href='#') Another action
+        li
+          a(href='#') Something else here
+        li.divider(role='separator')
+        li
+          a(href='#') Separated link
 .col-md-10
-  ul.link_list
-    li
-      a(href='#') OBJECTS
-    li
-      a(href='#') INSPECTIONS
-    li
-      a(href='#') USERS
-    li
-      a(href='#') TEMPLATES
-    li
-      a(href='#') DICTIONARY
-        
-        
-//button.btn.btn-default.select(type='button') KDMA OSBB fund
-//- button.btn.btn-default.select.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-//-   i.fa.fa-angle-down.fa-lg(aria-hidden='true')
-//-   span.sr-only Toggle Dropdown
+  .panel-body
+    button.btn.btn-default OBJECTS
+    button.btn.btn-default INSPECTIONS
+    button.btn.btn-default USERS
+    button.btn.btn-default TEMPLATES
+    button.btn.btn-default DICTIONARY

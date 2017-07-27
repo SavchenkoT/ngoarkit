@@ -1,199 +1,219 @@
+
 #accordion
   .panel-group
-      margin-bottom 10px
-      border-radius 0
+    margin-bottom 10px
+    border-radius 0
     .panel
       border-radius 0
       margin-bottom 20px
-  .panel-heading
-    background-color #b7c19f
-    border-top-right-radius 0
-    border-top-left-radius 0
-    padding 10px 15px
-    font-size 15px
-    color #fff
-
-    .panel-title
-      display inline-block
-      > h3
-        color #fff
-      #plusToPanel
-        display inline-block
-
-  .panel-body
-      display none
-      padding 15px 0
-      &.open
-        display block
-        padding-top 15px
-      .table.table
-        thead
-          tr
-            th
-              text-align left
-              font-size 12px
-
-.panel-heading,
-.input-group.pull-right
-  clearfix()
-input.search
-  width 150px
-  border-radius 25px
-  padding 0 10px
-.input-group
-  display inline-block
-  background-color #fff
-
-
-.panel-heading span
-  margin-bottom 0
-.alert
-  padding 10px
-  //border-radius 0
-.list-col
-  .colection-info
-    padding 10px 25px 10px 40px
-    margin-bottom 20px
-btn.btn-link
-  padding 0 10px
-  color #fff
-  display inline-block
-  &.circle
-    border-radius 50%
-  &.addcollection
-    color #fff
-  &:hover
-    border-color transparent
-i.fa.fa-check-circle-o
-  display inline-block
-  padding 5px
-  color green
-p.name_colection
-  display inline-block
-  font-size 15px
-  margin 0
-  color #fff
-// .panel-info> .panel-heading
-//   color #fff
-
-.list-inspection
-  display inline-block
-  padding 0
-.panel-default
-  border transparent
-.input-group.pull-right
-  text-align right
-i.fa.fa-chevron-down,
-i.fa.fa-ellipsis-v
-  color #fff
-  transform rotateY(180deg)
-  font-size 15px
-  &:hover
-    transform none
-    transition 0
-    -webkit-transition 0
-#adv-search.input-group.pull-right
-  width 270px
-
-.colwhite
-  color #fff
-.colgrey
-  color #58595b
-
-button.btn.btn-default.status
-  min-width 270px
-  #custom-search-form
-    margin 0
-    margin-top 5px
-    padding 0
-    .search-query
-      padding-right 3px
-      padding-right 4px \9
-      padding-left 3px
-      padding-left 4px \9
-      margin-bottom 0
-      -webkit-border-radius 0px
-      -moz-border-radius 0px
-      border-radius 0px
-      -webkit-transition width  0.2s ease-in-out
-      -moz-transition width  0.2s ease-in-out
-      -o-transition width  0.2s ease-in-out
-      transition width  0.2s ease-in-out
-    button
-      border 0
-      background none
-      padding 2px 5px
-      margin-top 2px
-      position relative
-      left -28px
-      margin-bottom 0
-      -webkit-border-radius 3px
-      -moz-border-radius 3px
-      border-radius 3px
-      &[type='submit']
-        border none
-  .search-query
-    &:focus
-      width 260px
-      & + button
-        z-index 3
-.btn.btn-default
-  border 1px solid #707071
-.input-group .form-control:last-child
-  border none
-  width 80%
-.dropdown
-  &.dropdown-lg
-    .dropdown-menu
-      margin-top -1px
-      padding 6px 20px
-
-.input-group-btn
-  .btn-group
-    display flex !important
-
-.btn-group
-  .btn
-    border-radius 3px
-    //margin-left -1px
-    &:last-child
-      border-top-right-radius 3px
-      border-bottom-right-radius 3px
-  .form-horizontal
-    .btn[type="submit"]
+    .panel-heading
+      background-color #b7c19f
+      border-top-right-radius 0
       border-top-left-radius 0
-      border-bottom-left-radius 0
+      padding 10px 15px
+      font-size 15px
+      color #fff
 
-.form-horizontal
-  .form-group
-    margin-left 0
-    margin-right 0
+    .list-inspection
+      display inline-block
+      padding 0
 
-@media (max-width: 1050px)
-  .col-sm-8,
-  .col-xs-12
-    .panel-body
-      .table.table
-        thead
-          tr
-            th
-              font-size 12px
-  ul.link_list
-    margin-left none
 
-.form-group,
-.form-control
-  border-radius 0
 
-@media screen and (max-width: 768px)
-  .panel-group .panel
-    border-radius 0
-    margin-bottom 10px
-  #adv-search
-    width 500px
-    margin 0 auto
-  .dropdown
-    &.dropdown-lg
-      position static !important
-    .dropdown-menu
-      min-width 500px
+// #accordion
+//   .panel-group
+//       margin-bottom 10px
+//       border-radius 0
+//     .panel
+//       border-radius 0
+//       margin-bottom 20px
+//     .panel-heading
+//       background-color #b7c19f
+//       border-top-right-radius 0
+//       border-top-left-radius 0
+//       padding 10px 15px
+//       font-size 15px
+//       color #fff
+//
+//     .panel-title
+//       display inline-block
+//       > h3
+//         color #fff
+//       #plusToPanel
+//         display inline-block
+//
+//   .panel-body
+//       display none
+//       padding 15px 0
+//       &.open
+//         display block
+//         padding-top 15px
+//       .table.table
+//         thead
+//           tr
+//             th
+//               text-align left
+//               font-size 12px
+//
+// .panel-heading,
+// .input-group.pull-right
+//   clearfix()
+// input.search
+//   width 150px
+//   border-radius 25px
+//   padding 0 10px
+// .input-group
+//   display inline-block
+//   background-color #fff
+//
+//
+// .panel-heading span
+//   margin-bottom 0
+// .alert
+//   padding 10px
+//   //border-radius 0
+// .list-col
+//   .colection-info
+//     padding 10px 25px 10px 40px
+//     margin-bottom 20px
+// btn.btn-link
+//   padding 0 10px
+//   color #fff
+//   display inline-block
+//   &.circle
+//     border-radius 50%
+//   &.addcollection
+//     color #fff
+//   &:hover
+//     border-color transparent
+// i.fa.fa-check-circle-o
+//   display inline-block
+//   padding 5px
+//   color green
+// p.name_colection
+//   display inline-block
+//   font-size 15px
+//   margin 0
+//   color #fff
+//
+// .list-inspection
+//   display inline-block
+//   padding 0
+// .panel-default
+//   border transparent
+// .input-group.pull-right
+//   text-align right
+// i.fa.fa-chevron-down,
+// i.fa.fa-ellipsis-v
+//   color #fff
+//   transform rotateY(180deg)
+//   font-size 15px
+//   &:hover
+//     transform none
+//     transition 0
+//     -webkit-transition 0
+// #adv-search.input-group.pull-right
+//   width 270px
+//
+// .colwhite
+//   color #fff
+// .colgrey
+//   color #58595b
+//
+// button.btn.btn-default.status
+//   min-width 270px
+//   #custom-search-form
+//     margin 0
+//     margin-top 5px
+//     padding 0
+//     .search-query
+//       padding-right 3px
+//       padding-right 4px \9
+//       padding-left 3px
+//       padding-left 4px \9
+//       margin-bottom 0
+//       -webkit-border-radius 0px
+//       -moz-border-radius 0px
+//       border-radius 0px
+//       -webkit-transition width  0.2s ease-in-out
+//       -moz-transition width  0.2s ease-in-out
+//       -o-transition width  0.2s ease-in-out
+//       transition width  0.2s ease-in-out
+//     button
+//       border 0
+//       background none
+//       padding 2px 5px
+//       margin-top 2px
+//       position relative
+//       left -28px
+//       margin-bottom 0
+//       -webkit-border-radius 3px
+//       -moz-border-radius 3px
+//       border-radius 3px
+//       &[type='submit']
+//         border none
+//   .search-query
+//     &:focus
+//       width 260px
+//       & + button
+//         z-index 3
+//   .btn.btn-default
+//     border 1px solid #707071
+// .input-group .form-control:last-child
+//   border none
+//   width 80%
+// .dropdown
+//   &.dropdown-lg
+//     .dropdown-menu
+//       margin-top -1px
+//       padding 6px 20px
+//
+// .input-group-btn
+//   .btn-group
+//     display flex !important
+//
+// .btn-group
+//   .btn
+//     border-radius 3px
+//     //margin-left -1px
+//     &:last-child
+//       border-top-right-radius 3px
+//       border-bottom-right-radius 3px
+//   .form-horizontal
+//     .btn[type="submit"]
+//       border-top-left-radius 0
+//       border-bottom-left-radius 0
+//
+// .form-horizontal
+//   .form-group
+//     margin-left 0
+//     margin-right 0
+//
+// @media (max-width: 1050px)
+//   .col-sm-8,
+//   .col-xs-12
+//     .panel-body
+//       .table.table
+//         thead
+//           tr
+//             th
+//               font-size 12px
+//   ul.link_list
+//     margin-left none
+//
+// .form-group,
+// .form-control
+//   border-radius 0
+//
+// @media screen and (max-width: 768px)
+//   .panel-group .panel
+//     border-radius 0
+//     margin-bottom 10px
+//   #adv-search
+//     width 500px
+//     margin 0 auto
+//   .dropdown
+//     &.dropdown-lg
+//       position static !important
+//     .dropdown-menu
+//       min-width 500px

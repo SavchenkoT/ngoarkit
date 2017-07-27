@@ -22,3 +22,35 @@
     a.btn.icon-btn.btn-primary(href='#')
       i.fa.fa-clock-o(aria-hidden='true')
         | Like
+
+.row
+  .btn-group
+    svg(xmlns='http://www.w3.org/2000/svg', style='display: none')
+    symbol#checkmark(viewbox='0 0 24 24')
+      path(stroke-linecap='round', stroke-miterlimit='10', fill='none', d='M22.9 3.7l-15.2 16.6-6.6-7.1')
+    .form-container
+    .promoted-checkbox
+      input#tmp.promoted-input-checkbox(type='checkbox')
+      label(for='tmp')
+        svg
+          use(xlink:href='#checkmark')
+        | Save recipient
+        
+.row
+  .btn-group
+  .wrapper-select
+    span.wrapper-select_default Выберете пункт
+    ul.wrapper-select_list
+      li.wrapper-select_item
+        | Не определено
+      li.wrapper-select_item
+        | Ок
+      li.wrapper-select_item
+        | Внимание
+      li.wrapper-select_item
+        | Критично
+      li.wrapper-select_item
+        | Не корректно
+      li.wrapper-select_item
+        | Без оценки
+        

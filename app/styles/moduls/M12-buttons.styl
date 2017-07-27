@@ -4,108 +4,78 @@
  *
  ******************************/
 
+.btn
+  border-radius: 0
+  border: 0
+  margin:0
+.btn-default
+  color: #555
 
-  // .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
-  // .btn-group > .btn + .dropdown-toggle
-  //   background-color #26a9e0
-  //   border-color #26a9e0
-  //   color #fff
-        // ul.dropdown-menu
-        //   position relative
-
+.btn-default:hover, .btn-default:focus
+  background-color: #f4f4f4
 
 .wrapper-select
+  width: 170px
+  cursor: pointer
   position: relative
-  display: inline-block
-  z-index: 10
-  cursor: pointer
+  color: #000
 
-
-.wrapper-select select
+.wrapper-select_default
+  color: #808184
   position: absolute
-  opacity: 0
-  z-index: -1
-
-
-.select-list
-  display: none
-  position: absolute
-
-
-
-.select-btn
-  width: 100%
+  display: block
+  width: 170px
+  padding-right: 10px
   padding-left: 20px
-  text-align: left
-  border-radius: 10px
-  outline: none
-  border: 1px solid #8f8f8f
-  background-color: #ffffff
-  color: #000000
-  cursor: pointer
+  padding-top: 5px
+  padding-bottom: 5px
+  box-sizing: border-box
+  border: 1px solid black
+  border-radius: 6%
+
+  &:after
+    content:''
+    display: block
+    position: absolute
+    top: 4px
+    right: 7px
+    width: 10px
+    height: 10px
+    border: 2px solid #26a9e0
+    border-top: none
+    border-right: none
+    transform: rotate(-45deg)
+
+.wrapper-select_list
+  position:absolute
+  top:29px
+  width:100%
+  padding:0
+  margin:0
+  margin-top:-1px
+  border:1px solid black
+  border-top:none
+  box-sizing:border-box
+  opacity:0
+  visibility:hidden
 
 
-.select-list .select-btn:hover
-  color: brown
+.wrapper-select_item
+  padding-left:20px
+  padding-top:5px
+  padding-bottom:5px
+  list-style:none
+  &:hover
+    background-color: grey
+  &:last-child
+   padding-bottom:5px
 
 
-.box-arrow
-  position: absolute
-  right: 15px
-  top: 12px
+.active
+  opacity:1
+  visibility:visible
+  color:#000
 
-
-.wrapper-select button
-  width: 100%
-  text-transform: uppercase
-  padding-top: 15px
-  padding-bottom: 15px
-
-
-
-ul.link_list
-  display inline-block
-  list-style none
-  padding 0
-  li
-    display inline-block
-    list-style none
-    margin-right 25px
-    &:last-child
-      margin-right 0
-    a
-      color #979797
-      font-size 22px
-      &:hover
-        color #26a9e0
-        text-decoration none
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn + .dropdown-toggle
-  background-color #fff
-  border 1px solid #707071
-  color #404041
-.btn.btn-default.dropdown-toggle
-  border-left none
-
-.btn-glyphicon
-  padding:8px;
-  background:#ffffff;
-  margin-right:4px;
-
-.icon-btn
-  padding: 1px 15px 3px 2px;
-  border-radius:50px;
-
-.panel-heading:before,
-.input-group.pull-right:before,
-.panel-heading:after,
-.input-group.pull-right:after
-  display block
-
-.panel-default > .panel-heading
-  background-color #b7c19f
-
-
-@media screen and (max-width: 768px)
-  ul.link_list
-    margin-left none
+.choosen
+  background-color: #26a9e0
+  color:#000
