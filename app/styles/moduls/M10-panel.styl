@@ -8,13 +8,128 @@
   > .panel-heading
     background-color #839eb2
 
+  .panel-body
+    padding 0
+    table
+      tbody
+        tr
+          &:nth-of-type(odd)
+            background-color #839eb2
+            th
+              &:not(:first-child)
+                background-color #e0e0e0
+                text-align center
+              &:last-child
+                background-color #a3ba5d
+                text-align center
+
+          &:nth-of-type(even)
+            background-color #c5d0d8
+            th
+              &:not(:first-child)
+                background-color #eaeaeb
+                text-align center
+              &:last-child
+                background-color #d2dbb6
+                text-align center
 .panel-success
   > .panel-heading
     background-color #bbbdbf
+  .panel-body
+    padding 0
+    table
+      tbody
+        tr
+          &:nth-of-type(odd)
+            background-color #bbbdbf
+            th
+              span
+                padding 0 10px
+                &.summary
+                  color #1b75bb
+              &:last-child
+                background-color #e0e0e0
+                text-align center
 
+          &:nth-of-type(even)
+            background-color #dddedf
+            th
+              span
+                padding 0 10px
+              &:not(:first-child)
+                background-color #f0f0f0
+                text-align center
+              &:last-child
+                background-color #f0f0f0
+                text-align center
+        th
+          .fa-clock-o
+            &:before
+              color #1b75bb
+          .fa-check-circle-o
+            &:before
+              color #37b34a
+          .fa-question-circle-o
+            &:before
+              color #90278e
+          .fa-times-circle-o
+            &:before
+              color #f05a28
+          .fa-exclamation-circle
+            &:before
+              color #ff9100
+          .fa-ban
+            &:before
+              color #26a9e0
 .panel-info
   > .panel-heading
     background-color #c1b49a
+  .panel-body
+    padding 0
+    table
+      tbody
+        tr
+          &:nth-of-type(odd)
+            background-color #c1b49a
+            th
+              span
+                padding 0 10px
+                &.summary
+                  color #1b75bb
+              &:last-child
+                background-color #d3c5ab
+                text-align center
+
+          &:nth-of-type(even)
+            background-color #e9e2d5
+            th
+              span
+                padding 0 10px
+              &:not(:first-child)
+                background-color #f0f0f0
+                text-align center
+              &:last-child
+                background-color #f0f0f0
+                text-align center
+        th
+          .fa-clock-o
+            &:before
+              color #1b75bb
+          .fa-check-circle-o
+            &:before
+              color #37b34a
+          .fa-question-circle-o
+            &:before
+              color #90278e
+          .fa-times-circle-o
+            &:before
+              color #f05a28
+          .fa-exclamation-circle
+            &:before
+              color #ff9100
+          .fa-ban
+            &:before
+              color #26a9e0
 
 .panel-body
   .table
@@ -22,6 +137,28 @@
     thead
       tr
         border-color none
+        th
+          color #808184
+
+          &:not(:first-child)
+            text-align center
+
+          .fa-calendar-o
+            &:before
+              color #26a9e0
+          .fa-calendar-plus-o
+            &:before
+              color #37b34a
+          .fa-calendar-check-o
+            &:before
+              color #bbbdbf
+          .fa-calendar-times-o
+            &:before
+              color #be1e2d
+          .fa-calendar-minus-o
+            &:before
+              color #ee5928
+
     .table-condensed.table-striped
       padding 0
 
@@ -32,6 +169,7 @@
   border-top-left-radius 0
   padding 9px 15px 9px 15px
   font-size 15px
+  clearfix()
   a, i
     color #fff
     display inline-block
