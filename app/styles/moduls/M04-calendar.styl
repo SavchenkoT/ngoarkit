@@ -4,62 +4,38 @@
  *
  ******************************/
 
- #calendar
-  time.icon
-    color #2a3f54
-    display: inline-block
-    width: 73px
-    height: 70px
-    background-color: #e6e7e8
-    margin-right: 10px
-    border-radius:4px
-    overflow: hidden
-    &:last-child
-      margin-right 0
-
-  time.icon *
-    display: block
-    width: 100%
-    //font-size: 22px
-    //font-weight: bold
-    font-style: normal
-    text-align: center
-
-  time.icon strong
-    top: 0
-    color: #fff
-    background-color: #b7c19f
-    box-shadow: 0 2px 0 #b7c19f
-
-  time.icon em
-    font-size:10px
-
-    text-transform:uppercase
-
-  time.icon span
-    width: 100%
-    font-size: 24px
-    color: #2f2f2f
-    line-height:20px
-
-  time.icon sup
-    position inherit
-    line-height 15px
-    text-transform uppercase
-
-
-  // @-webkit-keyframes swing {
-  //   0%   { -webkit-transform: rotate(0deg)  skewY(0deg); }
-  //   20%  { -webkit-transform: rotate(12deg) skewY(4deg); }
-  //   60%  { -webkit-transform: rotate(-9deg) skewY(-3deg); }
-  //   80%  { -webkit-transform: rotate(6deg)  skewY(-2deg); }
-  //   100% { -webkit-transform: rotate(0deg)  skewY(0deg); }
-  // }
-  //
-  // @keyframes swing {
-  //   0%   { transform: rotate(0deg)  skewY(0deg); }
-  //   20%  { transform: rotate(12deg) skewY(4deg); }
-  //   60%  { transform: rotate(-9deg) skewY(-3deg); }
-  //   80%  { transform: rotate(6deg)  skewY(-2deg); }
-  //   100% { transform: rotate(0deg)  skewY(0deg); }
-  // }
+#calendar
+  time
+    &.icon
+       color #2a3f54
+       display inline-block
+       width 73px
+       height 70px
+       background-color #e6e7e8
+       margin-right 10px
+       border-radius 4px
+       overflow hidden
+       &:last-child
+         margin-right 0
+       *
+         display block
+         width 100%
+         font-style normal
+         text-align center
+       strong
+         top 0
+         color #fff
+         background-color #b7c19f
+         box-shadow 0 2px 0 #b7c19f
+       em
+         font-size 10px
+         text-transform uppercase
+       span
+         width 100%
+         font-size 24px
+         color #2f2f2f
+         line-height 20px
+       sup
+         position inherit
+         line-height 15px
+         text-transform uppercase

@@ -1,25 +1,27 @@
-//Page.jade
+//- ------------------------------------------
+//-
+//-     Page.jade
+//-
+//- ------------------------------------------
 
 extends layouts/default
 block vars
   - page.title = 'Page title'
   - page.bodyid = 'authpage'
 
-block content    
+block content
   .container
-    .row      
+    .row
       include modules/M01-navbar
       include modules/M12-buttons
-    
-        
+
     .row
       .col-md-2
         include modules/M14-filters-inspection
         include modules/M15-filters-object
-      
-      .col-md-10      
-        include modules/M16-inspection        
+
+      .col-md-10
+        include modules/M16-inspection
         include modules/M17-pagination
-        
         include modules/M05-tables
         include modules/M17-pagination

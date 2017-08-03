@@ -1,158 +1,137 @@
 /******************************
- *
- *   M01- login.styl
- *
- ******************************/
+*
+*   M01- login.styl
+*
+******************************/
 
- ul, ol
+ul, ol
   margin 0
   padding 0
-.navbar
-   margin-bottom 0
-.navbar-default,
-.navbar-brand.foto,
-.navbar-brand.setting,
-.form.navbar-form
-   clearfix()
-.navbar
-   margin-bottom 0
 
-  // .navbar-default
-  // .navbar-brand.foto
-  // .navbar-brand.setting
-  // .form.navbar-form
-  // .navbar-brand.text
-  //    clearfix()
+.navbar
+  margin-bottom 0
+  margin-bottom 0
 
-.navbar-brand.setting,
-.form.navbar-form
-   display block
-   vertical-align middle
+.navbar-brand.setting, .form.navbar-form
+  display block
+  vertical-align middle
 
 .navbar-header
-   vertical-align middle
-   float left
-.navbar-brand
-   text-align center
-   padding 0
-   max-width 181px
-   font-size 15px
-   margin-left 0
-   .logo
-      padding 0
-   > .foto,
-   > .setting,
-   > .text
-      clearfix()
+  vertical-align middle
+  float left
 
+.navbar-brand
+  text-align center
+  padding 0
+  max-width 181px
+  font-size 15px
+  margin-left 0
+  height auto
+  padding 0
+  height auto
+  .logo
+    padding 0
+  & > .text
+    &.text-right
+      margin-left 125px
+  & > .logo
+    padding 0
 
 .navbar-default
-   background-color #fff
-   border none
+  background-color #fff
+  border none
+  background-color #fff
+  border none
 
 .navbar-static-top
-   border-color transparent
+  border-color transparent
+  border-color transparent
 
-.navbar-brand
-   height auto
-   padding 0
-   > .text.text-right
+.dropdown, .dropdown-menu
+  margin-top -1px
+  padding 6px 20px
+  margin-top -1px
+  padding 6px 20px
+
+
+  & > .text
+    &.text-right
       margin-left 125px
-   > .logo
-      padding 0
-      clearfix()
-
-.dropdown
-.dropdown-menu
-   margin-top -1px
-   padding 6px 20px
-
-.navbar-default
-   background-color #fff
-   border none
-
-.navbar-static-top
-   border-color transparent
-
-.navbar-brand
-   height auto
-   //padding 0
- > .text.text-right
-      margin-left 125px
- > .logo
-     padding 0
-     clearfix()
-
-.dropdown
-.dropdown-menu
-   margin-top -1px
-   padding 6px 20px
+  & > .logo
+    padding 0
 
 .input-group-btn
-   .btn-group
-      display flex !important
-      .btn
-        border-radius 3px
-        border 1px solid #707071
-        //margin-left -1px
-        &:last-child
-           border-top-right-radius 4px
-           border-bottom-right-radius 4px
-      .form-horizontal
-        .btn[type="submit"]
-           border-top-left-radius 4px
-           border-bottom-left-radius 4px
+  .btn-group
+    display flex !important
+    .btn
+      border-radius 3px
+      border 1px solid #707071
+      &:last-child
+         border-top-right-radius 4px
+         border-bottom-right-radius 4px
+    .form-horizontal
+      .btn[type="submit"]
+        border-top-left-radius 4px
+        border-bottom-left-radius 4px
+
 .card
-   canvas#header-blur.header-bg
+  canvas#header-blur
+    &.header-bg
       border 1px solid #4c4c4d
       border-radius 4px
-      background-color red
+      background-color #f00
       vertical-align middle
-   a
-      display: inline-block;
-      vertical-align: middle;
+  a
+    display inline-block
+    vertical-align middle
 
-.navbar-nav> li> a
-   padding-top 15px
-   padding-bottom 15px
+.navbar-nav
+  & > li
+    & > a
+      padding-top 15px
+      padding-bottom 15px
 
-img.img-responsive
-   width 60px
-   height 60px
-   display inline-block
-   box-sizing border-box
+img
+  &.img-responsive
+    width 60px
+    height 60px
+    display inline-block
+    box-sizing border-box
+
 .form-group
-   display inline-block
-   margin-left 62px
-   &:last-child
-      margin-left 0
-      font-size 20px
-   &.phone
-      margin-right 24px
-   &.envelope,
-   &.phone
-      margin-bottom 0
-      font-size 15px
-      display inline-block
-      vertical-align middle
-      padding-top 14px
-   a
-      color #26a9e0
-      text-decoration none
-      font-weight bold
-      margin-left 8px
+  display inline-block
+  margin-left 62px
+  &:last-child
+    margin-left 0
+    font-size 20px
+  &.phone
+    margin-right 24px
+  a
+    color #26a9e0
+    text-decoration none
+    font-weight bold
+    margin-left 8px
+
+.form-group.envelope, .form-group.phone
+  margin-bottom 0
+  font-size 15px
+  display inline-block
+  vertical-align middle
+  padding-top 14px
 
 @media screen and (max-width: 768px)
   #adv-search
     width 270px
     .dropdown
        &.dropdown-lg
-          position static !important
+           position static !important
        .dropdown-menu
-          min-width 270px
+           min-width 270px
     .navbar-header
        float right
-    .navbar-brand.text.text-right
-       margin-left 0
-       .form-group
-          display block
+    .navbar-brand
+       &.text
+           &.text-right
+               margin-left 0
+               .form-group
+                   display block
