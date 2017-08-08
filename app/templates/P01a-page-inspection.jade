@@ -1,25 +1,26 @@
-//Page-test.jade
+//-******************************
+//-
+//-*   P01a-page-inspection.jade
+//-
+//-******************************/
 
 extends layouts/default
 block vars
   - page.title = 'Page title'
   - page.bodyid = 'authpage'
 
-block content    
+block content
   .container
-    .row      
+    .row 
       include modules/M01-navbar
       include modules/M12-buttons
       include modules/M06-Slavutich
     .row
-      include modules/M08-OSBB
+      include modules/M08-panel-success
       include modules/M06-Slavutich
-    
-        
     .row
       .col-md-2
         include modules/M14-filters-inspection
         include modules/M15-filters-object
       .col-md-10
         include modules/M19-structure-object
-        

@@ -7,54 +7,49 @@
 .inspection-for-object
   .inspection-btn
     p Инспекции по объектам
-    .btn-group
-      button.btn-default(type='button') Сохранить
-      button.btn-save(type='button') Сохранить
-      button.btn-delete(type='button') Удалить
-      button.btn-clean(type='button') Очистить
-  #accordion.panel-group
-    .panel.panel-default.list-col
-      .panel-heading
-        h3.panel-title 
-          p.name_colection Условия фильтрации
+    .btn-group.btn-group__pull-center
+      button.btn-default.btn-default__transpar(type='button') Сохранить
+      button.btn-default.btn-default__save(type='button') Сохранить
+      button.btn-default.btn-default__delete(type='button') Удалить
+      button.btn-default.btn-default__clean(type='button') Очистить
+  #accordion
+    .panel-group
+      .panel.panel-heading.panel-heading__inspect
+        h3.panel-title Условия фильтрации
         span.pull-right.clickable
           i.fa.fa-chevron-down(aria-hidden='true')
           
         .btn-group
-          button.btn.btn-default.select(type='button') Введите название
-          button.btn.btn-default.dropdown-toggle(data-toggle='dropdown', type='button')
+          button.btn.btn-default.btn-default__white.select(type='button') Часовые
+          button.btn.btn-default.btn-default__white.dropdown-toggle(data-toggle='dropdown', type='button')
             i.fa.fa-angle-down.fa-lg(aria-hidden='true')
-        .btn-group
+        .btn-group.pull-right
           button.btn-save(type='button') Сохранить
           button.btn-delete(type='button') Удалить
           button.btn-clean(type='button') Очистить
       .panel-body
-        table.table-responsiv
-          th Инспекции
-          tr
-            td Период:
-            td 
-              input(type='text', placeholder='Введите период')
-          tr
-            td Тип по времени:
-            td
-          tr
-            td Состояние выполнения:
-            td
-            
-        table.table-responsiv
-          th Объекты
-          tr
-            td Категория:
-            td 
+          table.table-responsiv
+            th Инспекции
+            tr
+              td Период:
+              td 
+                input(type='text', placeholder='Введите период')
+            tr
+              td Тип по времени:
+              td
+            tr
+              td Состояние выполнения:
+              td
               
-          tr
-            td Класс
-            td
-          tr
-            td 
-            td 
-              
-        
-      
-  
+          table.table-responsiv
+            th Объекты
+            tr
+              td Категория:
+              td 
+                
+            tr
+              td Класс
+              td
+            tr
+              td 
+              td 

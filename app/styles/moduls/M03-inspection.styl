@@ -4,228 +4,248 @@
  *
  ******************************/
 
+ #accordion
+   .panel-group
+       margin-bottom 10px
+       border-radius 0
+       .panel
+           border-radius 0
+           margin-bottom 20px
+           border none
+           padding 0
+       .panel-heading
+           border-top-right-radius 0
+           border-top-left-radius 0
+           padding 10px 15px
+           font-size 15px
+           color #fff
+           .fa
+               color #929497
+               font-size 15px
+           a
+               color #fff
+           li
+               padding-right 10px
+               &:last-child
+                   padding-right 0
+           .btn-link
+               &.addcollection
+                   color #fff
+                   margin-right 15px
+       .list-inspection
+           display inline-block
+           padding 0
+
 #accordion
   .panel-group
-    margin-bottom 10px
-    border-radius 0
-    .panel
-      border-radius 0
-      margin-bottom 20px
     .panel-heading
-      border-top-right-radius 0
-      border-top-left-radius 0
-      padding 10px 15px
-      font-size 15px
-      color #fff
-      a
-        color #fff
-      li
-        padding-right 10px
-        &:last-child
-          padding-right 0
-      .btn-link.addcollection
-        color #fff
-        margin-right 15px
-    .list-inspection
-      display inline-block
-      padding 0
+      &__main
+         background-color #bbbdbf
+         color #58595b
+      &__inspect
+        background-color #b7c19f
+        clearfix()
+    .navbar-form
+        margin 0
+        .search-box
+            border 0px
+            //height 35px
+            outline none
+            width 150px
+            //padding-right 3px
+            padding-left 32px
+            //margin 4px
+            -webkit-border-radius 22px
+            -moz-border-radius 22px
+            border-radius 22px
+        button
+            border 0
+            background none
+            padding 2px 5px
+            margin-top 2px
+            position relative
+            right -28px
+            margin-bottom 0
+            -webkit-border-radius 3px
+            -moz-border-radius 3px
+            border-radius 3px
+
+    .search-box
+        &:focus
+            & + button
+                z-index 3
 
 
+.panel-primary
+  & > .panel-heading
+    background-color #839eb2
+  .panel-body
+    padding 0
+    table
+       tbody
+           tr
+               &:nth-of-type(odd)
+                   background-color #839eb2
+                   th
+                       &:not(:first-child)
+                           background-color #e0e0e0
+                           text-align center
+                       &:last-child
+                           background-color #a3ba5d
+                           text-align center
+               &:nth-of-type(even)
+                   background-color #c5d0d8
+                   th
+                       &:not(:first-child)
+                           background-color #eaeaeb
+                           text-align center
+                       &:last-child
+                           background-color #d2dbb6
+                           text-align center
 
-// #accordion
-//   .panel-group
-//       margin-bottom 10px
-//       border-radius 0
-//     .panel
-//       border-radius 0
-//       margin-bottom 20px
-//     .panel-heading
-//       background-color #b7c19f
-//       border-top-right-radius 0
-//       border-top-left-radius 0
-//       padding 10px 15px
-//       font-size 15px
-//       color #fff
-//
-//     .panel-title
-//       display inline-block
-//       > h3
-//         color #fff
-//       #plusToPanel
-//         display inline-block
-//
-//   .panel-body
-//       display none
-//       padding 15px 0
-//       &.open
-//         display block
-//         padding-top 15px
-//       .table.table
-//         thead
-//           tr
-//             th
-//               text-align left
-//               font-size 12px
-//
-// .panel-heading,
-// .input-group.pull-right
-//   clearfix()
-// input.search
-//   width 150px
-//   border-radius 25px
-//   padding 0 10px
-// .input-group
-//   display inline-block
-//   background-color #fff
-//
-//
-// .panel-heading span
-//   margin-bottom 0
-// .alert
-//   padding 10px
-//   //border-radius 0
-// .list-col
-//   .colection-info
-//     padding 10px 25px 10px 40px
-//     margin-bottom 20px
-// btn.btn-link
-//   padding 0 10px
-//   color #fff
-//   display inline-block
-//   &.circle
-//     border-radius 50%
-//   &.addcollection
-//     color #fff
-//   &:hover
-//     border-color transparent
-// i.fa.fa-check-circle-o
-//   display inline-block
-//   padding 5px
-//   color green
-// p.name_colection
-//   display inline-block
-//   font-size 15px
-//   margin 0
-//   color #fff
-//
-// .list-inspection
-//   display inline-block
-//   padding 0
-// .panel-default
-//   border transparent
-// .input-group.pull-right
-//   text-align right
-// i.fa.fa-chevron-down,
-// i.fa.fa-ellipsis-v
-//   color #fff
-//   transform rotateY(180deg)
-//   font-size 15px
-//   &:hover
-//     transform none
-//     transition 0
-//     -webkit-transition 0
-// #adv-search.input-group.pull-right
-//   width 270px
-//
-// .colwhite
-//   color #fff
-// .colgrey
-//   color #58595b
-//
-// button.btn.btn-default.status
-//   min-width 270px
-//   #custom-search-form
-//     margin 0
-//     margin-top 5px
-//     padding 0
-//     .search-query
-//       padding-right 3px
-//       padding-right 4px \9
-//       padding-left 3px
-//       padding-left 4px \9
-//       margin-bottom 0
-//       -webkit-border-radius 0px
-//       -moz-border-radius 0px
-//       border-radius 0px
-//       -webkit-transition width  0.2s ease-in-out
-//       -moz-transition width  0.2s ease-in-out
-//       -o-transition width  0.2s ease-in-out
-//       transition width  0.2s ease-in-out
-//     button
-//       border 0
-//       background none
-//       padding 2px 5px
-//       margin-top 2px
-//       position relative
-//       left -28px
-//       margin-bottom 0
-//       -webkit-border-radius 3px
-//       -moz-border-radius 3px
-//       border-radius 3px
-//       &[type='submit']
-//         border none
-//   .search-query
-//     &:focus
-//       width 260px
-//       & + button
-//         z-index 3
-//   .btn.btn-default
-//     border 1px solid #707071
-// .input-group .form-control:last-child
-//   border none
-//   width 80%
-// .dropdown
-//   &.dropdown-lg
-//     .dropdown-menu
-//       margin-top -1px
-//       padding 6px 20px
-//
-// .input-group-btn
-//   .btn-group
-//     display flex !important
-//
-// .btn-group
-//   .btn
-//     border-radius 3px
-//     //margin-left -1px
-//     &:last-child
-//       border-top-right-radius 3px
-//       border-bottom-right-radius 3px
-//   .form-horizontal
-//     .btn[type="submit"]
-//       border-top-left-radius 0
-//       border-bottom-left-radius 0
-//
-// .form-horizontal
-//   .form-group
-//     margin-left 0
-//     margin-right 0
-//
-// @media (max-width: 1050px)
-//   .col-sm-8,
-//   .col-xs-12
-//     .panel-body
-//       .table.table
-//         thead
-//           tr
-//             th
-//               font-size 12px
-//   ul.link_list
-//     margin-left none
-//
-// .form-group,
-// .form-control
-//   border-radius 0
-//
-// @media screen and (max-width: 768px)
-//   .panel-group .panel
-//     border-radius 0
-//     margin-bottom 10px
-//   #adv-search
-//     width 500px
-//     margin 0 auto
-//   .dropdown
-//     &.dropdown-lg
-//       position static !important
-//     .dropdown-menu
-//       min-width 500px
+.panel-success
+  & > .panel-heading
+       background-color #bbbdbf
+  .panel-body
+       padding 0
+       table
+           tbody
+               tr
+                   &:nth-of-type(odd)
+                       background-color #bbbdbf
+                       th
+                           span
+                               padding 0 10px
+                               &.summary
+                                   color #1b75bb
+                           &:last-child
+                               background-color #e0e0e0
+                               text-align center
+                   &:nth-of-type(even)
+                       background-color #dddedf
+                       th
+                           span
+                               padding 0 10px
+                           &:not(:first-child)
+                               background-color #f0f0f0
+                               text-align center
+                           &:last-child
+                               background-color #f0f0f0
+                               text-align center
+               th
+                   .fa-clock-o
+                       &:before
+                           color #1b75bb
+                   .fa-check-circle-o
+                       &:before
+                           color #37b34a
+                   .fa-question-circle-o
+                       &:before
+                           color #90278e
+                   .fa-times-circle-o
+                       &:before
+                           color #f05a28
+                   .fa-exclamation-circle
+                       &:before
+                           color #ff9100
+                   .fa-ban
+                       &:before
+                           color #26a9e0
+
+.panel-info
+  & > .panel-heading
+     background-color #c1b49a
+  .panel-body
+       padding 0
+       table
+           tbody
+               tr
+                   &:nth-of-type(odd)
+                       background-color #c1b49a
+                       th
+                           span
+                               padding 0 10px
+                               &.summary
+                                   color #1b75bb
+                           &:last-child
+                               background-color #d3c5ab
+                               text-align center
+                   &:nth-of-type(even)
+                       background-color #e9e2d5
+                       th
+                           span
+                               padding 0 10px
+                           &:not(:first-child)
+                               background-color #f0f0f0
+                               text-align center
+                           &:last-child
+                               background-color #f0f0f0
+                               text-align center
+               th
+                   .fa-clock-o
+                       &:before
+                           color #1b75bb
+                   .fa-check-circle-o
+                       &:before
+                           color #37b34a
+                   .fa-question-circle-o
+                       &:before
+                           color #90278e
+                   .fa-times-circle-o
+                       &:before
+                           color #f05a28
+                   .fa-exclamation-circle
+                       &:before
+                           color #ff9100
+                   .fa-ban
+                       &:before
+                           color #26a9e0
+
+.panel-body
+  .table
+       margin-bottom 0
+       thead
+           tr
+               border-color none
+               th
+                   color #808184
+                   &:not(:first-child)
+                       text-align center
+                   .fa-calendar-o
+                       &:before
+                           color #26a9e0
+                   .fa-calendar-plus-o
+                       &:before
+                           color #37b34a
+                   .fa-calendar-check-o
+                       &:before
+                           color #bbbdbf
+                   .fa-calendar-times-o
+                       &:before
+                           color #be1e2d
+                   .fa-calendar-minus-o
+                       &:before
+                           color #ee5928
+       .table-condensed
+           &.table-striped
+               padding 0
+
+.panel-heading
+   vertical-align middle
+   border-color inherit
+   border-top-right-radius 0
+   border-top-left-radius 0
+   padding 9px 15px 9px 15px
+   font-size 15px
+   .name_colection
+       color #fff
+       display inline-block
+       margin 0
+       padding-left 15px
+   .panel-title
+       display inline-block
+
+.panel-heading a,
+.panel-heading i
+   color #fff
+   display inline-block

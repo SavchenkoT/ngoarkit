@@ -10,6 +10,10 @@ block vars
   - page.bodyid = 'homepage'
 
 block content
-  .wrapper
-    include modules/M01-navbar
-    include modules/M12-buttons
+  .container
+    .row
+      include modules/M01-navbar
+    .row.text-top
+      include modules/M12-buttons
+    .row
+      include modules/M03-inspection

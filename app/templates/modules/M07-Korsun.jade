@@ -1,12 +1,20 @@
-//M07-Korsun.jade
+//-******************************
+//-
+//-*   M07-Korsun.jade
+//-
+//-******************************/
 
-#accordion.panel-group
-  .panel.panel-default.list-col
-    .panel-heading
-      h3.panel-title 
-        p.name_colection Korsun
-      span.pull-right.clickable
-        i.fa.fa-chevron-down(aria-hidden='true')
+#accordion
+  .panel-group
+    .panel.panel-heading.panel-heading__main
+      h3.panel-title Korsun
+      .form-group.pull-right
+        btn.btn-link
+          i.fa.fa-print(aria-hidden='true')
+        btn.btn-link
+          i.fa.fa-share-square-o(aria-hidden='true')
+        btn.btn-link.pull-right.clickable
+          i.fa.fa-chevron-down(aria-hidden='true')
     .panel-body
       include M09-panel-primary
       include M10-panel-info

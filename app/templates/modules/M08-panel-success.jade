@@ -1,0 +1,89 @@
+//-******************************
+//-
+//-*   M08-success.jade
+//-
+//-******************************/
+
+.col-lg-4.col-md-6.col-sm-6.col-xs-12
+  .panel.panel-success
+    .panel-heading 
+      a(href="#")
+        i.fa.fa-plus.colgrey(aria-hidden='true')
+      p.name_colection Качество объектов
+      btn.btn-link.pull-right
+        i.fa.fa-ellipsis-v(aria-hidden='true')
+    .panel-body 
+      table.table.table-condensed.table-striped
+        thead
+          tr
+            th статус состояния
+            th колличество
+              
+        tbody
+          tr
+            th Не определено
+              span.pull-left
+                i.fa.fa-clock-o(aria-hidden='true')
+            th 180
+
+          tr
+            th Ок
+              span.pull-left
+                i.fa.fa-check-circle-o(aria-hidden='true')
+            th 52
+
+          tr
+            th Внимание
+              span.pull-left
+                i.fa.fa-exclamation-circle(aria-hidden='true')
+            th 10
+
+          tr
+            th Критично
+              span.pull-left
+                i.fa.fa-times-circle-o(aria-hidden='true')
+            th 7
+
+          tr
+            th Не корректно
+              span.pull-left
+                i.fa.fa-question-circle-o(aria-hidden='true')
+            th 0
+
+          tr
+            th Без оценки
+              span.pull-left
+                i.fa.fa-ban(aria-hidden='true')
+            th 0
+          tr 
+            th Итого
+            th
+              span.summary 242
+
+
+
+
+//-******************************
+//-
+//-*   M08-panel-OSBB.jade
+//-
+//-******************************/
+
+//- #accordion
+//-   .panel-group
+//-     .panel.panel-heading
+//-       btn.btn-link.addcollection
+//-         i.fa.fa-plus(aria-hidden='true')
+//-       ul.list-inspection
+//-         li 
+//-           a(href="#") ОСББ Менеджмент
+//-         li  >
+//-         li Management
+//-       .form-horizontal.pull-right
+//-         btn.btn-link.circle
+//-           i.fa.fa-check-circle-o.fa-lg(aria-hidden='true')
+//-         input.search.pull-right(type='text', placeholder='Search')
+//- 
+//-     .panel-bodys
+//-       include M09-panel-primary
+//-       include M10-panel-info

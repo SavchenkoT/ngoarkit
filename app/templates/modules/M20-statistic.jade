@@ -3,13 +3,15 @@
 //-*   M20-statistic
 //-
 //-******************************/
-#accordion.panel-group
-  .panel.panel-default.list-col
-    .panel-heading
-      h3.panel-title Статистика
-      btn.btn-link.pull-right.clickable
-        i.fa.fa-chevron-down(aria-hidden='true')
-    .panel-body
-      include M09-panel-primary
-      include M09a-success
-      include M10-panel-info
+
+#accordion
+  .panel-group
+    .panel.panel-heading.panel-heading__inspect
+        h3.panel-title Статистика
+        .form-group.pull-right
+          btn.btn-link
+            i.fa.fa-chevron-down(aria-hidden='true')
+      .panel-body
+        include M09-panel-primary
+        include M08-panel-success
+        include M10-panel-info
