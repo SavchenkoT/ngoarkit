@@ -25,14 +25,14 @@
   transition all 0.12s linear 0s !important
   font 12px/16px "Helvetica Neue",Helvetica,Arial,sans-serif
 
-a.cons
-  //margin-right 5px
-  min-width 120px
-  //margin-bottom 8px
-  color #333
-  background-color #fff
-  border-color #ccc
-  font-size 30px
+// a.cons
+//   //margin-right 5px
+//   min-width 120px
+//   //margin-bottom 8px
+//   color #333
+//   background-color #fff
+//   border-color #ccc
+//   font-size 30px
 
 .btn-select
   display inline-block
@@ -48,14 +48,15 @@ a.cons
   line-height 20px
 
 .wrapper-select
-  width 170px
+  width 180px
   cursor pointer
   position relative
+  box-sizing border-box
 
 .wrapper-select_default
   position absolute
   display block
-  width 170px
+  width inherit
   padding-right 10px
   padding-left 8px
   padding-top 5px
@@ -79,14 +80,15 @@ a.cons
 .wrapper-select_list
   position absolute
   top 29px
-  width 100%
+  width inherit
   padding 0
   margin 0
   margin-top -1px
   border 1px solid black
   border-top none
   box-sizing border-box
-  opacity 0
+  opacity 1
+  background #fff
   visibility hidden
 
 .wrapper-select_item
@@ -108,3 +110,9 @@ a.cons
 .link-box
   display flex
   justify-content space-between
+  padding 0 25px
+  a
+    font-size 25px
+    text-decoration none
+    &:hover
+      color #26a9e0

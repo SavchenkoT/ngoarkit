@@ -4,37 +4,39 @@
  *
  ******************************/
 
- #accordion
-   .panel-group
-       margin-bottom 10px
+#accordion
+  .panel-group
+    margin-bottom 10px
+    border-radius 0
+    .panel
        border-radius 0
-       .panel
-           border-radius 0
-           margin-bottom 20px
-           border none
-           padding 0
-       .panel-heading
-           border-top-right-radius 0
-           border-top-left-radius 0
-           padding 10px 15px
-           font-size 15px
-           color #fff
-           .fa
-               color #929497
-               font-size 15px
-           a
-               color #fff
-           li
-               padding-right 10px
-               &:last-child
-                   padding-right 0
-           .btn-link
-               &.addcollection
-                   color #fff
-                   margin-right 15px
-       .list-inspection
-           display inline-block
-           padding 0
+       margin-bottom 20px
+       border none
+       padding 0
+    .panel-heading
+      border-top-right-radius 0
+      border-top-left-radius 0
+      padding 10px 15px
+      font-size 15px
+      color #fff
+      .fa
+         color #929497
+         font-size 15px
+      .fa-ellipsis-v
+        color #fff
+      a
+         color #fff
+      li
+         padding-right 10px
+         &:last-child
+             padding-right 0
+      .btn-link
+         &.addcollection
+             color #fff
+             margin-right 15px
+    .list-inspection
+       display inline-block
+       padding 0
 
 #accordion
   .panel-group
@@ -45,6 +47,8 @@
       &__inspect
         background-color #b7c19f
         clearfix()
+        .fa
+          color #fff
     .navbar-form
         margin 0
         .search-box

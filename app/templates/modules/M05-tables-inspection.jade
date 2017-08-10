@@ -1,0 +1,168 @@
+//-******************************
+//-
+//-*   M05- tables.jade
+//-
+//-******************************/
+
+#accordion
+  .panel-group
+    .panel.panel-heading.panel-heading__inspect
+      h3.panel-title Инспекции
+      span.pull-right.clickable
+        i.fa.fa-chevron-down(aria-hidden='true')
+    .panel-body
+      table.table-bordered
+        thead
+          tr
+            th.col-md-2 Дата
+            th.col-md-2 Название объекта
+            th.col-md-2 Класс объекта
+            th.col-md-2 Название инспекции
+            th.col-md-2 Тип инспекции
+            th.col-md-2 Состояние инспекции
+        tbody.table-bordered_scrollbar
+          tr.odd
+            td.col-md-2 22/06/2016
+            td.col-md-2 Грузовик -П 5334
+            td.col-md-2 Грузовик
+            td.col-md-2 Технический осмотр
+            td.col-md-2 Дневная
+            td.col-md-2 ОК 24/0/0
+          tr.even
+            td.col-md-2 22/06/2016
+            td.col-md-2 Грузовик -П 5246
+            td.col-md-2 Грузовик
+            td.col-md-2 Технический осмотр
+            td.col-md-2 Дневная
+            td.col-md-2 Критично 24/3/2
+          tr.odd
+            td.col-xs-2 22/06/2016
+            td.col-xs-2 Погрузчик 51
+            td.col-xs-2 Погрузчики
+            td.col-xs-2 Осмотр Двигателя
+            td.col-xs-2 Дневная
+            td.col-xs-2 Внимание 11/2/3
+          tr.even
+            td.col-xs-2 22/06/2016
+            td.col-xs-2 Погрузчик 53
+            td.col-xs-2 Погрузчики
+            td.col-xs-2 Осмотр Двигателя
+            td.col-xs-2 Дневная
+            td.col-xs-2 Активная
+          tr.odd
+            td.col-xs-1 22/06/2016
+              td.col-xs-2 Грузовик -П 5334
+              td.col-xs-2 Грузовик
+              td.col-xs-2 Расширенный осмотр ТО-2
+              td.col-xs-2 Дневная
+              td.col-xs-2 Не начата
+          tr.even
+            td.col-xs-2 22/06/2016
+            td.col-xs-2 Грузовик -П 5246
+            td.col-xs-2 Грузовик
+            td.col-xs-2 Технический осмотр
+            td.col-xs-2 Дневная
+            td.col-xs-2 Критично 24/3/2
+          tr.odd
+            td.col-xs-2 22/06/2016
+            td.col-xs-2 Погрузчик 51
+            td.col-xs-2 Погрузчики
+            td.col-xs-2 Осмотр Двигателя
+            td.col-xs-2 Дневная
+            td.col-xs-2 Внимание 11/2/3
+          tr.even
+            td.col-xs-2 22/06/2016
+            td.col-xs-2 Погрузчик 53
+            td.col-xs-2 Погрузчики
+            td.col-xs-2 Осмотр Двигателя
+            td.col-xs-2 Дневная
+            td.col-xs-2 Активная
+          tr.odd
+            td.col-xs-1 22/06/2016
+              td.col-xs-4 Грузовик -П 5334
+              td.col-xs-2 Грузовик
+              td.col-xs-4 Расширенный осмотр ТО-2
+              td.col-xs-2 Дневная
+              td.col-xs-2 Не начата
+          tr.even
+            td.col-xs-1 22/06/2016
+            td.col-xs-7 Грузовик -П 5246
+            td.col-xs-1 Грузовик
+            td.col-xs-1 Технический осмотр
+            td.col-xs-1 Дневная
+            td.col-xs-1 Критично 24/3/2
+          tr.odd
+            td.col-xs-1 22/06/2016
+            td.col-xs-7 Погрузчик 51
+            td.col-xs-1 Погрузчики
+            td.col-xs-1 Осмотр Двигателя
+            td.col-xs-1 Дневная
+            td.col-xs-1 Внимание 11/2/3
+          tr.even
+            td.col-xs-1 22/06/2016
+            td.col-xs-7 Погрузчик 53
+            td.col-xs-1 Погрузчики
+            td.col-xs-1 Осмотр Двигателя
+            td.col-xs-1 Дневная
+            td.col-xs-1 Активная
+          tr.odd
+            td.col-xs-1 22/06/2016
+              td.col-xs-7 Грузовик -П 5334
+              td.col-xs-1 Грузовик
+              td.col-xs-1 Расширенный осмотр ТО-2
+              td.col-xs-1 Дневная
+              td.col-xs-1 Не начата
+
+
+        //- table.points_table
+        //-   thead
+        //-     tr
+        //-       th Дата
+        //-       th Название объекта
+        //-       th Класс объекта
+        //-       th Название инспекции
+        //-       th Тип инспекции
+        //-       th Состояние инспекции
+        //-   tbody.points_table_scrollbar
+        //-     tr.odd
+        //-       td 22/06/2016
+        //-       td Грузовик -П 5334
+        //-       td Грузовик
+        //-       td Технический осмотр
+        //-       td Дневная
+        //-       td ОК 24/0/0
+        //-     tr.even
+        //-       td 22/06/2016
+        //-       td Грузовик -П 5246
+        //-       td Грузовик
+        //-       td Технический осмотр
+        //-       td Дневная
+        //-       td Критично 24/3/2
+        //-     tr.odd
+        //-       td 22/06/2016
+        //-       td Погрузчик 51
+        //-       td Погрузчики
+        //-       td Осмотр Двигателя
+        //-       td Дневная
+        //-       td Внимание 11/2/3
+        //-     tr.even
+        //-       td 22/06/2016
+        //-       td Погрузчик 53
+        //-       td Погрузчики
+        //-       td Осмотр Двигателя
+        //-       td Дневная
+        //-       td Активная
+        //-     tr.odd
+        //-       td 22/06/2016
+        //-         td Грузовик -П 5334
+        //-         td Грузовик
+        //-         td Расширенный осмотр ТО-2
+        //-         td Дневная
+        //-         td Не начата
+        //-     tr.even
+        //-       td 22/06/2016
+        //-       td Грузовик -П 5246
+        //-       td Грузовик
+        //-       td Технический осмотр
+        //-       td Дневная
+        //-       td Критично 24/3/2

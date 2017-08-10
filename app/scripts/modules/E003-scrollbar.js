@@ -22,11 +22,12 @@ module.exports = function(vars) {
 			}
    };
    window.applyScrollbar();
-
 };
 
 	$(".clickable").on("click", function(){
 	 var $this = $(this)
 	 $this.parent().parent().parent().find('.panel-body').toggleClass("open");
+
+
 	 $this.find('i.fa').toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
 	});
