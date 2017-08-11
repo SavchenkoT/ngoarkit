@@ -39,8 +39,10 @@
   .catalog_product.flex-block.flex-wrapp.clearfix
     .catalog.catalog-box
       .catalog__promo
+        .cell.text-title 
+          a(href="") Object One (ID/ 500)
         .cell.image-cell
-          img(src='../../images/img1.jpg')
+          img(src='css/images/img1.jpg')
         .cell.info-cell
           .info-text.text-rigth
               a(href="") Resours
@@ -56,10 +58,15 @@
               <em>•</em>  ОС: Windows 10 Pro 64-bit 
               <em>•</em>  цвет: серебристый 
               <em>•</em> <span>05.2017</span>&nbsp;
-
-              //p.catalog_object-description
-          .cell.text-title 
-            a(href="") Object One (ID/ 500)
-        .cell.price-box
-          .price-sum.inl-bot
-            
+          .catalog_object-description
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+        .cell.resours-box
+          .resours-sum.inl-bot
+            span Resours: 3500 / 10000km
+            ul.dropdown-menu(aria-labelledby='dropdownMenu4')
+              li
+                a(href='#') Regular link
+              li.disabled
+                a(href='#') Disabled link
+              li
+                a(href='#') Another link
