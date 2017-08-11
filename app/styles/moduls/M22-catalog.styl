@@ -1,0 +1,52 @@
+/*!******************************
+ *
+ *   M22-catalog.styl
+ *
+ ******************************/
+#catalog
+  .catalog_items
+    display flex
+    justify-content space-between
+
+    .catalog_item
+      background-color #b7c19f
+      text-transform uppercase
+      padding 7px 75px
+      a
+        color #fff
+        font-size 22px
+        line-height 22px
+
+  .catalog_buttons-select,
+  .catalog_buttons-checkbox
+    display inline-block
+  .catalog_buttons-checkbox
+    color #fff
+    padding-right 70px
+
+  .input-group
+    margin-bottom 5px
+    &:last-child
+        span
+            &.input-group-addon-remove
+                display none
+        input
+            &.form-control
+                border-bottom-right-radius 3px
+                border-top-right-radius 3px
+    span
+      &.input-group-addon-remove
+        cursor pointer
+        background none
+        border none
+.catalog_product
+  padding 15px 0
+  border-bottom 1px solid #dbdbdb
+  background-color red
+
+
+
+.text-title
+  font-size 13px
+  line-height 17px
+  padding-bottom 10px !important
