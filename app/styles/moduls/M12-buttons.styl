@@ -52,6 +52,7 @@
   cursor pointer
   position relative
   box-sizing border-box
+  display inline-block
 
 .wrapper-select_default
   position absolute
@@ -73,6 +74,19 @@
     width 10px
     height 10px
     border 3px solid #1b75bb
+    border-top none
+    border-right none
+    transform rotate(-45deg)
+
+.select_default
+  display inline-block
+  &:after
+    content ''
+    display block
+    top 7px
+    right 7px
+    width 10px
+    height 10px
     border-top none
     border-right none
     transform rotate(-45deg)
