@@ -7,7 +7,7 @@
 .inspection-for-object
   .inspection-btn
     p Инспекции по объектам
-    .btn-group.btn-group__pull-center
+    .btn-group.btn-group__pull-center.pull-right.text-center
       button.btn-default.btn-default__transpar(type='button') Сохранить
       button.btn-default.btn-default__save(type='button') Сохранить
       button.btn-default.btn-default__delete(type='button') Удалить
@@ -19,13 +19,12 @@
         span.pull-right.clickable
           i.fa.fa-chevron-down(aria-hidden='true')
           
-        .btn-group.pull-right
-          button.btn.btn-default.btn-default__white.select(type='button') Часовые
-          button.btn.btn-default.btn-default__white.dropdown-toggle(data-toggle='dropdown', type='button')
-            i.fa.fa-angle-down.fa-lg(aria-hidden='true')        
-          button.btn-save(type='button') Сохранить
-          button.btn-delete(type='button') Удалить
-          button.btn-clean(type='button') Очистить
+        .btn-group.pull-right.filter-btn
+          button.btn-default.btn-default__white.select(type='button') Часовые
+           i.fa.fa-angle-down.fa-lg(aria-hidden='true')
+          button.btn-default.btn-default__save(type='button') Сохранить
+          button.btn-default.btn-default__delete(type='button') Удалить
+          button.btn-default.btn-default__clean(type='button') Очистить
       .panel-body
           table.table-responsiv
             th Инспекции
