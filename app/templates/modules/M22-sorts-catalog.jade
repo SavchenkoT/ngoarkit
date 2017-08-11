@@ -13,30 +13,28 @@
                 a(href='#') Structure
             li.catalog_item
                 a(href='#') Object Model
-    .catalog_title Objects
+    .catalog_title
+      p Objects
     #accordion
         .panel-group
             .panel.panel-heading.panel-heading__inspect.clearfix
-                .btn-group
-
-<<<<<<< HEAD
-
-                ul.catalog_buttons-checkbox.pull-right
-                    li
-                        input#ok(type='checkbox')
-                        label(for='ok') Ок
-                    li
-                        input#attention(type='checkbox')
-                        label(for='attention') Внимание
-                    li
-                        input#critically(type='checkbox')
-                        label(for='critically') Критично
-                    li
-                        input#uncorrect(type='checkbox')
-                        label(for='uncorrect') Не корректно
-                    li
-                        input#unvalued(type='checkbox')
-                        label(for='unvalued') Без оценки
+                .btn-group.pull-right
+                  ul.catalog_buttons-checkbox
+                      li
+                          input#ok(type='checkbox')
+                          label(for='ok') Ок
+                      li
+                          input#attention(type='checkbox')
+                          label(for='attention') Внимание
+                      li
+                          input#critically(type='checkbox')
+                          label(for='critically') Критично
+                      li
+                          input#uncorrect(type='checkbox')
+                          label(for='uncorrect') Не корректно
+                      li
+                          input#unvalued(type='checkbox')
+                          label(for='unvalued') Без оценки
     .catalog_product.flex-block.flex-wrapp.clearfix
         .catalog.catalog-box
             .catalog__promo
@@ -59,8 +57,23 @@
                     .cell.description-cell
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 .cell.price-box
-                    a(href="") Resours
-                        span 3502/1000km
+                  a(href="") Resours
+                      span 3502/1000km
+                  .dropdown
+                    button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                      | Dropdown
+                      span.caret
+                    ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                      li
+                        a(href='#') Action
+                      li
+                        a(href='#') Another action
+                      li
+                        a(href='#') Something else here
+                      li.divider(role='separator')
+                      li
+                        a(href='#') Separated link
+
         .catalog.catalog-box
             .catalog__promo
                 .cell.image-cell
@@ -84,6 +97,21 @@
                 .cell.price-box
                     a(href="") Resours
                         span 3502/1000km
+                        
+                    .dropdown
+                      button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                        | Dropdown
+                        span.caret
+                      ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider(role='separator')
+                        li
+                          a(href='#') Separated link
         .catalog.catalog-box
             .catalog__promo
                 .cell.image-cell
@@ -107,23 +135,21 @@
                 .cell.price-box
                     a(href="") Resours
                         span 3502/1000km
-=======
-        ul.catalog_buttons-checkbox.pull-right
-          li
-            input#ok(type='checkbox')
-            label(for='ok') Ок
-          li
-            input#attention(type='checkbox')
-            label(for='attention') Внимание
-          li
-            input#critically(type='checkbox')
-            label(for='critically') Критично
-          li
-            input#uncorrect(type='checkbox')
-            label(for='uncorrect') Не корректно
-          li
-            input#unvalued(type='checkbox')
-            label(for='unvalued') Без оценки
+                    .dropdown
+                      button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                        | Dropdown
+                        span.caret
+                      ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                        li
+                          a(href='#') Action
+                        li
+                          a(href='#') Another action
+                        li
+                          a(href='#') Something else here
+                        li.divider(role='separator')
+                        li
+                          a(href='#') Separated link
+
   .catalog_product.flex-block.flex-wrapp.clearfix
     .catalog.catalog-box
       .catalog__promo
@@ -158,4 +184,3 @@
                 a(href='#') Disabled link
               li
                 a(href='#') Another link
->>>>>>> 106c51b6df7f9e1425f82be3dd003bf825e25bd1

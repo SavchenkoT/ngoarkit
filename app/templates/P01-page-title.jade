@@ -9,16 +9,12 @@ block vars
   - page.title = 'Page title'
   - page.bodyid = 'authpage'
 
+
 block content
   .container
     .row
       include modules/M01-navbar
+    .row.text-top.clearfix
       include modules/M12-buttons
     .row
-      include modules/M08-panel-success
-    .row
-      .col-md-2
-        include modules/M14-filters-inspection
-        include modules/M15-filters-object
-      .col-md-10
-        include modules/M19-structure-object
+      include modules/M21-inspection-in-object
