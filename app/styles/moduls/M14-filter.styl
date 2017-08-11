@@ -6,9 +6,41 @@
 
 .float-grid-columns
   width 160px
+  .cell__group
+    margin-top 10px
+  input[type='checkbox']
+    display none
+    & + label
+      position relative
+      padding-left 25px
+      &:before
+        content ""
+        display block
+        position absolute
+        left 0
+        top 2px
+        width 10px
+        height 10px
+        border 1px solid green
+        box-sizing border-box
+      &:after
+        position absolute
+        display none
+        top -3px
+        left 2px
+        content ""
+        width 8px
+        height 13px
+        border 2px solid #008000
+        border-left none
+        border-top none
+        transform rotate(45deg)
+
+
   .cell-list
     width 100%
     h3.panel-title
+      margin-bottom 15px
       text-align center
       text-transform uppercase
       color #58595b
@@ -18,8 +50,6 @@
     &__blutitle
       background-color #26a9e0
       margin-bottom 15px
-
-
     &.f-title
       p
         text-transform uppercase
@@ -27,3 +57,16 @@
       .list-group-item
           border none
           padding 0
+  &:nth-last-of-type(1)
+    .cell-list
+      &:nth-of-type(1)
+        margin-bottom 10px
+    input[type='checkbox']
+      & + label
+        border-color #26a9e0
+
+
+  input:checked
+    & + label
+      &:after
+        display block
