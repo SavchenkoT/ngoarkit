@@ -1,26 +1,14 @@
-(function(){var btn=document.querySelector('.wrapper-select_default');
-var select=document.querySelector('.wrapper-select_list');
-var wrapper=document.querySelector('.wrapper-select');
-wrapper.addEventListener('click',choose);
-wrapper.addEventListener('click',show);
-
-var choosen;
-function choose(event){
- var target=event.target;
-if(target.closest('.wrapper-select_item')){
-  if(choosen)choosen.classList.remove('choosen');
-    btn.innerHTML=target.innerText;
-    target.classList.add('choosen');
-    select.classList.remove('active');
-    choosen=target;
-}
-};
-
-
-function show(event){
-  var target=event.target;
-  if(target.closest('.wrapper-select_default')){
-     select.classList.toggle('active');
-     }
-};
+(function () {
+    var wrappers = document.querySelectorAll('.wrapper-select');
+    var choosen;
+    wrappers.forEach(function (wrapper) {
+        wrapper.addEventListener('click', show);
+    });
+    function show(event) {
+        console.log('hello');
+        var select=this.querySelector('.wrapper-select_list');
+        if(choosen && choosen!=select)choosen.classList.remove('active');
+        select.classList.toggle('active');
+        choosen=select;
+    };
 })();
