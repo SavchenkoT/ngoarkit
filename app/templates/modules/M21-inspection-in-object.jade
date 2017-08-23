@@ -1,0 +1,29 @@
+
+
+#accordion
+  .panel-group
+    .panel.panel-heading.panel-heading__inspect
+      btn.btn-link.addcollection
+        i.fa.fa-plus(aria-hidden='true')
+      ul.list-inspection
+        li 
+          a(href="#") ОСББ Менеджмент
+        li  >
+        li Management        
+      form.navbar-form.navbar-right.form-horizontal(role='search')
+        .input-group
+          button.btn(type='submit')
+            i.fa.fa-search(aria-hidden='true')
+          input.search-box(type='text', placeholder='Search')
+          span.clickable
+            i.fa.fa-chevron-down(aria-hidden='true')
+          span
+            i.fa.fa-ellipsis-v(aria-hidden='true')
+    .panel-body
+      include M06-Slavutich
+      .container
+        .row
+          .col-md-2.visible-md-block.visible-lg-block
+            include M13-panel-filters
+          .col-md-10
+            include M22-sorts-catalog

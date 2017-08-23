@@ -7,65 +7,62 @@
 ul, ol
   margin 0
   padding 0
-
+.nav
+  width 100%
 .navbar
   margin-bottom 0
   margin-bottom 0
 
-.navbar-brand.setting, .form.navbar-form
-  display block
-  vertical-align middle
-
-.navbar-header
-  vertical-align middle
-  float left
-
-.navbar-brand
-  text-align center
-  padding 0
-  max-width 181px
-  font-size 15px
-  margin-left 0
-  height auto
-  padding 0
-  height auto
-  .logo
-    padding 0
-  & > .text
-    &.text-right
-      margin-left 125px
-  & > .logo
-    padding 0
-
 .navbar-default
   background-color #fff
   border none
-  background-color #fff
-  border none
-
-.navbar-static-top
-  border-color transparent
-  border-color transparent
-
-.dropdown, .dropdown-menu
-  margin-top -1px
-  padding 6px 20px
-  margin-top -1px
-  padding 6px 20px
-
-
-  & > .text
-    &.text-right
-      margin-left 125px
-  & > .logo
+  .navbar-brand
+    text-align center
     padding 0
+    max-width 181px
+    font-size 15px
+    margin-left 0
+    height auto
+    padding 0
+    height auto
+  .navbar-header
+    vertical-align middle
+    float left
+
+.navbar-nav > li > a
+  padding 6px 18px
+  &:hover
+    background-color #fff
+
+.dropdown,
+.dropdown-menu
+  min-width 180px
+  border-radius 4px
+  border 1px solid #404041
+  margin-top -1px
+  padding 0
+  a
+    font-size 18px
+    color #222
+  .icon
+    display inline-block
+    position absolute
+    right 5%
+    color #1b75bb
+.dropdown-menu
+  li
+    padding 0
+    a
+      color #222
+      font-size 14px
+      padding 0 5px
 
 .input-group-btn
   > .btn-group
     display flex !important
     .btn
       border-radius 3px
-      border 1px solid #707071
+      border 1px solid #707071s
       &:last-child
         border-top-right-radius 4px
         border-bottom-right-radius 4px
@@ -75,24 +72,15 @@ ul, ol
         border-bottom-left-radius 4px
         padding 0
         margin 0
-
 .card
-  canvas#header-blur
-    &.header-bg
-      border 1px solid #4c4c4d
-      border-radius 4px
-      //background-image url('images/img1.jpg')
-      vertical-align middle
-  a
-    display inline-block
-    vertical-align middle
-    padding-left 10px
-
-.navbar-nav
-  & > li
-    & > a
-      padding-top 15px
-      padding-bottom 15px
+  display inline-block
+  border 1px solid #4c4c4d
+  border-radius 4px
+  vertical-align middle
+.card-seting
+  display inline-block
+  vertical-align middle
+  padding-left 10px
 
 img
   &.img-responsive
@@ -100,27 +88,119 @@ img
     height 60px
     display inline-block
     box-sizing border-box
-
-.form-group
+.link-item
   display inline-block
-  margin-left 62px
-  &:last-child
-    margin-left 0
-    font-size 20px
-  &.phone
-    margin-right 24px
+  font-size 30px
+  letter-spacing 3px
   a
-    color #26a9e0
     text-decoration none
     font-weight bold
     margin-left 8px
+    &:hover
+      background-color none
+      color #26a9e0
+  &:first-child
+    margin-left 35px
+.form-group
+  &__phone
+    margin-right 24px
+    display inline-block
+    font-size 20px
+    margin-left 35px
+  &__envelope
+    display inline-block
+    font-size 20px
+    margin-bottom 0
+  &:hover
+    background-color none
+  &:last-child
+    margin-left 0
+    font-size 20px
 
-.form-group.envelope, .form-group.phone
-  margin-bottom 0
-  font-size 15px
+.wrapper-select
+  width 180px
+  cursor pointer
+  position relative
+  box-sizing border-box
+  border 1px solid
+  border-radius 2%
   display inline-block
-  vertical-align middle
-  padding-top 14px
+
+.wrapper-select_default
+  position absolute
+  display block
+  width inherit
+  padding-right 10px
+  padding-left 8px
+  padding-top 5px
+  padding-bottom 5px
+  box-sizing border-box
+  border 1px solid black
+  border-radius 6%
+  &:after
+    content ''
+    display block
+    position absolute
+    top 7px
+    right 7px
+    width 10px
+    height 10px
+    border 3px solid #1b75bb
+    border-top none
+    border-right none
+    transform rotate(-45deg)
+
+.select_default
+  display inline-block
+  &:after
+    content ''
+    display block
+    top 7px
+    right 7px
+    width 10px
+    height 10px
+    border-top none
+    border-right none
+    transform rotate(-45deg)
+
+.wrapper-select_list
+  position absolute
+  top 29px
+  width inherit
+  padding 0
+  margin 0
+  margin-top -1px
+  border 1px solid black
+  border-top none
+  box-sizing border-box
+  opacity 1
+  visibility hidden
+
+.wrapper-select_item
+  display block
+  padding 8px
+  list-style none
+  &:hover
+    background-color grey
+  &:last-child
+    padding-bottom 5px
+
+.active
+  opacity 1
+  visibility visible
+
+.choosen
+  background-color blue
+
+.link-box
+  display flex
+  justify-content space-between
+  padding 0 25px
+  a
+    font-size 25px
+    text-decoration none
+    &:hover
+      color #26a9e0
 
 @media screen and (max-width: 768px)
   #adv-search
@@ -138,3 +218,5 @@ img
           margin-left 0
           .form-group
             display block
+    .link-item
+      font-size 24px
