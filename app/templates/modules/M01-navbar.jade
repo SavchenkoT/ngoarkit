@@ -1,35 +1,43 @@
 //-******************************
 //-
-//-*   M01-nav.jade
+//-*   M01-navbar.jade
 //-
 //-******************************/
 
-nav.navbar.navbar-default
-  .container
-    .navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      .navbar-brand(href='#') 
+.top-header
+  .col-xs-12
+    .pull-left.hidden-xs
+      .brand-block
         img.navbar-brand.logo(src='css/images/Inspection_4.png')
+    .pull-righ
+      ul.contacts-block.pull-left
+        li
+          a(href='+38 044 000 0000')  
+          i.fa.fa-phone(aria-hidden='true')
+            span.hidden-xs +38 044 000 0000
+        li
+          a(href='inspect@email.com')
+          i.fa.fa-envelope(aria-hidden='true')
+          span.hidden-xs inspect@email.com
+    .user-block.pull-right
+      .card
+      .card-setting
+        a(href='Auth.html')
+          i.fa.fa-cog.fa-2x(aria-hidden='true')
 
-    .form-group__phone
-      i.fa.fa-phone(aria-hidden='true')
-      span +38 044 000 0000
-    .form-group__envelope
-      i.fa.fa-envelope(aria-hidden='true')
-      a(href='#') inspect@email.com
-    .navbar-right
-      .form-group.pull-right
-        .card
-          img(src='css/images/img1.jpg', width='40', height='40')
-        .card-seting
-          a(href='Auth.html')
-            i.fa.fa-cog.fa-2x(aria-hidden='true')
+
+
 .row
   .col-xs-12
+    nav.navbar.navbar-default
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          .navbar-brand(href='#') 
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav
         li.dropdown
