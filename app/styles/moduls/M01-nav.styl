@@ -21,10 +21,11 @@
   .header-top-setting
     margin-top 10px
 
+/*
 .header-bottom
   .navbar-nav > li > a
     padding 6px 18px
-/*    &:hover
+    &:hover
       background-color #fff
   .dropdown,
   .dropdown-menu
@@ -47,7 +48,8 @@
       a
         color #222
         font-size 14px
-        padding 0 5px*/
+        padding 0 5px
+*/
 
 /*
 ul, ol
@@ -58,7 +60,6 @@ ul, ol
 .navbar
   margin-bottom 0
   margin-bottom 0
-
 .navbar-default
   background-color #fff
   border none
@@ -74,7 +75,6 @@ ul, ol
   .navbar-header
     vertical-align middle
     float left
-
 .navbar-nav > li > a
   padding 6px 18px
   &:hover
@@ -118,15 +118,39 @@ ul, ol
         border-bottom-left-radius 4px
         padding 0
         margin 0
-.card
-  display inline-block
-  border 1px solid #4c4c4d
-  border-radius 4px
-  vertical-align middle
-.card-seting
-  display inline-block
-  vertical-align middle
-  padding-left 10px
+.group-buttons
+  .btn
+    width calc(50% - 4px)
+    font-size 14px
+    font-weight 700
+    color #5c5c5c
+    text-shadow 0 1px 1px rgba(0,0,0,.2)
+    border-color 1px solid #5c5c5c !important
+    padding 10px 26px
+    white-space normal
+    text-transform uppercase
+    &:hover
+      color #fff
+      background-color #26a9e0
+
+.form-horizontal
+  &.form-group
+   margin-left 0
+   margin-right 0
+.user-block
+  .card
+    width 40px
+    height 40px
+    display inline-block
+    border 1px solid #4c4c4d
+    border-radius 4px
+    background-image url('images/img1.jpg')
+    background-size cover
+  .card-seting
+    display inline-block
+    vertical-align middle
+    padding-left 10px
+    font-size 15px
 
 img
   &.img-responsive
@@ -148,21 +172,23 @@ img
   &:first-child
     margin-left 35px
 .form-group
-  &__phone
-    margin-right 24px
+  &.form-group-object
+    font-size 18px
+    label
+      text-align left
+    input
+      max-width 670px
+  &:hover
+    background-color none
+  //&:last-child
+    //margin-left 0
+    //font-size 20px
+.contacts-block
+  margin-right 24px
+  li
     display inline-block
     font-size 20px
     margin-left 35px
-  &__envelope
-    display inline-block
-    font-size 20px
-    margin-bottom 0
-  &:hover
-    background-color none
-  &:last-child
-    margin-left 0
-    font-size 20px
-
 .wrapper-select
   width 180px
   cursor pointer
@@ -171,7 +197,6 @@ img
   border 1px solid
   border-radius 2%
   display inline-block
-
 .wrapper-select_default
   position absolute
   display block
@@ -195,6 +220,26 @@ img
     border-top none
     border-right none
     transform rotate(-45deg)
+.wrapper-select_list
+  position absolute
+  top 29px
+  width inherit
+  padding 0
+  margin 0
+  margin-top -1px
+  border 1px solid black
+  border-top none
+  box-sizing border-box
+  opacity 1
+  visibility hidden
+.wrapper-select_item
+  display block
+  padding 8px
+  list-style none
+  &:hover
+    background-color grey
+  &:last-child
+    padding-bottom 5px
 
 .select_default
   display inline-block
@@ -208,28 +253,6 @@ img
     border-top none
     border-right none
     transform rotate(-45deg)
-
-.wrapper-select_list
-  position absolute
-  top 29px
-  width inherit
-  padding 0
-  margin 0
-  margin-top -1px
-  border 1px solid black
-  border-top none
-  box-sizing border-box
-  opacity 1
-  visibility hidden
-
-.wrapper-select_item
-  display block
-  padding 8px
-  list-style none
-  &:hover
-    background-color grey
-  &:last-child
-    padding-bottom 5px
 
 .active
   opacity 1
@@ -265,5 +288,6 @@ img
           .form-group
             display block
     .link-item
-      font-size 24px*/
+      font-size 24px
 
+*/
