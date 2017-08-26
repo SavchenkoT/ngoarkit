@@ -20,37 +20,104 @@
     margin-right 10px
   .header-top-setting
     margin-top 10px
-
-/*
 .header-bottom
-  .navbar-nav > li > a
-    padding 6px 18px
-    &:hover
-      background-color #fff
-  .dropdown,
-  .dropdown-menu
-    min-width 180px
-    border-radius 4px
-    border 1px solid #404041
-    margin-top -1px
-    padding 0
-    a
-      font-size 18px
-      color #222
-    .icon
-      display inline-block
-      position absolute
-      right 5%
-      color #1b75bb
-  .dropdown-menu
-    li
-      padding 0
-      a
-        color #222
-        font-size 14px
-        padding 0 5px
-*/
+  .navbar-default
+    border none
+    background-color transparent
+    .navbar-header
+      .navbar-toggle
+        padding-right: 9px;
+        padding-left: 9px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        span
+          margin-bottom 0px
+          &:nth-of-type(2)
+            margin-top 6px
+            margin-bottom 6px
+    .navbar-collapse
+      padding-left 0px
+      .navbar-nav
+        .dropdown
+          min-width 198px
+          border-radius 4px
+          border 1px solid #404041
+          margin-top -1px
+          padding 0
+          .dropdown-toggle
+            padding 6px 18px
+            font-size 18px
+            .icon
+              display inline-block
+              position absolute
+              right 5%
+              color #1b75bb
+          .dropdown-menu
+            width 100%
+            li
+              padding 0
+              a
+                color #222
+                font-size 14px
+                padding 0 5px
+        .active
+          > a
+            background-color transparent
+            color #26a9e0
+      .link-box
+        margin-left 10px
+        padding 10px 25px 0px
+        li
+          margin-right 8em
+          &:last-child
+            margin-right 0px
+          a
+            padding 0
+            font-size 25px
+            text-decoration none
+            &:hover
+              color #26a9e0
 
+@media screen and (max-width:$mqDesktop) and (min-width:$mqTablet)
+  .header-bottom
+    .navbar-default
+      .link-box
+        li
+          margin-right 4em
+
+@media screen and (max-width:$mqTablet) and (min-width:$mqPhone)
+  .header-bottom
+    .navbar-default
+      .link-box
+        li
+          margin-right 1em
+          a
+            font-size 21px
+
+@media screen and (min-width:$mqPhone)
+  .header-bottom
+    .navbar-default
+      .navbar-header
+        .navbar-toggle
+          display none
+
+@media screen and (max-width:$mqPhone)
+  .header-bottom
+    .navbar-default
+      margin-bottom 0px
+      .link-box
+        text-align center
+        li
+          margin-right 0
+          a
+            padding-bottom 10px
+ @media screen and (max-width:$mqTiny)
+  .header-top
+    .header-logo
+      width 147px
+    .header-top-phone
+      margin-right 8px
+      margin-left 8px
 
 /*
 ul, ol
@@ -64,15 +131,7 @@ ul, ol
 .navbar-default
   background-color #fff
   border none
-  .navbar-brand
-    text-align center
-    padding 0
-    max-width 181px
-    font-size 15px
-    margin-left 0
-    height auto
-    padding 0
-    height auto
+
   .navbar-header
     vertical-align middle
     float left
@@ -262,15 +321,7 @@ img
 .choosen
   background-color blue
 
-.link-box
-  display flex
-  justify-content space-between
-  padding 0 25px
-  a
-    font-size 25px
-    text-decoration none
-    &:hover
-      color #26a9e0
+
 
 @media screen and (max-width: 768px)
   #adv-search

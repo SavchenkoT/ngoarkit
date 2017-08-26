@@ -6,5 +6,8 @@ html
 	block vars
 	include ../partials/head
 	body(id="#{page.bodyid}")
-		block content
+		block top
+			include ../modules/drawer
+			.is-moved-by-drawer
+				block content
 
