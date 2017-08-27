@@ -81,18 +81,20 @@
 @media screen and (max-width:$mqDesktop) and (min-width:$mqTablet)
   .header-bottom
     .navbar-default
-      .link-box
-        li
-          margin-right 4em
+      .navbar-collapse
+        .link-box
+          li
+            margin-right 4em
 
 @media screen and (max-width:$mqTablet) and (min-width:$mqPhone)
   .header-bottom
     .navbar-default
-      .link-box
-        li
-          margin-right 1em
-          a
-            font-size 21px
+      .navbar-collapse
+        .link-box
+          li
+            margin-right 1em
+            a
+              font-size 21px
 
 @media screen and (min-width:$mqPhone)
   .header-bottom
@@ -105,13 +107,16 @@
   .header-bottom
     .navbar-default
       margin-bottom 0px
-      .link-box
-        text-align center
-        li
-          margin-right 0
-          a
-            padding-bottom 10px
- @media screen and (max-width:$mqTiny)
+      .navbar-collapse
+        padding-left 15px
+        .link-box
+          text-align center
+          li
+            margin-right 0
+            a
+              padding-bottom 10px
+
+@media screen and (max-width:$mqTiny)
   .header-top
     .header-logo
       width 147px
