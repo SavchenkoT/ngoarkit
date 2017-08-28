@@ -12,30 +12,35 @@ body
 p
   margin 0
   display inline-block
-.wrapper
-  max-width 1020px
-  margin 0 auto
+
 img
   width 100%
   height auto
-.btn
-  background-image none // remove default bootstrap button-arr.svg styling
+ul
+  list-style none
+  border none
+  li
+    a
+      text-decoration none
+
 h1, h2, h3, h4, h5, h6, label
   font-weight normal !important //remove default bootstrap font-weight
 label
   font-family ttm-regular
-input:focus, textarea:focus // remove default bootstrap input outlines
+input:focus,
+textarea:focus // remove default bootstrap input outlines
   outline 0 !important
   box-shadow none !important
 
+.wrapper
+  max-width 1020px
+  margin 0 auto
+
 .col-right
   float right
+
 .col-left
   float left
-
-ul
-  list-style none
-  border none
 
 .not-padd
   padding 0
@@ -44,4 +49,3 @@ ul
   width 100%
   float left
   position relative
-

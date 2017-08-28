@@ -18,8 +18,6 @@
         label.col-sm-3.control-label(for='description') Description
         .col-sm-9
           textarea#description.form-control(type='textarea', maxlength='140', rows='7')
-          //- span.help-block
-          //-   p#characterLeft.help-block You have reached the limit
       .form-group.form-group-object
         label.col-sm-3.control-label(for='name') From 
         .col-sm-9
@@ -39,5 +37,12 @@
         .blog-img
           img(src='css/images/img1.jpg')
       .group-buttons
-        a.btn.btn-color(href='#') delete
-        a.btn.btn-outline(href='#') upload
+        a.btn.btn-outline(href='#') delete
+        a.btn.btn-color(href='#') upload
+    .info-block
+      .group-buttons
+        a.btn.btn-color.btn-color-big(href="#") upload document
+        
+  .row
+    .col-xs-12
+      include M24-table

@@ -3,36 +3,33 @@
  *   M12- buttons.styl
  *
 ******************************/
-// .btn
-//   display inline-block
-//   padding 9px 12px
-//   padding-top 7px
-//   margin-bottom 0
-//   font-size 14px
-//   line-height 20px
-//   color #5e5e5e
-//   text-align center
-//   vertical-align middle
-//   cursor pointer
-//   background-color #d1dade
-//   -webkit-border-radius 3px
-//   -webkit-border-radius 3px
-//   -webkit-border-radius 3px
-//   background-image none !important
-//   border none
-//   text-shadow none
-//   box-shadow none
-//   transition all 0.12s linear 0s !important
-//   font 12px/16px "Helvetica Neue",Helvetica,Arial,sans-serif
 
-// a.cons
-//   //margin-right 5px
-//   min-width 120px
-//   //margin-bottom 8px
-//   color #333
-//   background-color #fff
-//   border-color #ccc
-//   font-size 30px
+.group-buttons
+  .btn
+    width calc(50% - 4px)
+    font-size 14px
+    font-weight 700
+    color #5c5c5c
+    text-shadow 0 1px 1px rgba(0,0,0,.2)
+    border 1px solid #5c5c5c
+    padding 10px 26px
+    white-space normal
+    text-transform uppercase
+    &:hover
+      color #fff
+      background #26a9e0
+      border 1px solid #26a9e0
+  .btn-color
+    color #fff
+    background #26a9e0
+    border 1px solid #26a9e0
+  .btn-color-big
+    width 100%
+    color #fff
+    background #26a9e0
+    border 1px solid #26a9e0
+
+
 
 .btn-select
   display inline-block
@@ -112,9 +109,9 @@
   padding 8px
   list-style none
   &:hover
-      background-color grey
+    background-color grey
   &:last-child
-      padding-bottom 5px
+    padding-bottom 5px
 
 .active
   opacity 1
@@ -123,12 +120,30 @@
   > a
     color blue
 
-
-
 .choosen
   background-color blue
 
-
+// .btn
+//   display inline-block
+//   padding 9px 12px
+//   padding-top 7px
+//   margin-bottom 0
+//   font-size 14px
+//   line-height 20px
+//   color #5e5e5e
+//   text-align center
+//   vertical-align middle
+//   cursor pointer
+//   //background-color #d1dade
+//   -webkit-border-radius 3px
+//   -webkit-border-radius 3px
+//   -webkit-border-radius 3px
+//   background-image none !important
+//   border none
+//   text-shadow none
+//   box-shadow none
+//   transition all 0.12s linear 0s !important
+  //font 12px/16px "Helvetica Neue",Helvetica,Arial,sans-serif
 
 //
 // .btn-select
