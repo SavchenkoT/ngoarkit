@@ -8,10 +8,12 @@
     display flex
     .catalog_item
       width calc(100%/3 - 1rem)
+      margin-right 20px
+      padding-top 7px
+      padding-bottom 7px
+      text-align center
       background-color #b7c19f
       text-transform uppercase
-      padding 7px 75px
-      margin-right 20px
       &:last-child
         margin-right 0
       a
@@ -200,6 +202,17 @@
     width 175px
     height 175px
 
+
+@media (max-width: $mqPhone)
+  #catalog
+    .catalog_items
+      flex-direction column
+      align-items center
+      .catalog_item
+        margin-right 0
+        margin-bottom 10px
+        &:last-child
+          margin-bottom 0px
 @media (max-width: 650px)
   .catalog_product
     .catalog-box

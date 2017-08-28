@@ -5,112 +5,111 @@
 //-******************************/
 
 .float-grid-columns
-    .top-filters
-        .cell-list
-            h3.panel-title Панель фильтров
-            .cell-list__calendar
-                include M04-calendar
-            .cell-list__title
-                h3.panel-title.colwhite Инспекции
-            .cell-list.f-title
-                p Базовые
-                    .cell__group
-                        ul.list-group.checked-list-box
-                            li.list-group-item
-                                span.badge 10
-                                .ckbox
-                                    input#checkbox1(type='checkbox')
-                                    label(for='checkbox1') Технический осмотр
-                            li.list-group-item(data-checked='true')
-                                .ckbox
-                                    input#checkbox2(type='checkbox')
-                                    label(for='checkbox2') Осмотр ходовой
-                            li.list-group-item
-                                .ckbox
-                                    input#checkbox3(type='checkbox')
-                                    label(for='checkbox3') Расширеный осмотр
-                            li.list-group-item
-                                .ckbox
-                                    input#checkbox4(type='checkbox')
-                                    label(for='checkbox4') Осмотр двигателя
-                    .cell-list.f-title
-                        p Тип по времени
-                            .cell__group
-                                ul.list-group.checked-list-box
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox5(type='checkbox')
-                                            label(for='checkbox5') Часовые
-                                    li.list-group-item(data-checked='true')
-                                        .ckbox
-                                            input#checkbox6(type='checkbox')
-                                            label(for='checkbox6') Дневные
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox7(type='checkbox')
-                                            label(for='checkbox7') Недельные
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox8(type='checkbox')
-                                            label(for='checkbox8') Месячные
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox9(type='checkbox')
-                                            label(for='checkbox9') Назаначенные
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox10(type='checkbox')
-                                            label(for='checkbox10') Оперативные
-                    .cell-list.f-title
-                        p Состояние выполнения
-                            .cell__group
-                                ul.list-group.checked-list-box
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox11(type='checkbox')
-                                            label(for='checkbox11') Не начатые
-                                    li.list-group-item(data-checked='true')
-                                        .ckbox
-                                            input#checkbox12(type='checkbox')
-                                            label(for='checkbox12') Активные
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox13(type='checkbox')
-                                            label(for='checkbox13') Завершенные
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox14(type='checkbox')
-                                            label(for='checkbox14') Отмененные
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox15(type='checkbox')
-                                            label(for='checkbox15') Пропущенные
-                    .cell-list.f-title
-                        p Качественное состояние
-                            .cell__group
-                                ul.list-group.checked-list-box
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox16(type='checkbox')
-                                            label(for='checkbox16') Не определено
-                                    li.list-group-item(data-checked='true')
-                                        .ckbox
-                                            input#checkbox17(type='checkbox')
-                                            label(for='checkbox17') Ок
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox18(type='checkbox')
-                                            label(for='checkbox18') Внимание
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox19(type='checkbox')
-                                            label(for='checkbox19') Критично
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox20(type='checkbox')
-                                            label(for='checkbox20') Не корректно
-                                    li.list-group-item
-                                        .ckbox
-                                            input#checkbox21(type='checkbox')
-                                            label(for='checkbox21') Без оценки
-
+  .top-filters
+    .cell-list
+      h3 Панель фильтров
+      .cell-list__calendar
+          include M04-calendar
+      .cell-list__title
+          h3.panel-title.colwhite Инспекции
+      .cell-list.f-title
+        p Базовые
+        .cell__group
+          ul.list-group.checked-list-box
+            li.list-group-item
+              span.badge 10
+              .ckbox
+                  input#checkbox1(type='checkbox')
+                  label(for='checkbox1') Технический осмотр
+            li.list-group-item(data-checked='true')
+              .ckbox
+                  input#checkbox2(type='checkbox')
+                  label(for='checkbox2') Осмотр ходовой
+            li.list-group-item
+              .ckbox
+                  input#checkbox3(type='checkbox')
+                  label(for='checkbox3') Расширеный осмотр
+            li.list-group-item
+              .ckbox
+                  input#checkbox4(type='checkbox')
+                  label(for='checkbox4') Осмотр двигателя
+      .cell-list.f-title
+        p Тип по времени
+        .cell__group
+          ul.list-group.checked-list-box
+            li.list-group-item
+              .ckbox
+                  input#checkbox5(type='checkbox')
+                  label(for='checkbox5') Часовые
+            li.list-group-item(data-checked='true')
+              .ckbox
+                  input#checkbox6(type='checkbox')
+                  label(for='checkbox6') Дневные
+            li.list-group-item
+              .ckbox
+                  input#checkbox7(type='checkbox')
+                  label(for='checkbox7') Недельные
+            li.list-group-item
+              .ckbox
+                  input#checkbox8(type='checkbox')
+                  label(for='checkbox8') Месячные
+            li.list-group-item
+              .ckbox
+                  input#checkbox9(type='checkbox')
+                  label(for='checkbox9') Назаначенные
+            li.list-group-item
+              .ckbox
+                  input#checkbox10(type='checkbox')
+                  label(for='checkbox10') Оперативные
+      .cell-list.f-title
+          p Состояние выполнения
+          .cell__group
+              ul.list-group.checked-list-box
+                  li.list-group-item
+                      .ckbox
+                          input#checkbox11(type='checkbox')
+                          label(for='checkbox11') Не начатые
+                  li.list-group-item(data-checked='true')
+                      .ckbox
+                          input#checkbox12(type='checkbox')
+                          label(for='checkbox12') Активные
+                  li.list-group-item
+                      .ckbox
+                          input#checkbox13(type='checkbox')
+                          label(for='checkbox13') Завершенные
+                  li.list-group-item
+                      .ckbox
+                          input#checkbox14(type='checkbox')
+                          label(for='checkbox14') Отмененные
+                  li.list-group-item
+                      .ckbox
+                          input#checkbox15(type='checkbox')
+                          label(for='checkbox15') Пропущенные
+      .cell-list.f-title
+        p Качественное состояние
+        .cell__group
+            ul.list-group.checked-list-box
+                li.list-group-item
+                    .ckbox
+                        input#checkbox16(type='checkbox')
+                        label(for='checkbox16') Не определено
+                li.list-group-item(data-checked='true')
+                    .ckbox
+                        input#checkbox17(type='checkbox')
+                        label(for='checkbox17') Ок
+                li.list-group-item
+                    .ckbox
+                        input#checkbox18(type='checkbox')
+                        label(for='checkbox18') Внимание
+                li.list-group-item
+                    .ckbox
+                        input#checkbox19(type='checkbox')
+                        label(for='checkbox19') Критично
+                li.list-group-item
+                    .ckbox
+                        input#checkbox20(type='checkbox')
+                        label(for='checkbox20') Не корректно
+                li.list-group-item
+                    .ckbox
+                        input#checkbox21(type='checkbox')
+                        label(for='checkbox21') Без оценки
