@@ -1,19 +1,41 @@
 //- ------------------------------------------
 //-
-//-     Home.jade
+//-     Page-inspection.jade
 //-
 //- ------------------------------------------
 
 extends layouts/default
 block vars
-  - page.title = 'Homepage'
-  - page.bodyid = 'homepage'
-
+  - page.title = 'PageTitle'
+  - page.bodyid = 'authpage'
 block content
   .container
     .row
       include modules/M01-navbar
-    .row.text-top
-      include modules/M12-buttons
+      #accordion
+        .panel-group
+          .panel.panel-heading
+            btn.btn-link.addcollection
+              i.fa.fa-plus(aria-hidden='true')
+            ul.list-inspection
+              li 
+                a(href="#") ОСББ Менеджмент
+              li  >
+              li Management
+            form.navbar-form.navbar-right.form-horizontal(role='search')
+              .input-group
+                button.btn(type='submit')
+                  i.fa.fa-search(aria-hidden='true')
+                input.search-box(type='text', placeholder='Search')
+                span.clickable
+                  i.fa.fa-chevron-down(aria-hidden='true')
+                span
+                  i.fa.fa-ellipsis-v(aria-hidden='true')
+          .panel-body.not-padd
+            include modules/M06-Slavutich
     .row
-      include modules/M03-inspection
+      .col-md-3.visible-md-block.visible-lg-block
+        include modules/M13-panel-filters
+      .col-xs-12.col-md-9
+        include modules/M23-object-list
+        include modules/M24-table

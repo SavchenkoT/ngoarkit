@@ -10,7 +10,7 @@
   border-radius 0
   .panel
      border-radius 0
-     margin-bottom 20px
+     //margin-bottom 20px
      border none
      padding 0
   .panel-heading
@@ -18,22 +18,15 @@
     border-top-left-radius 0
     padding 10px 15px
     font-size 15px
+    margin-bottom 10px
     color #fff
-    .fa
-       color #929497
-       font-size 15px
-    .fa-ellipsis-v
-      color #fff
+    background #b7c19f
+    clearfix()
+    &__inspect
+      margin-bottom 20px
     a
-       color #fff
-    li
-       padding-right 10px
-       &:last-child
-           padding-right 0
-    .btn-link
-       &.addcollection
-           color #fff
-           margin-right 15px
+      color #fff
+
   .list-inspection
      display inline-block
      padding 0
@@ -46,12 +39,8 @@
     &__main
        background-color #bbbdbf
        color #58595b
-    &__inspect
-      background-color #b7c19f
-      margin-bottom 0px
-      clearfix()
-      .fa
-        color #fff
+
+
   .panel-body
     &__inspect
       padding-top 0px
@@ -208,9 +197,6 @@
         .fa-ban
            &:before
                color #26a9e0
-        .to-appruve
-          color #37b34a
-
 
 .panel-body
   .table
@@ -256,10 +242,10 @@
  .panel-title
      display inline-block
 
-.panel-heading a,
-.panel-heading i
-   color #fff
-   display inline-block
+    // .panel-heading a,
+    // .panel-heading i
+    //    color #fff
+    //    display inline-block
 
 @media (max-width: $mqPhone)
   .input-group
