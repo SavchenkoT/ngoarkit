@@ -4,32 +4,47 @@
 *
 ******************************/
 .header-top
+  color #979797
+  a
+    text-decoration none
+    color #979797
+    &:hover
+      color #26a9e0
+  .fa
+    margin-right 20px
+    &:hover
+      color #26a9e0
+      cursor pointer
   .header-logo
     width 198px
   .header-top-phone
     margin-top 10px
     margin-right 24px
     margin-left 35px
-    font-size 20px
+    font-size 18px
   .header-top-envelope
     margin-top 10px
-    font-size 20px
+    font-size 18px
   .header-top-card
     width 40px
     height 40px
-    margin-right 10px
+    background-image url('../css/images/img1.jpg')
+    background-repeat no-repeat
+    background-size cover
+    margin-right 15px
   .header-top-setting
-    margin-top 10px
+    margin-top 5px
 .header-bottom
   .navbar-default
+    font-family 'cuprum-regular', sans-serif
     border none
     background-color transparent
     .navbar-header
       .navbar-toggle
-        padding-right: 9px;
-        padding-left: 9px;
-        padding-top: 10px;
-        padding-bottom: 12px;
+        padding-right 9px
+        padding-left 9px
+        padding-top 10px
+        padding-bottom: 12px
         span
           margin-bottom 0px
           &:nth-of-type(2)
@@ -69,12 +84,12 @@
         padding 10px 25px 0px
         float left !important
         li
-          margin-right 8em
+          margin-right 5em
           &:last-child
             margin-right 0px
           a
             padding 0
-            font-size 20px
+            font-size 29px
             text-decoration none
             &:hover
               color #26a9e0
@@ -85,7 +100,9 @@
       .navbar-collapse
         .link-box
           li
-            margin-right 4em
+            margin-right 2.5em
+            font-size 18px
+            font-family "cuprum-regular", sans-serif
 
 @media screen and (max-width:$mqTablet) and (min-width:$mqPhone)
   .header-bottom

@@ -28,9 +28,10 @@ block content
                 button.btn(type='submit')
                   i.fa.fa-search(aria-hidden='true')
                 input.search-box(type='text', placeholder='Search')
-                span.clickable
+                btn.btn-link.clickable
                   i.fa.fa-chevron-down(aria-hidden='true')
-                span
+              .btn-group.btn-group__elips
+                btn.btn-link
                   i.fa.fa-ellipsis-v(aria-hidden='true')
           .panel-body.not-padd
             include modules/M06-Slavutich
@@ -40,7 +41,7 @@ block content
         include modules/M14-filters-inspection
         include modules/M15-filters-object
 
-      .col-md-9
+      .col-md-9.not-padd
         include modules/M18-inspection-for-object
         include modules/M20-statistic
         include modules/M05-tables-inspection

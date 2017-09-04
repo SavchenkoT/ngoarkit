@@ -2,21 +2,21 @@
  *
  *   M03-inspection.styl
  *
- ******************************/
-
+ ********************************/
 
 .panel-group
   margin-bottom 10px
   border-radius 0
   .panel
      border-radius 0
-     //margin-bottom 20px
      border none
      padding 0
   .panel-heading
     border-top-right-radius 0
     border-top-left-radius 0
-    padding 10px 15px
+    padding-top 15px
+    padding-left 25px
+    padding-right 40px
     font-size 15px
     margin-bottom 10px
     color #fff
@@ -24,12 +24,39 @@
     clearfix()
     &__inspect
       margin-bottom 20px
-    a
+      padding-top 15px
+      padding-bottom 10px
+      .btn-link
+        .fa
+          margin-right 10px
+    &__main
+      padding-left 70px
+      padding-top 0px
+      line-height 40px
+      .btn-link
+        .fa
+          margin-right 10px
+    li
+      margin-right 10px
+    li, a
       color #fff
+      font-size 20px
+      font-family "cuprum-regular", sans-serif
+    .input-group__elips
+      margin-left 10px
+    .navbar-form
+      padding-left 0px
+      padding-right 0px
+    .addcollection
+      margin-right 25px
 
   .list-inspection
-     display inline-block
-     padding 0
+    display inline-block
+    padding 0
+    li
+      a
+        font-size 20px
+        font-family "Cuprum-Regular", sans-serif
 
 #accordion
 .panel-group
@@ -46,31 +73,32 @@
       padding-top 0px
 
   .navbar-form
-      margin 0
-      .search-box
-          border 0px
-          outline none
-          width 150px
-          padding-left 32px
-          -webkit-border-radius 22px
-          -moz-border-radius 22px
-          border-radius 22px
-      button
-          border 0
-          background none
-          padding 2px 5px
-          margin-top 2px
-          position relative
-          right -28px
-          margin-bottom 0
-          -webkit-border-radius 3px
-          -moz-border-radius 3px
-          border-radius 3px
+    margin 0
+    .search-box
+      border 0px
+      outline none
+      width 150px
+      padding-left 32px
+      -webkit-border-radius 22px
+      -moz-border-radius 22px
+      border-radius 22px
+    button
+      border 0
+      background none
+      padding 2px 5px
+      margin-top 2px
+      position relative
+      right -28px
+      margin-bottom 0
+      -webkit-border-radius 3px
+      -moz-border-radius 3px
+      border-radius 3px
+      color #979797
 
   .search-box
-      &:focus
-          & + button
-              z-index 3
+    &:focus
+      & + button
+        z-index 3
 
 
 .panel-primary
@@ -161,12 +189,12 @@
              background-color #c1b49a
              th
                  span
-                     padding 0 10px
-                     &.summary
-                         color #1b75bb
+                   padding 0 10px
+                   &.summary
+                     color #1b75bb
                  &:last-child
-                     background-color #d3c5ab
-                     text-align center
+                   background-color #d3c5ab
+                   text-align center
          &:nth-of-type(even)
              background-color #e9e2d5
              th
@@ -200,32 +228,32 @@
 
 .panel-body
   .table
-       margin-bottom 0
-       thead
-           tr
-               border-color none
-               th
-                   color #808184
-                   &:not(:first-child)
-                       text-align center
-                   .fa-calendar-o
-                       &:before
-                           color #26a9e0
-                   .fa-calendar-plus-o
-                       &:before
-                           color #37b34a
-                   .fa-calendar-check-o
-                       &:before
-                           color #bbbdbf
-                   .fa-calendar-times-o
-                       &:before
-                           color #be1e2d
-                   .fa-calendar-minus-o
-                       &:before
-                           color #ee5928
-       .table-condensed
-           &.table-striped
-               padding 0
+     margin-bottom 0
+     thead
+         tr
+             border-color none
+             th
+                 color #808184
+                 &:not(:first-child)
+                     text-align center
+                 .fa-calendar-o
+                     &:before
+                         color #26a9e0
+                 .fa-calendar-plus-o
+                     &:before
+                         color #37b34a
+                 .fa-calendar-check-o
+                     &:before
+                         color #bbbdbf
+                 .fa-calendar-times-o
+                     &:before
+                         color #be1e2d
+                 .fa-calendar-minus-o
+                     &:before
+                         color #ee5928
+     .table-condensed
+         &.table-striped
+             padding 0
 
 .panel-heading
    vertical-align middle
@@ -234,13 +262,15 @@
    border-top-left-radius 0
    padding 9px 15px 9px 15px
    font-size 15px
- .name_colection
-     color #fff
-     display inline-block
-     margin 0
-     padding-left 15px
- .panel-title
-     display inline-block
+   .name_colection
+       color #fff
+       display inline-block
+       margin 0
+       padding-left 15px
+   >h3.panel-title
+       display inline-block
+       font-size 20px
+       font-weight 600
 
     // .panel-heading a,
     // .panel-heading i

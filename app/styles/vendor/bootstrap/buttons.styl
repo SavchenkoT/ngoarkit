@@ -35,30 +35,6 @@
     background-image none
     span
       transform none !important
-      /*
-      overflow hidden
-      span
-        outline none
-        position relative
-        display block
-        transition: all 0.5s
-        &:before
-          display block
-          position absolute
-          left auto
-          right auto
-          text-align center
-          font-family: 'orm-ico' !important;
-          font-weight normal
-          content '\e919'
-          font-size 31px
-          line-height 31px
-          margin-top -100px
-          width 31px
-          height 15px
-          margin -100px auto 0
-      */
-
   &,
   &:active,
   &.active
@@ -195,10 +171,13 @@ input.btn.focus
   &:focus,
   &:active
     border-color transparent
+    color #ccc
+    cursor pointer
 
   &:hover,
   &:focus
-    color $link-hover-color
+    color #ccc
+    //color $link-hover-color
     text-decoration $link-hover-decoration
     background-color transparent
 

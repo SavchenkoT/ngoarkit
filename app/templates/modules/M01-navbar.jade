@@ -8,22 +8,22 @@
     .container
       .row
         .col-xs-12
-          .pull-left
             .header-logo.pull-left
               a(href='#')
                 img(src='css/images/Inspection_4.png')
             .header-top-phone.pull-left
-              i.fa.fa-phone(aria-hidden='true')
-              span.hidden-xs +38 044 000 0000
+              a(href='+38 044 000 0000').hidden-xs 
+                i.fa.fa-phone(aria-hidden='true')
+                | +38 044 000 0000
             .header-top-envelope.pull-left
-              i.fa.fa-envelope(aria-hidden='true')
-              a(href='#').hidden-xs inspect@email.com
-          .pull-right
-            .header-top-card.pull-left
-              img(src='css/images/img1.jpg', width='40', height='40')
-            .header-top-setting.pull-left
+              a(href='inspect@email.com').hidden-xs 
+                i.fa.fa-envelope(aria-hidden='true')
+                | inspect@email.com
+              //- img(src='css/images/img1.jpg', width='40', height='40')
+            .header-top-setting.pull-right
               a(href='Auth.html')
                 i.fa.fa-cog.fa-2x(aria-hidden='true')
+            .header-top-card.pull-right
   .header-bottom
     nav.navbar.navbar-default
       .container
@@ -37,7 +37,7 @@
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                 | KDMA OSBB Fund
-                span.icon
+                .icon
                   i.fa.fa-chevron-down(aria-hidden='true')
               ul.dropdown-menu
                 li.wrapper-select_item
