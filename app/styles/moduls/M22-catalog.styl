@@ -101,16 +101,23 @@
       display flex
       position relative
       .image-cell
-        width 16%
+        width 20%
+        border 1px solid #d0d2d3
+        border-radius 4px
       .info-cell
-        width 81%
-        margin-left 15px
+        width 80%
+        padding-left 15px
         .text-title
-          font-size 13px
-          line-height 17px
-          color blue
+          a
+            display inline-block
+            font-size 25px
+            line-height 17px
+            color #1b75bb
 .catalog_object-type
-  width 62%
+  width 70%
+  color #color #5c5c5c
+  font-size 14px
+  font-weight 600
   margin-top 10px
   margin-bottom 10px
 .price-box
@@ -119,12 +126,17 @@
   width auto
   .info-resourse
     width 100%
+    max-width 180px
+    color #6d6e70
     margin-bottom 10px
-    background-color grey
-    border 4px
+    background-color #e6e7e8
+    border-radius 4px
+    border 1px solid #929496
+    box-sizing border-box
+    padding-left 10px
     span
       &:nth-of-type(1)
-        margin-right 60px
+        margin-right 20px
 .btn-group
   .btn
     position: relative;
@@ -210,7 +222,7 @@
     border 1px solid
     border-radius 4px
     margin-bottom 20px
-    background-image: url(../css/images/img1.jpg);
+    background-image: url('../css/images/img1.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 10px;
