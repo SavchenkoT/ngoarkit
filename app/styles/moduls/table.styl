@@ -1,19 +1,15 @@
-table.table-bordered
-  width:100%
-  border-collapse: collapse
+.table-bordered
+  width 100%
+  border-collapse collapse
+
   thead
    background-color #d0d2d3
-  .table-bordered tbody
-    height: 562px
-    overflow-y: auto
-    width: 100%
-
-  .table-bordered thead tr
-    width: 99%
-    padding 5px
-
-  .table-bordered tr
-    width: 100%
+   > tr
+     padding 5px
+  tbody
+    height 562px
+    overflow-y auto
+    width 100%
 
   .table-bordered thead,
   .table-bordered tbody,
@@ -70,10 +66,38 @@ table.table-bordered
     background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
 
 
-table.table-responsiv
+.table-filter
   width 100%
+  font-size 18px
+  border-collapse collapse
+  margin-bottom 35px
+  tr
+    th
+      line-height 55px
   input[type='text']
-    width 100%
+    width 50%
+    color #dcdee2
     border-radius 4px
-    padding 5px
+    border 1px solid
+    font-size 15px
+    padding-left 10px
     border-width 1px solid
+  .text-title
+    width 30%
+    border-spacing 4px
+  .text-content
+    width 70%
+    border-spacing 4px
+
+.table-responsive
+  width 100%
+  border-collapse collapse
+
+  thead
+   background-color #d0d2d3
+   > tr
+     padding 5px
+  tbody
+    height 562px
+    overflow-y auto
+    width 100%

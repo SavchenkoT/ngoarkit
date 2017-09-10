@@ -24,6 +24,8 @@ module.exports = function(vars) {
 
 	}
 
+	
+
 	//page id init (Auth.html)
 //  $("#authpage").each(function(){
 //		console.log('%c T01-messenger init! ', 'background: #A3C5E9; color: white');

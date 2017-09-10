@@ -4,15 +4,20 @@
 //-
 //-******************************/
 
+<<<<<<< HEAD
 #accordion.panel-group
     .panel.panel-heading.panel-heading__inspect
+=======
+#accordion4.panel-group
+    .panel.panel-heading.panel-heading__inspect(data-toggle='collapse', data-target='#collapse4', data-parent='#accordion4')
+>>>>>>> b06dd04d35277f002252e0a1da7476e2fcf12ec2
       h3.panel-title Инспекции
       btn.btn-link.pull-right.clickable
-        i.fa.fa-chevron-down(aria-hidden='true')
-    .panel-body
+        i.fa.fa-chevron-down(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='hide')
+    #collapse4.panel-body.collapse.in
       table.table-bordered.table-condensed.table-striped
         thead
-          tr
+          tr.even
             th.col-md-2 Дата
             th.col-md-2 Название объекта
             th.col-md-2 Класс объекта
@@ -111,3 +116,4 @@
               td.col-xs-1 Расширенный осмотр ТО-2
               td.col-xs-1 Дневная
               td.col-xs-1 Не начата
+      include M17-pagination

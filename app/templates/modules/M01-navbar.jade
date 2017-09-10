@@ -8,22 +8,22 @@
     .container
       .row
         .col-xs-12
-            .header-logo.pull-left
+            .header-logo.pull-left.hidden-xs 
               a(href='#')
                 img(src='css/images/Inspection_4.png')
             .header-top-phone.pull-left
-              a(href='+38 044 000 0000').hidden-xs 
-                i.fa.fa-phone(aria-hidden='true')
-                span +38 044 000 0000
+              a(href='+38 044 000 0000')
+                i.fa.fa-phone(aria-hidden='true',type='text', data-toggle='tooltip', data-placement='top', title='+38 044 000 0000')
+                span.hidden-xs  +38 044 000 0000
             .header-top-envelope.pull-left
-              a(href='inspect@email.com').hidden-xs 
-                i.fa.fa-envelope(aria-hidden='true')
-                span inspect@email.com
+              a(href='inspect@email.com') 
+                i.fa.fa-envelope(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='inspect@email.com')
+                span.hidden-xs  inspect@email.com
               //- img(src='css/images/img1.jpg', width='40', height='40')
-            .header-top-setting.pull-right
+            .header-top-setting.pull-right.hidden-xs
               a(href='Auth.html')
                 i.fa.fa-cog.fa-2x(aria-hidden='true')
-            .header-top-card.pull-right
+            .header-top-card.pull-right.hidden-xs
   .header-bottom
     nav.navbar.navbar-default
       .container

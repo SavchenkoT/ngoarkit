@@ -4,14 +4,13 @@
 //-
 //-******************************/
 
-#accordion
-  .panel-group
-    .panel.panel-heading.panel-heading__inspect
-        h3.panel-title Статистика
-        .form-group.pull-right
-          span
-            i.fa.fa-chevron-down(aria-hidden='true')
-      .panel-body.flex-block
-        include M09-panel-primary
-        include M08-panel-success
-        include M10-panel-info
+#accordion3.panel-group
+  .panel.panel-heading.panel-heading__inspect
+      h3.panel-title Статистика
+      .form-group.pull-right(data-toggle='collapse', data-target='#collapse3', data-parent='#accordion3')
+        span
+          i.fa.fa-chevron-down
+    #collapse3.panel-body.collapse.in
+      include M09-panel-primary
+      include M08-panel-success
+      include M10-panel-info

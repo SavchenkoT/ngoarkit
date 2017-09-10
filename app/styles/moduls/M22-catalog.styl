@@ -1,4 +1,4 @@
-/*!******************************
+  /*!******************************
  *
  *   M22-catalog.styl
  *
@@ -16,7 +16,7 @@
       background-color #b7c19f
       text-transform uppercase
       &:last-child
-        margin-right 0
+        margin-right 0px
       a
         color #fff
         font-size 22px
@@ -28,12 +28,12 @@
         border none
         span
           margin-left 10px
-          padding 0
+          padding 0px
           border: none
           &:after
             top 4px
             left 50px
-            right 0
+            right 0px
 
   .catalog_buttons-select,
   .catalog_buttons-checkbox
@@ -92,7 +92,7 @@
   flex-wrap wrap
 
 .catalog_product
-  padding 15px 0
+  padding 15px 0px
   .catalog-box
     margin-bottom 15px
     padding-bottom 10px
@@ -101,9 +101,12 @@
       display flex
       position relative
       .image-cell
-        width 20%
-        border 1px solid #d0d2d3
-        border-radius 4px
+          width 20%
+          border 1px solid #d0d2d3
+          border-radius 4px
+          +below($mqPhone)
+            width 80%
+            margin 0 auto
       .info-cell
         width 80%
         padding-left 15px
@@ -122,7 +125,7 @@
   margin-bottom 10px
 .price-box
   position absolute
-  right 0
+  right 0px
   width auto
   .info-resourse
     width 100%
@@ -139,8 +142,8 @@
         margin-right 20px
 .btn-group
   .btn
-    position: relative;
-    z-index: 1001;
+    position relative
+    z-index 1001
     outline none
     border 1px solid grey
     &:nth-of-type(1)
@@ -222,10 +225,10 @@
     border 1px solid
     border-radius 4px
     margin-bottom 20px
-    background-image: url('../css/images/img1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 10px;
+    background-image url('../css/images/img1.png')
+    background-repeat no-repeat
+    background-size cover
+    margin-right 10px
     .btn-link-big
       font-size 40px
   .group-buttons
@@ -241,8 +244,8 @@
 .catalog_title
   p
     font-size 36px
-    margin-top 0
-    margin-bottom 0
+    margin-top 0px
+    margin-bottom 0px
     font-weight 100
     font-family "cuprum-regular", sans-serif
 

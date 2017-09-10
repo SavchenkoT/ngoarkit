@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a383e674-c3a6-442b-ae66-1d6ad82cfc63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M14-filter.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M14-filter.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/Inspection-1.jade" afterPath="$PROJECT_DIR$/app/templates/Inspection-1.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M03-inspection.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M03-inspection.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade" />
-    </list>
+    <list default="true" id="a383e674-c3a6-442b-ae66-1d6ad82cfc63" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -42,7 +35,7 @@
       <file leaf-file-name="M14-filters-inspection.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="336">
               <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="20" />
               <folding />
             </state>
@@ -102,7 +95,7 @@
       <file leaf-file-name="Inspection-1.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/Inspection-1.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="21">
               <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
               <folding />
             </state>
@@ -224,7 +217,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
-    <option name="width" value="1932" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -242,6 +236,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,8 +390,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -518,11 +512,12 @@
       <workItem from="1503991888312" duration="1384000" />
       <workItem from="1504554842586" duration="4219000" />
       <workItem from="1504591838105" duration="6666000" />
+      <workItem from="1505033738152" duration="340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186480000" />
+    <option name="totallyTimeSpent" value="186820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,15 +529,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="1932" height="1050" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22015916" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21998942" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42615557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -748,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,11 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504554950616" expanded="true" signature="130:422" ph="{...}" />
-            <marker date="1504554950616" expanded="true" signature="338:422" ph="{...}" />
-            <marker date="1504554950616" expanded="true" signature="1348:1440" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,10 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4326">
           <caret line="206" column="10" lean-forward="false" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
-          <folding>
-            <marker date="1504554950625" expanded="true" signature="106:142" ph="{...}" />
-            <marker date="1504554950625" expanded="true" signature="125:142" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
           <caret line="100" column="17" lean-forward="false" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,7 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,9 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5922">
           <caret line="282" column="23" lean-forward="false" selection-start-line="282" selection-start-column="23" selection-end-line="282" selection-end-column="23" />
-          <folding>
-            <marker date="1504554950588" expanded="true" signature="6458:6482" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +876,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="336">
           <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
@@ -933,7 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/Inspection-1.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="21">
           <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
           <folding />
         </state>
