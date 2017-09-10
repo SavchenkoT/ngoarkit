@@ -24,9 +24,13 @@
     margin-right 24px
     margin-left 35px
     font-size 18px
+    +below($mqPhone)
+      float right
   .header-top-envelope
     margin-top 10px
     font-size 18px
+    +below($mqPhone)
+      float right
   .header-top-card
     width 40px
     height 40px
@@ -40,16 +44,21 @@
     margin-top 5px
 .header-bottom
   display inline-block
+  padding-right 10px
+
   .navbar-default
     font-family 'cuprum-regular', sans-serif
     border none
     background-color transparent
     .navbar-header
       .navbar-toggle
-        padding-right 9px
-        padding-left 9px
-        padding-top 10px
-        padding-bottom: 12px
+        position absolute
+        top 0px
+        right 0px
+        padding 0px
+        border-color transparent
+        float none
+        margin 0px
         span
           margin-bottom 0px
           &:nth-of-type(2)
@@ -87,7 +96,7 @@
             color #26a9e0
       .link-box
         margin-left 10px
-        padding 10px 25px 0px
+        padding 7px 25px 0px
         float left !important
         li
           margin-right 5em
@@ -95,7 +104,7 @@
             margin-right 0px
           a
             padding 0
-            font-size 29px
+            font-size 2rem
             text-decoration none
             &:hover
               color #26a9e0
@@ -106,13 +115,21 @@
       .navbar-collapse
         .link-box
           li
-            margin-right 2.5em
+            margin-right 2rem
             font-size 18px
             font-family "cuprum-regular", sans-serif
 
 @media screen and (max-width:$mqTablet) and (min-width:$mqPhone)
   .header-bottom
+    nav.navbar
+      padding 0
     .navbar-default
+      .navbar-header
+        .navbar-header
+          padding 0px
+        .navbar-toggle
+          margin 0px
+          float none
       .navbar-collapse
         .link-box
           li
