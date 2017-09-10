@@ -12,43 +12,42 @@
       button.btn-default.btn-default__save(type='button') Сохранить
       button.btn-default.btn-default__delete(type='button') Удалить
       button.btn-default.btn-default__clean(type='button') Очистить
-  #accordion
-    .panel-group
+  #accordion2.panel-group
       .panel.panel-heading.panel-heading__inspect
         h3.panel-title Условия фильтрации
-        .btn-group.btn-group__elips.pull-right.clickable
-          i.fa.fa-chevron-down(aria-hidden='true')          
+        .btn-group.btn-group__elips.pull-right.clickable(data-toggle='collapse', data-target='#collapse2', data-parent='#accordion2')
+          i.fa.fa-chevron-down
         .btn-group.pull-right.filter-btn
           button.btn-default.btn-default__white.select(type='button') Часовые
            i.fa.fa-angle-down.fa-lg(aria-hidden='true')
           button.btn-default.btn-default__save(type='button') Сохранить
           button.btn-default.btn-default__delete(type='button') Удалить
           button.btn-default.btn-default__clean(type='button') Очистить
-      .panel-body
-          table.table-responsiv
+      #collapse2.panel-body.collapse.in
+          table.table-filter
             th 
               p.color-green Инспекции
             tr
-              td Период:
-              td 
+              td.text-title Период:
+              td.text-content 
                 input(type='text', placeholder='Введите период')
             tr
-              td Тип по времени:
-              td 
+              td.text-title Тип по времени:
+              td.text-content 
                 input(type='text', placeholder='Тип по времени')
             tr
-              td Состояние выполнения:
-              td
+              td.text-title Состояние выполнения:
+              td.text-content 
                 input(type='text', placeholder='Состояние выполнения')
 
-          table.table-responsiv
+          table.table-filter
             th
               p.color-blue Объекты
             tr
-              td Категория:
-              td 
+              td.text-title Категория:
+              td.text-content  
                 input(type='text', placeholder='Категория')
             tr
-              td Класс
-              td
+              td.text-title Класс
+              td.text-content 
                 input(type='text', placeholder='Класс')

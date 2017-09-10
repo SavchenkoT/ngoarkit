@@ -37,77 +37,99 @@
       .btn-link
         .fa
           margin-right 10px
-    li
-      margin-right 10px
-    li, a
+    &__sorts
       color #fff
-      font-size 20px
-      font-family "cuprum-regular", sans-serif
+
     .input-group__elips
       margin-left 10px
     .navbar-form
       padding-left 0px
       padding-right 0px
+      display inline-block
+      border-top 0px
+      border-bottom 0px
+      box-shadow none
+      +below($mqPhone)
+        padding 0px
+
     .addcollection
       margin-right 25px
+    +below($mqPhone)
+      padding-top 0px
 
   .list-inspection
     display inline-block
     padding 0
     li
-      a
-        font-size 20px
-        font-family "Cuprum-Regular", sans-serif
+      margin-right 10px
+      color #fff
+      font-size 20px
+      font-family "Cuprum-Regular", sans-serif
+      +below($mqPhone)
+        font-size 15px
 
-#accordion
+
 .panel-group
-  .panel-heading
-    .form-group
-      margin-bottom 0
-    &__main
-       background-color #bbbdbf
-       color #58595b
+    .panel-heading
+      .form-group
+        margin-bottom 0
+      &__main
+         background-color #bbbdbf
+         color #58595b
 
+    .panel-body
+      &__inspect
+        padding-top 0px
 
-  .panel-body
-    &__inspect
-      padding-top 0px
+    .navbar-form
+      margin 0
+      .search-box
+        border 0px
+        outline none
+        width 150px
+        padding-left 32px
+        -webkit-border-radius 22px
+        -moz-border-radius 22px
+        border-radius 22px
+        // +below($mqPhone)
+        //   width 25px
+        //   border-radius 50%
+        //   -webkit-border-radius 50%
+        //   -moz-border-radius 50%
 
-  .navbar-form
-    margin 0
+      button
+        border 0
+        background none
+        padding 2px 5px
+        margin-top 2px
+        position relative
+        right -28px
+        margin-bottom 0
+        -webkit-border-radius 3px
+        -moz-border-radius 3px
+        border-radius 3px
+        color #979797
+        +below($mqPhone)
+          right 0px
+          color #fff
+
     .search-box
-      border 0px
-      outline none
-      width 150px
-      padding-left 32px
-      -webkit-border-radius 22px
-      -moz-border-radius 22px
-      border-radius 22px
-    button
-      border 0
-      background none
-      padding 2px 5px
-      margin-top 2px
-      position relative
-      right -28px
-      margin-bottom 0
-      -webkit-border-radius 3px
-      -moz-border-radius 3px
-      border-radius 3px
-      color #979797
-
-  .search-box
-    &:focus
-      & + button
-        z-index 3
+      &:focus
+        & + button
+          z-index 3
 
 
 .panel-primary
   & > .panel-heading
     background-color #839eb2
+    padding 10px
+    margin-bottom 0px
   .panel-body
     padding 0
     table
+      thead
+        tr
+          background-color #eaeaeb
       tbody
         tr
            &:nth-of-type(odd)
@@ -132,9 +154,14 @@
 .panel-success
   & > .panel-heading
        background-color #bbbdbf
+       padding 10px
+       margin-bottom 0px
   .panel-body
     padding 0
     table
+      thead
+        tr
+          background-color #eaeaeb
       tbody
         tr
           &:nth-of-type(odd)
@@ -158,32 +185,18 @@
                &:last-child
                  background-color #f0f0f0
                  text-align center
-        th
-           .fa-clock-o
-               &:before
-                   color #1b75bb
-           .fa-check-circle-o
-               &:before
-                   color #37b34a
-           .fa-question-circle-o
-               &:before
-                   color #90278e
-           .fa-times-circle-o
-               &:before
-                   color #f05a28
-           .fa-exclamation-circle
-               &:before
-                   color #ff9100
-           .fa-ban
-               &:before
-                   color #26a9e0
 
 .panel-info
   & > .panel-heading
      background-color #c1b49a
+     padding 10px
+     margin-bottom 0px
   .panel-body
     padding 0
     table
+      thead
+        tr
+          background-color #f0f0f0
     tbody
       tr
          &:nth-of-type(odd)
@@ -207,25 +220,6 @@
                  &:last-child
                      background-color #f0f0f0
                      text-align center
-      th
-        .fa-clock-o
-           &:before
-               color #1b75bb
-        .fa-check-circle-o
-           &:before
-               color #37b34a
-        .fa-question-circle-o
-           &:before
-               color #90278e
-        .fa-times-circle-o
-           &:before
-               color #f05a28
-        .fa-exclamation-circle
-           &:before
-               color #ff9100
-        .fa-ban
-           &:before
-               color #26a9e0
 
 .panel-body
   .table
@@ -237,21 +231,6 @@
                  color #808184
                  &:not(:first-child)
                      text-align center
-                 .fa-calendar-o
-                     &:before
-                         color #26a9e0
-                 .fa-calendar-plus-o
-                     &:before
-                         color #37b34a
-                 .fa-calendar-check-o
-                     &:before
-                         color #bbbdbf
-                 .fa-calendar-times-o
-                     &:before
-                         color #be1e2d
-                 .fa-calendar-minus-o
-                     &:before
-                         color #ee5928
      .table-condensed
          &.table-striped
              padding 0

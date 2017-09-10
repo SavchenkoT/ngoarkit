@@ -13,23 +13,22 @@ block content
   .container
     .row
       include modules/M01-navbar
-      #accordion
+      #accordion1
         .panel-group
           .panel.panel-heading
             btn.btn-link.addcollection
-              i.fa.fa-plus(aria-hidden='true')
+              i.fa.fa-plus(aria-hidden='true',  type='text', data-toggle='tooltip', data-placement='top', title='add collection')
             ul.list-inspection
-              li 
-                a(href="#") ОСББ Менеджмент
+              li  ОСББ Менеджмент
               li  >
-              li Management
+              li  Management
             form.navbar-form.navbar-right.form-horizontal(role='search')
               .input-group
-                button.btn(type='submit')
+                button.btn(type='submit', data-toggle='tooltip', data-placement='top', title='search')
                   i.fa.fa-search(aria-hidden='true')
-                input.search-box(type='text', placeholder='Search')
+                input.search-box.hidden-xs(type='text', placeholder='Search')
                 btn.btn-link.clickable(data-toggle='collapse', data-target='#collapse1')
-                  i.fa.fa-chevron-down(aria-hidden='true')
+                  i.fa.fa-chevron-down(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='hide')
               .btn-group.btn-group__elips
                 btn.btn-link
                   i.fa.fa-ellipsis-v(aria-hidden='true')
@@ -43,4 +42,4 @@ block content
               include modules/M18-inspection-for-object
               include modules/M20-statistic
               include modules/M05-tables-inspection
-              include modules/M17-pagination
+              
