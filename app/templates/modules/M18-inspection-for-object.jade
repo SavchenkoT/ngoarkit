@@ -12,43 +12,42 @@
       button.btn-default.btn-default__save(type='button') Сохранить
       button.btn-default.btn-default__delete(type='button') Удалить
       button.btn-default.btn-default__clean(type='button') Очистить
-  #accordion
-    .panel-group
-      .panel.panel-heading.panel-heading__inspect
-        h3.panel-title Условия фильтрации
-        .btn-group.btn-group__elips.pull-right.clickable
-          i.fa.fa-chevron-down(aria-hidden='true')          
-        .btn-group.pull-right.filter-btn
-          button.btn-default.btn-default__white.select(type='button') Часовые
-           i.fa.fa-angle-down.fa-lg(aria-hidden='true')
-          button.btn-default.btn-default__save(type='button') Сохранить
-          button.btn-default.btn-default__delete(type='button') Удалить
-          button.btn-default.btn-default__clean(type='button') Очистить
-      .panel-body
-          table.table-responsiv
-            th 
-              p.color-green Инспекции
-            tr
-              td Период:
-              td 
-                input(type='text', placeholder='Введите период')
-            tr
-              td Тип по времени:
-              td 
-                input(type='text', placeholder='Тип по времени')
-            tr
-              td Состояние выполнения:
-              td
-                input(type='text', placeholder='Состояние выполнения')
+  .panel-group#accordion
+    .panel.panel-heading.panel-heading__inspect
+      h3.panel-title Условия фильтрации
+      .btn-group.btn-group__elips.pull-right.clickable
+        i.fa.fa-chevron-down(aria-hidden='true')
+      .btn-group.pull-right.filter-btn
+        button.btn-default.btn-default__white.select(type='button') Часовые
+          i.fa.fa-angle-down.fa-lg(aria-hidden='true')
+        button.btn-default.btn-default__save(type='button') Сохранить
+        button.btn-default.btn-default__delete(type='button') Удалить
+        button.btn-default.btn-default__clean(type='button') Очистить
+    .panel-body
+      table.table-responsiv
+        th
+          p.color-green Инспекции
+        tr
+          td Период:
+          td
+            input(type='text', placeholder='Введите период')
+        tr
+          td Тип по времени:
+          td
+            input(type='text', placeholder='Тип по времени')
+        tr
+          td Состояние выполнения:
+          td
+            input(type='text', placeholder='Состояние выполнения')
 
-          table.table-responsiv
-            th
-              p.color-blue Объекты
-            tr
-              td Категория:
-              td 
-                input(type='text', placeholder='Категория')
-            tr
-              td Класс
-              td
-                input(type='text', placeholder='Класс')
+      table.table-responsiv
+        th
+          p.color-blue Объекты
+        tr
+          td Категория:
+          td
+            input(type='text', placeholder='Категория')
+        tr
+          td Класс
+          td
+            input(type='text', placeholder='Класс')

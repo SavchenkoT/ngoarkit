@@ -19,7 +19,7 @@ block content
             btn.btn-link.addcollection
               i.fa.fa-plus(aria-hidden='true')
             ul.list-inspection
-              li 
+              li
                 a(href="#") ОСББ Менеджмент
               li  >
               li Management
@@ -28,21 +28,20 @@ block content
                 button.btn(type='submit')
                   i.fa.fa-search(aria-hidden='true')
                 input.search-box(type='text', placeholder='Search')
-                btn.btn-link.clickable
+                btn.btn-link.clickable(data-toggle='collapse', data-target='#collapse1')
                   i.fa.fa-chevron-down(aria-hidden='true')
               .btn-group.btn-group__elips
                 btn.btn-link
                   i.fa.fa-ellipsis-v(aria-hidden='true')
-          .panel-body.not-padd
+          #collapse1.panel-body.not-padd.collapse.in
             include modules/M06-Slavutich
+            .row
+              .col-md-3
+                include modules/M14-filters-inspection
+                include modules/M15-filters-object
 
-    .row
-      .col-md-3
-        include modules/M14-filters-inspection
-        include modules/M15-filters-object
-
-      .col-md-9.not-padd
-        include modules/M18-inspection-for-object
-        include modules/M20-statistic
-        include modules/M05-tables-inspection
-        include modules/M17-pagination
+              .col-md-9.not-padd
+                include modules/M18-inspection-for-object
+                include modules/M20-statistic
+                include modules/M05-tables-inspection
+                include modules/M17-pagination
