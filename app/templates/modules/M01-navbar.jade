@@ -3,12 +3,12 @@
 //-*   M01-navbar.jade
 //-
 //-******************************/
-.header
+.header.clearfix
   .header-top
     .container
       .row
         .col-xs-12
-            .header-logo.pull-left.hidden-xs 
+            .header-logo.pull-left 
               a(href='#')
                 img(src='css/images/Inspection_4.png')
             .header-top-phone.pull-left
@@ -24,7 +24,7 @@
               a(href='Auth.html')
                 i.fa.fa-cog.fa-2x(aria-hidden='true')
             .header-top-card.pull-right.hidden-xs
-  .header-bottom
+  .header-bottom.pull-right
     nav.navbar.navbar-default
       .container
         .navbar-header
