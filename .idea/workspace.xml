@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a383e674-c3a6-442b-ae66-1d6ad82cfc63" name="Default" comment="" />
+    <list default="true" id="a383e674-c3a6-442b-ae66-1d6ad82cfc63" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/proba.jade" afterPath="$PROJECT_DIR$/app/templates/proba.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/Inspection-1.jade" afterPath="$PROJECT_DIR$/app/templates/Inspection-1.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M03-inspection.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M03-inspection.jade" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,98 +23,45 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="The_Inspection2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-images/The_Inspection2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M14-filter.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styles/moduls/M14-filter.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M14-filters-inspection.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M15-filters-object.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/modules/M15-filters-object.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M13-panel-filters.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/modules/M13-panel-filters.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M18-inspection-for-object.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M03-inspection.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/modules/M03-inspection.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M05-tables-inspection.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Inspection-1.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Inspection-1.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/Inspection-1.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="378">
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="M06-Slavutich.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/modules/M06-Slavutich.jade">
+      <file leaf-file-name="M01-nav.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/moduls/M01-nav.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="945">
+              <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proba.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/proba.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#nav#0;n#div#1;n#div#0;n#block#1;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#nav#0;n#div#1;n#div#0;n#block#1;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M01-navbar.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/modules/M01-navbar.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1344">
+              <caret line="64" column="52" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="64" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -170,7 +125,6 @@
         <option value="$PROJECT_DIR$/app/templates/modules/M12-buttons.jade" />
         <option value="$PROJECT_DIR$/dist/proba.html" />
         <option value="$PROJECT_DIR$/app/templates/modules/M15-filters-object.jade" />
-        <option value="$PROJECT_DIR$/app/templates/proba.jade" />
         <option value="$PROJECT_DIR$/app/scripts/modules/M12-buttons.js" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/less/navbar.less" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/less/variables.less" />
@@ -178,7 +132,6 @@
         <option value="$PROJECT_DIR$/app/styles/moduls/M12-buttons.styl" />
         <option value="$PROJECT_DIR$/app/styles/helpers/variables.styl" />
         <option value="$PROJECT_DIR$/app/templates/drawer.jade" />
-        <option value="$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade" />
         <option value="$PROJECT_DIR$/app/templates/P01a-page-inspection.jade" />
         <option value="$PROJECT_DIR$/app/templates/modules/drawer.jade" />
         <option value="$PROJECT_DIR$/app/templates/layouts/default.jade" />
@@ -190,12 +143,14 @@
         <option value="$PROJECT_DIR$/app/templates/modules/M22-sorts-catalog.jade" />
         <option value="$PROJECT_DIR$/app/styles/moduls/M22-catalog.styl" />
         <option value="$PROJECT_DIR$/app/styles/moduls/M03-inspection.styl" />
-        <option value="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" />
         <option value="$PROJECT_DIR$/app/styles/moduls/M14-filter.styl" />
-        <option value="$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade" />
         <option value="$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade" />
         <option value="$PROJECT_DIR$/app/templates/modules/M03-inspection.jade" />
+        <option value="$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade" />
+        <option value="$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade" />
         <option value="$PROJECT_DIR$/app/templates/Inspection-1.jade" />
+        <option value="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" />
+        <option value="$PROJECT_DIR$/app/templates/proba.jade" />
       </list>
     </option>
   </component>
@@ -237,7 +192,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -390,6 +344,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,11 +468,14 @@
       <workItem from="1504554842586" duration="4219000" />
       <workItem from="1504591838105" duration="6666000" />
       <workItem from="1505033738152" duration="340000" />
+      <workItem from="1505072297057" duration="4707000" />
+      <workItem from="1505127381790" duration="34000" />
+      <workItem from="1505336566087" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186820000" />
+    <option name="totallyTimeSpent" value="191569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,6 +488,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21998942" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -539,7 +498,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42615557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08455468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -588,18 +547,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ng-images/The_Inspection_UI_Objects.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/proba.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/register-login.jade" />
     <entry file="file://$PROJECT_DIR$/app/templates/Page.jade" />
     <entry file="file://$PROJECT_DIR$/ng-images/Prototype_THE_INSP.png">
@@ -639,13 +586,6 @@
     <entry file="file://$PROJECT_DIR$/app/images/Inspection_4.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M01-navbar.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/layouts/default.jade">
@@ -802,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/moduls/M01-nav.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="100" column="17" lean-forward="false" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/moduls/M02-login.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -846,47 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M13-panel-filters.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M15-filters-object.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,23 +786,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modules/M05-tables-inspection.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/modules/M03-inspection.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="329">
+          <caret line="68" column="37" lean-forward="false" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modules/M18-inspection-for-object.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="91" column="55" lean-forward="false" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modules/M13-panel-filters.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modules/M15-filters-object.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/vendor/bootstrap/grid.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/Inspection-1.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="28" column="49" lean-forward="false" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="378">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/moduls/M01-nav.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modules/M01-navbar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="64" column="52" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="64" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/proba.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#nav#0;n#div#1;n#div#0;n#block#1;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#nav#0;n#div#1;n#div#0;n#block#1;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
