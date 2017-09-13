@@ -4,23 +4,33 @@
  *
  ******************************/
 #catalog
+  width 90%
+  margin 0 auto
   .catalog_items
     display flex
     justify-content space-between
     .catalog_item
       width calc(100%/3 - 1rem)
       margin-right 20px
-      padding-top 7px
-      padding-bottom 7px
       text-align center
       background-color #b7c19f
       text-transform uppercase
       &:last-child
         margin-right 0px
-      a
+      > a
         color #fff
         font-size 22px
+        padding-top 7px
+        padding-bottom 7px
         line-height 22px
+
+        &:hover
+          background-color #3d4135
+        +below($mqPhone)
+          font-size 18px
+
+      +below($mqPhone)
+        width 100%
   .pull-left
     li
       .wrapper-select
@@ -90,6 +100,14 @@
 .catalog__promo
   display flex
   flex-wrap wrap
+  .info-cell,
+  .catalog_object-type
+    +below($mqPhone)
+      width 100%
+  .info-cell
+    +below($mqPhone)
+      margin-top 20px
+
 
 .catalog_product
   padding 15px 0px
@@ -102,14 +120,20 @@
       position relative
       .image-cell
           width 20%
+          max-width 180px
+          height 130px
           border 1px solid #d0d2d3
+          float left
           border-radius 4px
           +below($mqPhone)
             width 80%
+            margin-bottom 20px
             margin 0 auto
       .info-cell
         width 80%
         padding-left 15px
+        +below($mqPhone)
+          width 100%
         .text-title
           a
             display inline-block
@@ -123,6 +147,9 @@
   font-weight 600
   margin-top 10px
   margin-bottom 10px
+  +below($mqPhone)
+    width 90%
+    margin 10px auto
 .price-box
   position absolute
   right 0px
@@ -210,6 +237,8 @@
     position relative
   & > li
     margin-right 10px
+  .dropdown-select
+    background-color #fff
 
 .info-block
   max-width 300px
@@ -266,8 +295,8 @@
         .image-cell
           margin-right 15px
         .info-cell
-          margin-left 0px
-          width 78%
+          margin 0 auto
+          width 90%
           .catalog_object-type
             width 100%
         .price-box

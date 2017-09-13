@@ -9,7 +9,7 @@
   font-family Cuprum, sans-serif
   .color-green
     display inline-block
-    font-size 25px
+    font-size 22px
     text-transform uppercase
     color #8bc53f
   .color-blue
@@ -19,10 +19,14 @@
     color #26a9e0
   .btn-group
     background #b7c19f
+
     &__pull-center
       width 387px
       padding 10px 18px
       font-family "cuprum-regular", sans-serif
+      +below($mqPhone)
+        float none
+        margin-bottom 20px
     &__elips
       margin-left 15px
     .btn-delete
@@ -72,6 +76,7 @@
          margin-left 10px
          color black !important
          font-size 12px
+
 
 .inspection-btn
    margin-bottom 30px

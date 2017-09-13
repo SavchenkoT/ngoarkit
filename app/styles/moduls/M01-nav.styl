@@ -42,6 +42,7 @@
     margin-right 15px
   .header-top-setting
     margin-top 5px
+
 .header-bottom
   display inline-block
 
@@ -108,7 +109,7 @@
             &:hover
               color #26a9e0
 
-@media screen and (max-width:$mqDesktop) and (min-width:$mqTablet)
+@media screen and (max-width: $mqDesktop) and (min-width: $mqTablet)
   .header-bottom
     .navbar-default
       .navbar-collapse
@@ -118,7 +119,7 @@
             font-size 18px
             font-family "cuprum-regular", sans-serif
 
-@media screen and (max-width:$mqTablet) and (min-width:$mqPhone)
+@media screen and (max-width: $mqTablet) and (min-width: $mqPhone)
   .header-bottom
     nav.navbar
       padding 0
@@ -136,27 +137,36 @@
             a
               font-size 20px
 
-@media screen and (min-width:$mqPhone)
+@media screen and (min-width: $mqPhone)
   .header-bottom
     .navbar-default
       .navbar-header
         .navbar-toggle
           display none
 
-@media screen and (max-width:$mqPhone)
+@media screen and (max-width: $mqPhone)
   .header-bottom
+    float none !important
+    position absolute
     .navbar-default
+
       margin-bottom 0px
+      .navbar-header
+        .navbar-toggle
+          right 2%
+          top 1%
       .navbar-collapse
         padding-left 15px
         .link-box
+          width 100%
+          height 100vh
           text-align center
           li
             margin-right 0
             a
               padding-bottom 10px
 
-@media screen and (max-width:$mqTiny)
+@media screen and (max-width: $mqTiny)
   .header-top
     .header-logo
       width 147px

@@ -8,7 +8,6 @@ window.Cookies = require("js-cookie");
 global.app = function () {
   require("./modules/E003-scrollbar")();
 	require("./modules/M02-login")();
-  require("./modules/M12-buttons")();
   require("./modules/M14-filters-inspection")();
 	//...
 	//test
