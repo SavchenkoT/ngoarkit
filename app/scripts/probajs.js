@@ -5,6 +5,7 @@ $.ajax({
 });
 
 $(document).ready(function(){
+
     var next = 1;
     $(".add-more").click(function(e){
         e.preventDefault();
@@ -29,3 +30,4 @@ $(document).ready(function(){
             });
     });
 });
+

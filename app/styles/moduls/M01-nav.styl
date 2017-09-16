@@ -27,33 +27,40 @@
       margin-right 24px
       margin-left 35px
       font-size 18px
+      span
+        +below($mqTablet)
+          display none
       +below($mqPhone)
         float right
     .header-top-envelope
       margin-top 10px
       font-size 18px
+      span
+        +below($mqTablet)
+          display none
       +below($mqPhone)
         float right
-    .header-top-card
-      width 40px
-      height 40px
-      background-image url('../css/images/img1.png')
-      background-repeat no-repeat
-      background-size cover
-      border 1px solid #d0d2d3
-      border-radius 4px
-      margin-right 15px
+    .header-top-user
+      +below($mqTablet)
+        margin-right 14%
+      .header-top-card
+        width 40px
+        height 40px
+        background-image url('../css/images/img1.png')
+        background-repeat no-repeat
+        background-size cover
+        border 1px solid #d0d2d3
+        border-radius 4px
+        margin-right 15px
+      .header-top-setting
+        margin-top 5px
       +below($mqPhone)
-        display none
-    .header-top-setting
-      margin-top 5px
-      +below($mqPhone)
-        display none
-    +below($mqPhone)
-      display inline-block
+        display inline-block
   .header-bottom
     width 100%
     padding-left 15px
+    +below($mqTablet)
+      padding-left 0px
     .navbar-default
       font-family 'cuprum-regular', sans-serif
       border none
@@ -61,8 +68,8 @@
       .navbar-header
         .navbar-toggle
           position absolute
-          //top 0px
-          right 0px
+          top: -29px
+          right 3%;
           padding 0px
           border-color transparent
           float none
@@ -76,7 +83,16 @@
           +below($mqTablet)
             display block
     .navbar-collapse
+      transition: 0.3s cubic-bezier(0.25, 0.93, 1, 1);
       padding-left 0px
+      +below($mqTablet)
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        height: 80vh;
+        padding 0
+        background-color: azure;
+        overflow hidden
       .navbar-nav
         .dropdown
           min-width 198px
@@ -105,15 +121,26 @@
           > a
             background-color transparent
             color #26a9e0
+      .dropdown-box
+        +below($mqTablet)
+          width 80%
+          margin 0 auto
+          margin-top 20px
       .link-box
         margin-left 10px
         padding 7px 25px 0px
         float left !important
         box-sizing border-box
+        +below($mqTablet)
+          width 100%
+          float none !important
         +below($mqPhone)
           float none !important
         li
           margin-right 3.6em
+          +below($mqTablet)
+            margin-right 0 !important
+            text-align center
           &:last-child
             margin-right 0px
           +below($mqDesktop)
@@ -126,12 +153,13 @@
               font-size 2em
             +below($mqTablet)
               font-size 1.5em
+              padding-top 30px
+              padding-bottom 30px
             &:hover
               color #26a9e0
     +below($mqPhone)
       display inline-block
       width 100%
-
 
 // @media screen and (max-width: $mqDesktop) and (min-width: $mqTablet)
 //   .header-bottom
@@ -197,7 +225,6 @@
 //     .header-top-phone
 //       margin-right 8px
 //       margin-left 8px
-
 
 // **********************************************************
 //

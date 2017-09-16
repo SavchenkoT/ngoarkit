@@ -31,3 +31,10 @@ module.exports = function(vars) {
 
 	 $this.find('i.fa').toggleClass("fa-chevron-down").toggleClass("fa-chevron-up");
 	});
+$('.collapse').on('show.bs.collapse', function () {
+    document.body.style.overflow="hidden";
+})
+
+$('.collapse').on('hidden.bs.collapse', function () {
+    document.body.style.overflow="scroll";
+})

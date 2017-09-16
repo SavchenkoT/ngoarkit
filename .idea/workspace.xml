@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a383e674-c3a6-442b-ae66-1d6ad82cfc63" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/modules/header.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/application.js" afterPath="$PROJECT_DIR$/app/scripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/libs/panels.js" afterPath="$PROJECT_DIR$/app/scripts/libs/panels.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/E003-scrollbar.js" afterPath="$PROJECT_DIR$/app/scripts/modules/E003-scrollbar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/M12-buttons.js" afterPath="$PROJECT_DIR$/app/scripts/modules/M12-buttons.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/elements/header.styl" afterPath="$PROJECT_DIR$/app/styles/elements/header.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/helpers/bootstrap-variables.styl" afterPath="$PROJECT_DIR$/app/styles/helpers/bootstrap-variables.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/probajs.js" afterPath="$PROJECT_DIR$/app/scripts/probajs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M02-login.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M02-login.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M03-inspection.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M03-inspection.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M04-calendar.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M04-calendar.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M14-filter.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M14-filter.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M18-inspection-for-object.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M18-inspection-for-object.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/moduls/M22-catalog.styl" afterPath="$PROJECT_DIR$/app/styles/moduls/M22-catalog.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/badges.styl" afterPath="$PROJECT_DIR$/app/styles/vendor/bootstrap/badges.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/buttons.styl" afterPath="$PROJECT_DIR$/app/styles/vendor/bootstrap/buttons.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/vendor/bootstrap/navs.styl" afterPath="$PROJECT_DIR$/app/styles/vendor/bootstrap/navs.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/Inspection-1.jade" afterPath="$PROJECT_DIR$/app/templates/Inspection-1.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M01-nav-login.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M01-nav-login.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M04-calendar.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M04-calendar.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M21-inspection-in-object.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M21-inspection-in-object.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/modules/M01-navbar.jade" afterPath="$PROJECT_DIR$/app/templates/modules/M01-navbar.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/proba.jade" afterPath="$PROJECT_DIR$/app/templates/proba.jade" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,28 +27,40 @@
       <file leaf-file-name="M01-nav.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/moduls/M01-nav.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="160" column="6" lean-forward="false" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
+            <state relative-caret-position="350">
+              <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+              <folding>
+                <element signature="e#882#1118#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="E003-scrollbar.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/modules/E003-scrollbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proba.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/proba.jade">
+      <file leaf-file-name="M14-filters-inspection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/modules/M14-filters-inspection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="86" column="14" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="M12-buttons.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scripts/modules/M12-buttons.js">
+      <file leaf-file-name="M22-sort-catalog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/modules/M22-sort-catalog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,15 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dropdownMenu1</find>
-      <find>accordion</find>
-      <find>link-item</find>
-      <find>btn</find>
-      <find>Не</find>
-      <find>Ob</find>
-      <find>price</find>
-      <find>grid-float-breakpoint</find>
-      <find>screen-sm-min</find>
       <find>screen-sm</find>
       <find>$</find>
       <find>nav</find>
@@ -110,6 +99,15 @@
       <find>.col</find>
       <find>75</find>
       <find>link</find>
+      <find>grid-float-breakpoint</find>
+      <find>screen-md-min</find>
+      <find>screen-md</find>
+      <find>toggle</find>
+      <find>bottom</find>
+      <find>colla</find>
+      <find>transition</find>
+      <find>80</find>
+      <find>span</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,7 +126,6 @@
         <option value="$PROJECT_DIR$/app/templates/modules/M15-filters-object.jade" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/less/navbar.less" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/less/variables.less" />
-        <option value="$PROJECT_DIR$/app/templates/modules/M01-navbar.jade" />
         <option value="$PROJECT_DIR$/app/styles/moduls/M12-buttons.styl" />
         <option value="$PROJECT_DIR$/app/styles/helpers/variables.styl" />
         <option value="$PROJECT_DIR$/app/templates/drawer.jade" />
@@ -150,8 +147,12 @@
         <option value="$PROJECT_DIR$/app/templates/modules/M14-filters-inspection.jade" />
         <option value="$PROJECT_DIR$/app/templates/Inspection-1.jade" />
         <option value="$PROJECT_DIR$/app/templates/proba.jade" />
-        <option value="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" />
+        <option value="$PROJECT_DIR$/app/templates/modules/M01-navbar.jade" />
+        <option value="$PROJECT_DIR$/app/scripts/probajs.js" />
         <option value="$PROJECT_DIR$/app/scripts/modules/M12-buttons.js" />
+        <option value="$PROJECT_DIR$/app/styles/moduls/M01-nav.styl" />
+        <option value="$PROJECT_DIR$/app/scripts/libs/panels.js" />
+        <option value="$PROJECT_DIR$/app/scripts/modules/E003-scrollbar.js" />
       </list>
     </option>
   </component>
@@ -164,6 +165,153 @@
     <gulpfiles>
       <GulpfileState>
         <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="copyMedia" />
+              <dependency value="copyImages" />
+            </dependencies>
+            <task-name>images</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>spritesPng</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copyMedia</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copyImages</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>iconFont</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watchImages</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>cleanScripts</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>build-persistent</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="build-persistent" />
+            </dependencies>
+            <task-name>scripts</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>scriptsAndExit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="build-persistent" />
+            </dependencies>
+            <task-name>watchScripts</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="complieStylus" />
+            </dependencies>
+            <task-name>styles</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>complieStylus</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>minimifyCSS</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watchStyles</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="compileJade" />
+            </dependencies>
+            <task-name>templates</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>compileJade</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>compileJadeChanged</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watchTemplates</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="api" />
+              <dependency value="copyFavicons" />
+              <dependency value="copyFonts" />
+              <dependency value="copyHTML" />
+              <dependency value="copyHTC" />
+            </dependencies>
+            <task-name>misc</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>api</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copyFavicons</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copyFonts</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copyHTML</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copyHTC</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>zipDest</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watchMisc</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>serve</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean" />
+            </dependencies>
+            <task-name>build</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean" />
+            </dependencies>
+            <task-name>buildAndExit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="pack" />
+            </dependencies>
+            <task-name>dist</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="watchImages" />
+              <dependency value="watchScripts" />
+              <dependency value="watchStyles" />
+              <dependency value="watchTemplates" />
+              <dependency value="watchMisc" />
+            </dependencies>
+            <task-name>watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="build" />
+              <dependency value="watch" />
+            </dependencies>
+            <task-name>default</task-name>
+          </GulpTaskState>
+        </tasks>
       </GulpfileState>
     </gulpfiles>
     <sorting>DEFINITION_ORDER</sorting>
@@ -193,6 +341,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,6 +351,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ngoarkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngoarkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngoarkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,10 +545,31 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngoarkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngoarkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,9 +577,10 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="SearchEverywhereHistoryKey" value="1024&#9;null&#9;null" />
     <property name="list.type.of.created.stylesheet" value="Stylus" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="C:\Users\ALI\Desktop\ngoarkit\node_modules\gulp" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -419,6 +604,17 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="false" name="scripts" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>scripts</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -485,6 +681,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Gulp.js.scripts" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.scripts" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -511,12 +715,14 @@
       <workItem from="1505033738152" duration="340000" />
       <workItem from="1505072297057" duration="4707000" />
       <workItem from="1505127381790" duration="34000" />
-      <workItem from="1505336566087" duration="3340000" />
+      <workItem from="1505336566087" duration="3527000" />
+      <workItem from="1505388774070" duration="229000" />
+      <workItem from="1505560719362" duration="14092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194901000" />
+    <option name="totallyTimeSpent" value="209409000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,18 +734,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21998942" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31993654" sideWeight="0.4184874" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31993654" sideWeight="0.58151263" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3461105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -588,54 +793,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M12-buttons.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/Home.jade" />
-    <entry file="file://$PROJECT_DIR$/app/templates/P01a-page-inspection.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/partials/head.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/drawer.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/images/Inspection_4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/layouts/default.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/vendor/bootstrap/scaffolding.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/vendor/bootstrap/panels.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -647,13 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/helpers/bootstrap-variables.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="447" column="58" lean-forward="false" selection-start-line="447" selection-start-column="58" selection-end-line="447" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -671,11 +821,6 @@
         <state relative-caret-position="441">
           <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-images/The_Inspection1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/modules/M22-sorts-catalog.jade">
@@ -731,13 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/helpers/variables.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -869,14 +1007,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/modules/M03-inspection.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/helpers/bootstrap-variables.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="339" column="34" lean-forward="false" selection-start-line="339" selection-start-column="34" selection-end-line="339" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-images/The_Inspection1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/Page-inspect.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/probajs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/helpers/variables.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/modules/M01-navbar.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        <state relative-caret-position="464">
+          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/proba.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/M14-filters-inspection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/M22-sort-catalog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/M02-login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/libs/proba.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -889,7 +1110,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/probajs.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/M12-buttons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -897,34 +1126,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/modules/M03-inspection.jade">
+    <entry file="file://$PROJECT_DIR$/app/scripts/libs/panels.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="51" column="10" lean-forward="false" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        <state relative-caret-position="294">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/moduls/M01-nav.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="160" column="6" lean-forward="false" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="350">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding>
+            <element signature="e#882#1118#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/proba.jade">
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/E003-scrollbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="86" column="14" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/modules/M12-buttons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="465">
+          <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
           <folding />
         </state>
       </provider>

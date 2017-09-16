@@ -11,3 +11,5 @@ $('#myTab a').click(function (e) {
 })
 
 $('.checkbox').checkbox();
+
+

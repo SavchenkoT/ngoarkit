@@ -14,16 +14,17 @@
             .header-top-phone.pull-left
               a(href='+38 044 000 0000')
                 i.fa.fa-phone(aria-hidden='true',type='text', data-toggle='tooltip', data-placement='top', title='+38 044 000 0000')
-                span.hidden-xs  +38 044 000 0000
+                span +38 044 000 0000
             .header-top-envelope.pull-left
               a(href='inspect@email.com') 
                 i.fa.fa-envelope(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='inspect@email.com')
-                span.hidden-xs  inspect@email.com
+                span inspect@email.com
               //- img(src='css/images/img1.jpg', width='40', height='40')
-            .header-top-setting.hidden-md.pull-right
-              a(href='Auth.html')
-                i.fa.fa-cog.fa-2x(aria-hidden='true')
-            .header-top-card.hidden-md.pull-right
+            .header-top-user
+              .header-top-setting.pull-right
+                a(href='Auth.html')
+                  i.fa.fa-cog.fa-2x(aria-hidden='true')
+              .header-top-card.pull-right
   .header-bottom.pull-right
     nav.navbar.navbar-default
       .navbar-header
@@ -32,7 +33,7 @@
           span.icon-bar
           span.icon-bar
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
-        ul.nav.navbar-nav
+        ul.nav.navbar-nav.dropdown-box
           li.dropdown
             a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
               | KDMA OSBB Fund
