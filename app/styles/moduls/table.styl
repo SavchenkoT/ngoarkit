@@ -1,6 +1,7 @@
-.table-bordered
+table.table-bordered
   width 100%
   border-collapse collapse
+  border none
 
   thead
    background-color #d0d2d3
@@ -82,6 +83,8 @@
     font-size 15px
     padding-left 10px
     border-width 1px solid
+    +below($mqPhone)
+      width 100%
   .text-title
     width 30%
     border-spacing 4px
@@ -96,8 +99,26 @@
   thead
    background-color #d0d2d3
    > tr
-     padding 5px
+     padding-top 5px
+     padding-bottom 5px
+     border-bottom 1px solid #abadb0
+     > th
+       padding-top 5px
+       padding-bottom 5px
   tbody
     height 562px
     overflow-y auto
     width 100%
+
+    > tr
+
+      border-bottom 1px solid #abadb0
+
+      > th, td
+        border-right 1px solid #abadb0
+        padding-top 5px
+        padding-bottom 5px
+
+      > td
+        &:last-child
+          border-right none

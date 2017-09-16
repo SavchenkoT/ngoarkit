@@ -5,12 +5,21 @@
     .pagination
       li
         display inline-block
-        margin-right 5px
+        &:first-child
+          a
+            border-top-left-radius 4px
+            border-bottom-left-radius 4px
+        &:last-child
+          a
+            border-top-right-radius 4px
+            border-bottom-right-radius 4px
         a
-          background-color #efefef
+          padding 10px 18px
+          background-color #d0d2d3
+          color #fff
+          font-size 18px
+          font-weight 600
+
       .active
         a
           background-color #b7c19f
-      .disabled
-        border-top-left-radius 4px
-        border-bottom-left-radius 4px

@@ -12,7 +12,7 @@ block vars
 
 block content
   .container
-    .row
+    .row.not-padd
       include modules/M01-navbar
       #accordion1
         .panel-group
@@ -20,15 +20,10 @@ block content
             btn.btn-link.addcollection
               i.fa.fa-plus(aria-hidden='true',  type='text', data-toggle='tooltip', data-placement='top', title='add collection')
             ul.list-inspection
-
-              li
-                a(href="#") ОСББ Менеджмент
-
               li  ОСББ Менеджмент
-
               li  >
               li  Management
-            form.navbar-form.navbar-right.form-horizontal(role='search')
+            form.navbar-form.form-horizontal.pull-right(role='search')
               .input-group
                 button.btn(type='submit', data-toggle='tooltip', data-placement='top', title='search')
                   i.fa.fa-search(aria-hidden='true')
@@ -40,24 +35,13 @@ block content
                   i.fa.fa-ellipsis-v(aria-hidden='true')
           #collapse1.panel-body.not-padd.collapse.in
             include modules/M06-Slavutich
-            .row
-              .col-md-3
+            .container
+                .row.not-padd
+              .col-lg-3.visible-lg
                 include modules/M14-filters-inspection
                 include modules/M15-filters-object
 
-              .col-md-9.not-padd
+              .col-lg-9
                 include modules/M18-inspection-for-object
                 include modules/M20-statistic
                 include modules/M05-tables-inspection
-                include modules/M17-pagination
-
-            .col-lg-3.hidden-md.hidden-xs
-              include modules/M14-filters-inspection
-              include modules/M15-filters-object
-
-            .col-lg-9.not-padd
-              include modules/M18-inspection-for-object
-              include modules/M20-statistic
-              include modules/M05-tables-inspection
-
-

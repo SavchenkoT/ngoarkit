@@ -97,6 +97,8 @@
         background none
         border none
 
+
+
 .catalog__promo
   display flex
   flex-wrap wrap
@@ -242,8 +244,8 @@
 
 .info-block
   max-width 300px
-  padding-right 20px
-  padding-left 20px
+  // padding-right 20px
+  // padding-left 20px
   margin 0 auto
   border-bottom 1px solid
   &:last-child
@@ -265,10 +267,14 @@
   .group-document
     padding-top 10px
     padding-bottom 10px
-    btn.btn-link >.fa
-      color #929497
-      font-size 35px
-      margin-bottom 10px
+    btn.btn-link
+      >.fa
+        color #929497
+        font-size 35px
+        margin-bottom 10px
+        padding-right 10px
+        &:last-child
+          padding-right 0px
 
 .catalog_title
   p
@@ -295,8 +301,8 @@
         .image-cell
           margin-right 15px
         .info-cell
-          margin 0 auto
-          width 90%
+          margin-bottom 15px
+          width 100%
           .catalog_object-type
             width 100%
         .price-box
