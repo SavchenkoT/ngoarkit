@@ -1,0 +1,18 @@
+//- ------------------------------------------
+//-
+//-    Regiser-login.jade
+//-
+//- ------------------------------------------
+
+
+extends layouts/default
+block vars
+  - page.title = 'Login'
+  - page.bodyid = 'authpage'
+
+block content
+  .container-fluid
+    .row
+      .col-md-6.col-md-offset-3
+        include modules/M01-nav-login
+        include modules/M02-login

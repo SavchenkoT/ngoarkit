@@ -1,0 +1,31 @@
+//- ------------------------------------------
+//-
+//-     Inspection-for-object.jade
+//-
+//- ------------------------------------------
+
+#accordion3.panel-group
+    .panel.panel-heading
+      btn.btn-link.addcollection
+        i.fa.fa-plus(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='add new panel')
+      ul.list-inspection
+        li  ОСББ Менеджмент
+        li  >
+        li  Management
+      form.navbar-form.form-horizontal.pull-right(role='search')
+        .input-group
+          button.btn(type='submit')
+            i.fa.fa-search(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='Search')
+          input.search-box.hidden-xs(type='text', placeholder='Search')
+          span.clickable(data-toggle='collapse', data-target='#collapse2', data-parent='#accordion3')
+            i.fa.fa-chevron-down(aria-hidden='true')
+        .btn-group.btn-group__elips
+          i.fa.fa-ellipsis-v(aria-hidden='true')
+    #collapse2.panel-body.not-padd.collapse.in
+      include M06-Slavutich
+      .container
+        .row
+          .col-md-3.visible-md-block.visible-lg-block
+            include M13-panel-filters
+          .col-md-9.not-padd
+            include M22-sorts-catalog

@@ -1,6 +1,5 @@
-//
 // Typography
-// --------------------------------------------------
+// -------------------------
 
 
 // Headings
@@ -61,6 +60,9 @@ h3, .h3
   font-size $font-size-h3
   font-weight bold
   line-height 32px
+
+  &.colwhite
+    color #fff
   +below($mqPhone)
     font-size 16px
 
@@ -92,7 +94,7 @@ q
   font-style italic
   line-height 28px
 p
-  margin 0 0 ($line-height-computed / 2)
+  //margin 0 0 ($line-height-computed / 2)
   font-size $font-size-p
   +below($mqPhone)
     font-size 14px
@@ -205,12 +207,16 @@ mark,
 // Unordered and Ordered lists
 ul,
 ol
+  padding 0
   margin-top 0
   margin-bottom ($line-height-computed / 2)
+  list-style none
   ul,
   ol
     margin-bottom 0
-
+ul
+  li
+    display inline-block
 // List options
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style

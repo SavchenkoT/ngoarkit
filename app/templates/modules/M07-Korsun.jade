@@ -1,0 +1,20 @@
+//-******************************
+//-
+//-*   M07-Korsun.jade
+//-
+//-******************************/
+
+#accordion
+  .panel-group
+    .panel.panel-heading.panel-heading__main
+      h3.panel-title Korsun
+      .form-group.pull-right
+        btn.btn-link
+          i.fa.fa-print(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='print')
+        btn.btn-link
+          i.fa.fa-share-square-o(aria-hidden='true')
+        btn.btn-link.pull-right.clickable
+          i.fa.fa-chevron-up(aria-hidden='true',type='text', data-toggle='tooltip', data-placement='top', title='hide')
+    .panel-body
+      include M09-panel-primary
+      include M10-panel-info

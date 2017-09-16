@@ -1,0 +1,15 @@
+//- ------------------------------------------
+//-
+//-     Inspection-2.jade
+//-
+//- ------------------------------------------
+
+extends layouts/default
+block vars
+  - page.title = 'PageTitle'
+  - page.bodyid = 'authpage'
+block content
+  .container
+    .row
+      include modules/M01-navbar
+      include modules/M21-inspection-in-object

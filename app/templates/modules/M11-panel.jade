@@ -1,0 +1,209 @@
+//-******************************
+//-
+//-*   M11-panel.jade
+//-
+//-******************************/
+
+.container
+  .row
+    .panel.panel-primary
+      .panel-heading 
+        a(href="#")
+          i.fa.fa-plus.colgrey(aria-hidden='true')
+        p.name_colection Состояние по типам инспекций
+        btn.btn-link.pull-right
+          i.fa.fa-ellipsis-v(aria-hidden='true')
+      .panel-body 
+        table.table.table-condensed.table-striped
+          thead
+            tr
+              th тип / состояние
+              th 
+                i.fa.fa-calendar-o(aria-hidden='true')
+              th 
+                i.fa.fa-calendar-plus-o(aria-hidden='true')
+              th 
+                i.fa.fa-calendar-check-o(aria-hidden='true')
+              th 
+                i.fa.fa-calendar-times-o(aria-hidden='true')
+              th
+                i.fa.fa-calendar-minus-o(aria-hidden='true')
+              th
+                
+          tbody
+            tr
+              th Часовые
+              th 2
+              th 2
+              th 2
+              th 2
+              th 2
+              th 2
+            tr
+              th Дневные
+              th 122
+              th 38
+              th 63
+              th 10
+              th 11
+              th 2
+            tr
+              th Недельные
+              th 0
+              th 0
+              th 0
+              th 0
+              th 0
+              th 10
+            tr
+              th Месячные
+              th 2
+              th 3
+              th 1
+              th 0
+              th 5
+              th 0
+            tr
+              th Неназначеные
+              th 5
+              th 2
+              th 7
+              th 2
+              th 5
+              th 0
+            tr
+              th Оперативные
+              th 3
+              th 2
+              th 1
+              th 0
+              th 9
+              th 0
+            tr 
+              th Итого
+              th 132
+              th 48
+              th 69
+              th 14
+              th 0
+              th
+                span.summary 263
+  .row
+    .panel.panel-success
+      .panel-heading 
+        a(href="#")
+          i.fa.fa-plus.colgrey(aria-hidden='true')
+        p.name_colection Качество объектов
+        btn.btn-link.pull-right
+          i.fa.fa-ellipsis-v(aria-hidden='true')
+      .panel-body 
+        table.table.table-condensed.table-striped
+          thead
+            tr
+              th статус состояния
+              th колличество
+                
+          tbody
+            tr
+              th Не определено
+                span.pull-left
+                  i.fa.fa-clock-o(aria-hidden='true')
+              th 180
+ 
+            tr
+              th Ок
+                span.pull-left
+                  i.fa.fa-check-circle-o(aria-hidden='true')
+              th 52
+
+            tr
+              th Внимание
+                span.pull-left
+                  i.fa.fa-exclamation-circle(aria-hidden='true')
+              th 10
+
+            tr
+              th Критично
+                span.pull-left
+                  i.fa.fa-times-circle-o(aria-hidden='true')
+              th 7
+
+            tr
+              th Не корректно
+                span.pull-left
+                  i.fa.fa-question-circle-o(aria-hidden='true')
+              th 0
+
+            tr
+              th Без оценки
+                span.pull-left
+                  i.fa.fa-ban(aria-hidden='true')
+              th 0
+            tr 
+              th Итого
+              th
+                span.summary 242
+  .row
+    .panel.panel-info
+      .panel-heading 
+        a(href="#")
+          i.fa.fa-plus.colgrey(aria-hidden='true')
+        p.name_colection Качество объектов
+        btn.btn-link.pull-right
+          i.fa.fa-ellipsis-v(aria-hidden='true')
+      .panel-body 
+        table.table.table-condensed.table-striped
+          thead
+            tr
+              th тип / состояние
+              th колличество
+                
+          tbody
+            tr
+              th Не определено
+                span.pull-left
+                  i.fa.fa-clock-o(aria-hidden='true')
+              th 1
+ 
+            tr
+              th Ок
+                span.pull-left
+                  i.fa.fa-check-circle-o(aria-hidden='true')
+              th 58
+
+            tr
+              th Внимание
+                span.pull-left
+                  i.fa.fa-exclamation-circle(aria-hidden='true')
+              th 2
+
+            tr
+              th Критично
+                span.pull-left
+                  i.fa.fa-times-circle-o(aria-hidden='true')
+              th 3
+
+            tr
+              th Не корректно
+                span.pull-left
+                  i.fa.fa-question-circle-o(aria-hidden='true')
+              th 0
+
+            tr
+              th Без оценки
+                span.pull-left
+                  i.fa.fa-ban(aria-hidden='true')
+              th 0
+            tr 
+              th Итого
+              th
+                span.summary 65
+  
+  .row
+    #accordion
+      .panel-group
+        .panel.panel-heading.panel-heading__main
+            h3.panel-title Slavutich
+            .btn-group.btn-group__elips.pull-right.clickable
+              i.fa.fa-chevron-up(aria-hidden='true')
+          .panel-body

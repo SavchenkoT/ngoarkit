@@ -44,14 +44,13 @@
     margin-left 5px
 
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle)
-  border-radius 0
+
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child
   margin-left 0
 
-  &:not(:last-child):not(.dropdown-toggle)
-    border-right-radius(0)
+
 
 // Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
 .btn-group > .btn:last-child:not(:first-child),
@@ -113,6 +112,8 @@
   // Show no shadow for `.btn-link` since it has no other button styles.
   &.btn-link
     box-shadow none
+    &:hover
+      color #ccc
 
 
 // Reposition the caret

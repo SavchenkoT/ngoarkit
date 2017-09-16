@@ -1,0 +1,69 @@
+//-******************************
+//-
+//-*   M03-inspection
+//-
+//-******************************/
+
+
+#accordion.panel-group
+  .panel.panel-heading.panel-heading__inspect
+    btn.btn-link.addcollection
+      i.fa.fa-plus(aria-hidden='true')
+    ul.list-inspection
+      li  ОСББ Менеджмент
+      li  >
+      li  Management
+    form.navbar-form.navbar-right.form-horizontal(role='search')
+      .input-group
+        button.btn(type='submit')
+          i.fa.fa-search(aria-hidden='true')
+        input.vis(type='text', placeholder='Search')
+        span.clickable
+          i.fa.fa-chevron-down(aria-hidden='true')
+      .btn-group.btn-group__elips
+        btn.btn-link
+          i.fa.fa-ellipsis-v(aria-hidden='true')
+  .panel-body
+    include M06-Slavutich
+    .container
+      .row
+        .col-md-2.visible-md-block.visible-lg-block
+          include M13-panel-filters
+        .col-md-10
+          include M18-inspection-for-object
+          include M20-statistic
+          include M05-tables-inspection
+          include M17-pagination
+          include M16-tables-object
+
+#accordion
+  .panel-group
+    .panel.panel-heading.panel-heading__inspect
+      btn.btn-link.addcollection
+        i.fa.fa-plus(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='add collection')
+      ul.list-inspection
+        li  ОСББ Менеджмент
+        li  >
+        li  Management
+      form.navbar-form.navbar-right.form-horizontal(role='search')
+        .input-group
+          button.btn(type='submit')
+            i.fa.fa-search(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='search')
+          input.vis(type='text', placeholder='Search')
+          span.clickable
+            i.fa.fa-chevron-down(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='hide')
+        .btn-group
+          btn.btn-link.btn-group__elips
+            i.fa.fa-ellipsis-v(aria-hidden='true')
+    .panel-body
+      include M06-Slavutich
+      .container
+        .row
+          .col-md-2.visible-md-block.visible-lg-block
+            include M13-panel-filters
+          .col-md-10
+            include M18-inspection-for-object
+            include M20-statistic
+            include M05-tables-inspection
+            include M17-pagination
+            include M16-tables-object

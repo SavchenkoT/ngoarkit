@@ -75,7 +75,7 @@ th
 // Add borders all around the table and between all the columns.
 
 .table-bordered
-  border 1px solid $table-border-color
+  border-bottom 1px solid $table-border-color
   > thead,
   > tbody,
   > tfoot
@@ -83,6 +83,8 @@ th
       > th,
       > td
         border 1px solid $table-border-color
+        padding-top 7px
+        padding-bottom 7px
 
   > thead > tr
     > th,
@@ -195,4 +197,3 @@ table-row-variant(danger, $state-danger-bg)
           > th,
           > td
             border-bottom 0
-

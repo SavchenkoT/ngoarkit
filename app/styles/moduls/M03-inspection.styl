@@ -1,0 +1,289 @@
+/*!******************************
+ *
+ *   M03-inspection.styl
+ *
+ ********************************/
+
+.panel-group
+  margin-bottom 10px
+  border-radius 0
+  .panel
+     border-radius 0
+     border none
+     padding 0
+  .panel-heading
+    border-top-right-radius 0
+    border-top-left-radius 0
+    padding-top 15px
+    padding-left 25px
+    padding-right 40px
+    margin-bottom 10px
+    color #fff
+    background #b7c19f
+    clearfix()
+    &__inspect
+      margin-bottom 10px
+      padding-top 15px
+      padding-bottom 10px
+      .btn-link
+        .fa
+          margin-left 10px
+      &li, a
+        font-size 16px
+      .filter-btn
+        +below($mqPhone)
+          display block
+          width 100%
+    &__main
+      padding-left 70px
+      padding-top 0px
+      line-height 40px
+      .btn-link
+        .fa
+          color #929497
+          margin-left 10px
+    &__sorts
+      color #fff
+      .btn-group
+        .dropdown-toggle
+          color #fff
+      .catalog_buttons-checkbox
+        +below($mqTablet)
+          display block
+          float none
+
+
+    .input-group__elips
+      margin-left 10px
+    .navbar-form
+      padding-left 0px
+      padding-right 0px
+      height auto
+      display inline-block
+      border-top 0px
+      border-bottom 0px
+      box-shadow none
+      +below($mqPhone)
+        padding 0px
+
+    .addcollection
+      margin-right 25px
+    +below($mqPhone)
+      padding-top 0px
+
+  .list-inspection
+    display inline-block
+    padding 0
+    li
+      margin-right 10px
+      color #fff
+      font-size 20px
+      font-family "Cuprum-Regular", sans-serif
+      +below($mqPhone)
+        font-size 15px
+  .btn-group
+    &__elips
+      .fa
+        margin-left 10px
+
+
+.panel-group
+    .panel-heading
+      padding-top 15px
+      margin-bottom 10px
+      .form-group
+        margin-bottom 0
+      &__main
+         background-color #bbbdbf
+         color #58595b
+
+    .panel-body
+      &__inspect
+        padding-top 0px
+
+    .navbar-form
+      margin 0
+      .search-box
+        border 0px
+        outline none
+        width 150px
+        padding-left 32px
+        -webkit-border-radius 22px
+        -moz-border-radius 22px
+        border-radius 22px
+        // +below($mqPhone)
+        //   width 25px
+        //   border-radius 50%
+        //   -webkit-border-radius 50%
+        //   -moz-border-radius 50%
+
+      button
+        border 0
+        background none
+        padding 2px 5px
+        margin-top 2px
+        position relative
+        right -28px
+        margin-bottom 0
+        -webkit-border-radius 3px
+        -moz-border-radius 3px
+        border-radius 3px
+        color #979797
+        +below($mqPhone)
+          right 0px
+          color #fff
+
+    .search-box
+      &:focus
+        & + button
+          z-index 3
+
+
+.panel-primary
+
+  & > .panel-heading
+    background-color #839eb2
+    padding 10px
+    margin-bottom 0px
+  .panel-body
+    padding 0
+    table
+      margin-bottom 20px
+      thead
+        tr
+          background-color #eaeaeb
+      tbody
+        tr
+           &:nth-of-type(odd)
+             background-color #839eb2
+             th
+               &:not(:first-child)
+                 background-color #e0e0e0
+                 text-align center
+               &:last-child
+                 background-color #a3ba5d
+                 text-align center
+           &:nth-of-type(even)
+             background-color #c5d0d8
+             th
+               &:not(:first-child)
+                 background-color #eaeaeb
+                 text-align center
+               &:last-child
+                 background-color #d2dbb6
+                 text-align center
+
+.panel-success
+  & > .panel-heading
+       background-color #bbbdbf
+       padding 10px
+       margin-bottom 0px
+  .panel-body
+    padding 0
+    table
+      margin-bottom 20px
+      thead
+        tr
+          background-color #eaeaeb
+      tbody
+        tr
+          &:nth-of-type(odd)
+             background-color #bbbdbf
+             th
+               span
+                 padding 0 10px
+                 &.summary
+                     color #1b75bb
+               &:last-child
+                 background-color #e0e0e0
+                 text-align center
+          &:nth-of-type(even)
+             background-color #dddedf
+             th
+               span
+                 padding 0 10px
+               &:not(:first-child)
+                 background-color #f0f0f0
+                 text-align center
+               &:last-child
+                 background-color #f0f0f0
+                 text-align center
+
+.panel-info
+  & > .panel-heading
+     background-color #c1b49a
+     padding 10px
+     margin-bottom 0px
+  .panel-body
+    padding 0
+    table
+      margin-bottom 20px
+      thead
+        tr
+          background-color #f0f0f0
+    tbody
+      tr
+         &:nth-of-type(odd)
+             background-color #c1b49a
+             th
+                 span
+                   padding 0 10px
+                   &.summary
+                     color #1b75bb
+                 &:last-child
+                   background-color #d3c5ab
+                   text-align center
+         &:nth-of-type(even)
+             background-color #e9e2d5
+             th
+                 span
+                     padding 0 10px
+                 &:not(:first-child)
+                     background-color #f0f0f0
+                     text-align center
+                 &:last-child
+                     background-color #f0f0f0
+                     text-align center
+
+.panel-body
+  .table
+     margin-bottom 0
+     thead
+         tr
+             border-color none
+             th
+                 color #808184
+                 &:not(:first-child)
+                     text-align center
+     .table-condensed
+         &.table-striped
+             padding 0
+
+.panel-heading
+   vertical-align middle
+   border-color inherit
+   border-top-right-radius 0
+   border-top-left-radius 0
+   padding 9px 15px 9px 15px
+   font-size 15px
+   .name_colection
+       color #fff
+       display inline-block
+       margin 0
+       padding-left 15px
+   >h3.panel-title
+       display inline-block
+       font-size 20px
+       font-weight 600
+
+    // .panel-heading a,
+    // .panel-heading i
+    //    color #fff
+    //    display inline-block
+
+@media (max-width: $mqPhone)
+  .input-group
+    display inline-block
+
+    button(type='submit')
+      margin-right 20px

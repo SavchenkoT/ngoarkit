@@ -1,0 +1,328 @@
+/******************************
+*
+*   M01- login.styl
+*
+******************************/
+
+.header
+  clearfix()
+  .header-top
+    display block
+    color #979797
+    a
+      text-decoration none
+      color #979797
+      &:hover
+        color #26a9e0
+    .fa
+      margin-right 20px
+      color #979797
+      &:hover
+        color #26a9e0
+        cursor pointer
+    .header-logo
+      width 198px
+    .header-top-phone
+      margin-top 10px
+      margin-right 24px
+      margin-left 35px
+      font-size 18px
+      span
+        +below($mqTablet)
+          display none
+      +below($mqPhone)
+        float right
+    .header-top-envelope
+      margin-top 10px
+      font-size 18px
+      span
+        +below($mqTablet)
+          display none
+      +below($mqPhone)
+        float right
+    .header-top-user
+      +below($mqTablet)
+        margin-right 14%
+      .header-top-card
+        width 40px
+        height 40px
+        background-image url('../css/images/img1.png')
+        background-repeat no-repeat
+        background-size cover
+        border 1px solid #d0d2d3
+        border-radius 4px
+        margin-right 15px
+      .header-top-setting
+        margin-top 5px
+      +below($mqPhone)
+        display inline-block
+  .header-bottom
+    width 100%
+    padding-left 15px
+    +below($mqTablet)
+      padding-left 0px
+    .navbar-default
+      font-family 'cuprum-regular', sans-serif
+      border none
+      background-color transparent
+      .navbar-header
+        .navbar-toggle
+          position absolute
+          top: -29px
+          right 3%;
+          padding 0px
+          border-color transparent
+          float none
+          margin 0px
+          display none
+          span
+            margin-bottom 0px
+            &:nth-of-type(2)
+              margin-top 6px
+              margin-bottom 6px
+          +below($mqTablet)
+            display block
+    .navbar-collapse
+      transition: 0.3s cubic-bezier(0.25, 0.93, 1, 1);
+      padding-left 0px
+      +below($mqTablet)
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        height: 80vh;
+        padding 0
+        background-color: azure;
+        overflow hidden
+      .navbar-nav
+        .dropdown
+          min-width 198px
+          border-radius 4px
+          border 1px solid #404041
+          margin-top -1px
+          padding 0
+          .dropdown-toggle
+            padding 6px 18px
+            font-size 18px
+            .icon
+              display inline-block
+              position absolute
+              right 5%
+              color #1b75bb
+          .dropdown-menu
+            width 100%
+            position absolute
+            li
+              padding 0
+              a
+                color #222
+                font-size 14px
+                padding 0 5px
+        .active
+          > a
+            background-color transparent
+            color #26a9e0
+      .dropdown-box
+        +below($mqTablet)
+          width 80%
+          margin 0 auto
+          margin-top 20px
+      .link-box
+        margin-left 10px
+        padding 7px 25px 0px
+        float left !important
+        box-sizing border-box
+        +below($mqTablet)
+          width 100%
+          float none !important
+        +below($mqPhone)
+          float none !important
+        li
+          margin-right 3.6em
+          +below($mqTablet)
+            margin-right 0 !important
+            text-align center
+          &:last-child
+            margin-right 0px
+          +below($mqDesktop)
+            margin-right 1em
+          a
+            padding 0
+            font-size 2.5em
+            text-decoration none
+            +below($mqDesktop)
+              font-size 2em
+            +below($mqTablet)
+              font-size 1.5em
+              padding-top 30px
+              padding-bottom 30px
+            &:hover
+              color #26a9e0
+    +below($mqPhone)
+      display inline-block
+      width 100%
+
+// @media screen and (max-width: $mqDesktop) and (min-width: $mqTablet)
+//   .header-bottom
+//     .navbar-default
+//       .navbar-collapse
+//         .link-box
+//           li
+//             margin-right 2rem
+//             font-size 18px
+//             font-family "cuprum-regular", sans-serif
+//
+// @media screen and (max-width: $mqTablet) and (min-width: $mqPhone)
+//   .header-bottom
+//     nav.navbar
+//       padding 0
+//     .navbar-default
+//       .navbar-header
+//         .navbar-header
+//           padding 0px
+//         .navbar-toggle
+//           margin 0px
+//           float none
+//       .navbar-collapse
+//         .link-box
+//           li
+//             margin-right 1em
+//             a
+//               font-size 20px
+
+// @media screen and (min-width: $mqPhone)
+//   .header-bottom
+//     .navbar-default
+//       .navbar-header
+//         .navbar-toggle
+//           display none
+//
+// @media screen and (max-width: $mqPhone)
+//   .header-bottom
+//     // float none !important
+//     // position absolute
+//     .navbar-default
+//
+//       margin-bottom 0px
+//       .navbar-header
+//         .navbar-toggle
+//           right 2%
+//           top 1%
+//       .navbar-collapse
+//         padding-left 15px
+//         .link-box
+//           width 100%
+//           height 100vh
+//           text-align center
+//           li
+//             margin-right 0
+//             a
+//               padding-bottom 10px
+//
+// @media screen and (max-width: $mqTiny)
+//   .header-top
+//     .header-logo
+//       width 147px
+//     .header-top-phone
+//       margin-right 8px
+//       margin-left 8px
+
+// **********************************************************
+//
+// .navbar-brand
+//   position relative
+//   z-index 2
+//
+// .navbar-nav
+//   &.navbar-right
+//     .btn
+//       position relative
+//       z-index 2
+//       padding 4px 20px
+//       margin 10px auto
+//       transition transform 0.3s
+//       &:not(.collapsed)
+//         background-color rgb(111, 84, 153)
+//         border-color rgb(111, 84, 153)
+//         color rgb(255, 255, 255)
+//
+// .navbar
+//   .navbar-collapse
+//     position relative
+//     overflow hidden !important
+//     .navbar-right
+//       & > li
+//         &:last-child
+//           padding-left 22px
+//   .nav-collapse
+//     position absolute
+//     z-index 1
+//     top 0
+//     left 0
+//     right 0
+//     bottom 0
+//     margin 0
+//     padding-right 120px
+//     padding-left 80px
+//     width 100%
+//     .navbar-form
+//       border-width 0
+//       box-shadow none
+//   &.navbar-default
+//     .nav-collapse
+//       background-color #f8f8f8
+//   &.navbar-inverse
+//     .nav-collapse
+//       background-color #222
+//
+// .nav-collapse
+//   & > li
+//     float right
+//
+// .btn
+//   &.btn-circle
+//     border-radius 50px
+//   &.btn-outline
+//     background-color transparent
+//
+// .navbar.navbar-default .nav-collapse,
+// .navbar.navbar-inverse .nav-collapse
+//   height auto !important
+//   transition transform 0.3s
+//   transform translate(0px,-50px)
+//
+// .navbar.navbar-default .nav-collapse.in,
+// .navbar.navbar-inverse .nav-collapse.in
+//   transform translate(0px,0px)
+//
+// @media screen and (max-width: 767px)
+//   .navbar
+//     .navbar-collapse
+//       .navbar-right
+//         & > li
+//           &:last-child
+//             padding-left 15px
+//             padding-right 15px
+//     .nav-collapse
+//       margin 7.5px auto
+//       padding 0
+//       .navbar-form
+//         margin 0
+//   .nav-collapse
+//     & > li
+//       float none
+//
+//   .navbar.navbar-default .nav-collapse,
+//   .navbar.navbar-inverse .nav-collapse
+//     transform translate(-100%,0px)
+//
+//   .navbar.navbar-default .nav-collapse.in,
+//   .navbar.navbar-inverse .nav-collapse.in
+//     transform translate(0px,0px)
+//
+//   .navbar.navbar-default .nav-collapse.slide-down,
+//   .navbar.navbar-inverse .nav-collapse.slide-down
+//     transform translate(0px,-100%)
+//
+//   .navbar.navbar-default .nav-collapse.in.slide-down,
+//   .navbar.navbar-inverse .nav-collapse.in.slide-down
+//     transform translate(0px,0px)

@@ -3,9 +3,57 @@
   Common styles
 
 ********************************/
+$table-cells-spacing = 6px
+$table-cells-spacing-big = 30px
 
 html
 body
-  //min-height 100vh
-  //min-width 320px
-  //text-size-adjust: none
+  font-size 14px
+  font-family "Cuprum-Regular", Helvetica, Arial, sans-serif
+p
+  margin 0
+  display inline-block
+
+img
+  width 100%
+  height auto
+ul
+  list-style none
+  border none
+  li
+    a
+      text-decoration none
+
+h1, h2, h3, h4, h5, h6, label
+  font-weight normal //remove default bootstrap font-weight
+label
+  font-family "Cuprum-Regular", sans-serif
+input:focus,
+textarea:focus // remove default bootstrap input outlines
+  outline 0 !important
+  box-shadow none !important
+
+.wrapper
+  max-width 1020px
+  margin 0 auto
+
+.col-right
+  float right
+
+.col-left
+  float left
+
+.not-padd
+  padding 0
+.not-margin-bottom
+  margin-bottom 0
+.cell
+  width 100%
+  float left
+  position relative
+.to-appruve
+  color #37b34a
+
+.flex-block
+  display flex
+  justify-content space-between

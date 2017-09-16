@@ -1,0 +1,47 @@
+
+//- ------------------------------------------
+//-
+//-     Inspection-1.jade
+//-
+//- ------------------------------------------
+
+extends layouts/default
+block vars
+  - page.title = 'Inspection-1'
+  - page.bodyid = 'authpage'
+
+block content
+  .container
+    .row.not-padd
+      include modules/M01-navbar
+      #accordion1
+        .panel-group
+          .panel.panel-heading
+            btn.btn-link.addcollection
+              i.fa.fa-plus(aria-hidden='true',  type='text', data-toggle='tooltip', data-placement='top', title='add collection')
+            ul.list-inspection
+              li  ОСББ Менеджмент
+              li  >
+              li  Management
+            form.navbar-form.form-horizontal.pull-right(role='search')
+              .input-group
+                button.btn(type='submit', data-toggle='tooltip', data-placement='top', title='search')
+                  i.fa.fa-search(aria-hidden='true')
+                input.search-box.hidden-xs(type='text', placeholder='Search')
+                btn.btn-link.clickable(data-toggle='collapse', data-target='#collapse1')
+                  i.fa.fa-chevron-down(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='hide')
+              .btn-group.btn-group__elips
+                btn.btn-link
+                  i.fa.fa-ellipsis-v(aria-hidden='true')
+          #collapse1.panel-body.not-padd.collapse.in
+            include modules/M06-Slavutich
+            .container
+                .row.not-padd
+              .col-lg-3.visible-lg
+                include modules/M14-filters-inspection
+                include modules/M15-filters-object
+
+              .col-lg-9
+                include modules/M18-inspection-for-object
+                include modules/M20-statistic
+                include modules/M05-tables-inspection

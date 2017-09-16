@@ -1,0 +1,142 @@
+/*******************************
+ *
+ *   M12- buttons.styl
+ *
+******************************/
+btn.btn-link
+  >.fa
+    color #fff
+  .btn-link-big
+    font-size 40px
+.group-buttons
+  .btn
+    width calc(50% - 4px)
+    font-size 14px
+    font-weight 700
+    color #5c5c5c
+    text-shadow 0 1px 1px rgba(0,0,0,.2)
+    border 1px solid #5c5c5c
+    padding 10px 26px
+    white-space normal
+    text-transform uppercase
+    &:hover
+      color #fff
+      background #26a9e0
+      border 1px solid #26a9e0
+  .btn-color
+    color #fff
+    background #26a9e0
+    border 1px solid #26a9e0
+  .btn-color-big
+    width 100%
+    color #fff
+    background #26a9e0
+    border 1px solid #26a9e0
+
+.btn-select
+  display inline-block
+  width 160px
+  padding 10px
+  border 1px solid #000
+  outline none
+  color #404041
+  background-color #fff
+  text-transform uppercase
+  border-radius 10px
+  font-size 15px
+  line-height 20px
+
+.wrapper-select
+  width 180px
+  cursor pointer
+  position relative
+  box-sizing border-box
+  border 1px solid
+  border-radius 2%
+  display inline-block
+
+.wrapper-select_default
+  position absolute
+  display block
+  width inherit
+  padding-right 10px
+  padding-left 8px
+  padding-top 5px
+  padding-bottom 5px
+  box-sizing border-box
+  border 1px solid black
+  border-radius 6%
+  &:after
+    content ''
+    display block
+    position absolute
+    top 7px
+    right 7px
+    width 10px
+    height 10px
+    border 3px solid #1b75bb
+    border-top none
+    border-right none
+    transform rotate(-45deg)
+
+.select_default
+  display inline-block
+  &:after
+    content ''
+    display block
+    top 7px
+    right 7px
+    width 10px
+    height 10px
+    border-top none
+    border-right none
+    transform rotate(-45deg)
+
+.wrapper-select_list
+  position absolute
+  top 29px
+  width inherit
+  padding 0
+  margin 0
+  margin-top -1px
+  border 1px solid black
+  border-top none
+  box-sizing border-box
+  opacity 1
+  background-color: slategrey;
+  visibility hidden
+
+.wrapper-select_item
+  display block
+  padding 8px
+  list-style none
+  &:hover
+    background-color grey
+  &:last-child
+    padding-bottom 5px
+
+.active
+  opacity 1
+  visibility visible
+  z-index 1
+  > a
+    color blue
+
+.choosen
+  background-color blue
+
+
+
+//
+// .btn-select
+//   display inline-block
+//   width 160px
+//   padding 10px
+//   border 1px solid #000
+//   outline none
+//   color #404041
+//   background-color #fff
+//   text-transform uppercase
+//   border-radius 10px
+//   font-size 15px
+//   line-height 20px

@@ -33,7 +33,7 @@ mixin accordion-item(type,title,parent,expanded)
 	-var id = title.replace(/\s+/g,"")
 	.panel(class="panel-#{type}")
 		.panel-heading(role="tab", id="heading#{title}")
-			h4.panel-title
+			h3.panel-title
 				a(role="button", data-toggle="collapse", data-parent="#accordion#{parent}", href="#collapse#{id}", aria-expanded="#{expanded}" ,aria-controls="collapseOne#{id}")
 					= title
 		unless expanded == 'true'

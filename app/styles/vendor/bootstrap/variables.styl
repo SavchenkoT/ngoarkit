@@ -278,7 +278,12 @@ $zindex-modal-background ?= 1040
 $zindex-modal ?=            1050
 
 
-//== Media queries breakpoints
+//== Media queries
+$maxLarge = 1200px
+$maxDesktop = 992px
+$maxTablet = 768px
+$maxPhone = 600px
+$maxMobile = 480px
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
@@ -322,7 +327,7 @@ $screen-md-max ?=            ($screen-lg-min - 1)
 //## Define your custom responsive grid.
 
 //** Number of columns in the grid.
-$grid-columns ?=              12
+$default-grid ?=              12
 //** Padding between columns. Gets divided in half for the left and right.
 $grid-gutter-width ?=         30px
 // Navbar collapse

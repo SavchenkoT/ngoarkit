@@ -1,0 +1,89 @@
+//-******************************
+//-
+//-*   M09-primary.jade
+//-
+//-******************************/
+
+.col-lg-4.col-md-6.col-sm-6.col-xs-12
+  .panel.panel-primary
+    .panel-heading 
+      //-a(href="#")
+        //-i.fa.fa-plus.colgrey(aria-hidden='true')
+      p.name_colection Состояние по типам инспекций
+      btn.btn-link.pull-right
+        i.fa.fa-ellipsis-v(aria-hidden='true')
+    .panel-body 
+      table.table.table-condensed.table-striped
+        thead
+          tr
+            th тип / состояние
+            th 
+              i.fa.fa-calendar-o(aria-hidden='true', type='text', data-toggle='tooltip', data-placement='top', title='ок')
+            th 
+              i.fa.fa-calendar-plus-o(aria-hidden='true',  type='text', data-toggle='tooltip', data-placement='top', title='ок')
+            th 
+              i.fa.fa-calendar-check-o(aria-hidden='true',  type='text', data-toggle='tooltip', data-placement='top', title='ок')
+            th 
+              i.fa.fa-calendar-times-o(aria-hidden='true',  type='text', data-toggle='tooltip', data-placement='top', title='ок')
+            th
+              i.fa.fa-calendar-minus-o(data-toggle='tooltip', data-placement='right', title='пропущенные')
+            th
+              
+        tbody
+          tr
+            th Часовые
+            th 2
+            th 2
+            th 2
+            th 2
+            th 2
+            th 2
+          tr
+            th Дневные
+            th 122
+            th 38
+            th 63
+            th 10
+            th 11
+            th 2
+          tr
+            th Недельные
+            th 0
+            th 0
+            th 0
+            th 0
+            th 0
+            th 10
+          tr
+            th Месячные
+            th 2
+            th 3
+            th 1
+            th 0
+            th 5
+            th 0
+          tr
+            th Неназначеные
+            th 5
+            th 2
+            th 7
+            th 2
+            th 5
+            th 0
+          tr
+            th Оперативные
+            th 3
+            th 2
+            th 1
+            th 0
+            th 9
+            th 0
+          tr 
+            th Итого
+            th 132
+            th 48
+            th 69
+            th 14
+            th 0
+            th
+              span.summary 263

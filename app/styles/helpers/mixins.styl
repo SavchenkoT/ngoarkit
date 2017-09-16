@@ -8,7 +8,7 @@ clearfix()
   &:before,
   &:after
     content " "
-    display table
+    display inline-block
   &:after
     clear both
 
@@ -235,18 +235,18 @@ triangle(width = 10px, height = 10px, direction = 'bottom', color = #000)
 	// Mixin styles for passed direction
 	styles = directions[direction]
 	{styles}
-  
+
 
 //-- placeholder
 //--------------------------------------
 placeholder-color(color)
-  &::-webkit-input-placeholder 
+  &::-webkit-input-placeholder
      color color !important
   &:-moz-placeholder  /* Firefox 18- */
      color color !important
   &::-moz-placeholder  /* Firefox 19+ */
      color color !important
-  &:-ms-input-placeholder  
+  &:-ms-input-placeholder
      color color !important
 
 header-size()

@@ -1,0 +1,46 @@
+//-******************************
+//-
+//-*   M25-feature-object-list.jade
+//-
+//-******************************/
+
+.feature-object-list
+  .panel-group
+    .panel.panel-heading.panel-heading__main
+      h3.panel-title Название  Значение
+  .panel-body.panel-body__object
+    .col-sm-8
+      .form-horizontal
+        .form-group.form-group-object
+          label.col-sm-3.control-label(for='concept') Город
+          .col-sm-9
+            input#concept.form-control(type='text', name='concept')
+        .form-group.form-group-object
+          label.col-sm-3.control-label(for='name') Улица 
+          .col-sm-9
+            input#name.form-control(type='text', name='')
+        .form-group.form-group-object
+          label.col-sm-3.control-label(for='name') Дом 
+          .col-sm-9
+            input#name.form-control(type='text', name='')
+        .form-group.form-group-object
+          label.col-sm-3.control-label(for='name') Область 
+          .col-sm-9
+            select#resourse.form-control(name='resourse')
+              option(value='resourse') Chouse from the list type of resourse
+        .form-group.form-group-object
+          label.col-sm-3.control-label(for='resourse') Тип строения
+          .col-sm-9
+            select#resourse.form-control(name='resourse')
+              option(value='resourse') Chouse from the list type of resourse
+    .col-sm-4
+      .info-block.not-padd
+        .add-img
+          btn.btn-link.btn-link-big
+            i.fa.fa-plus(aria-hidden='true')
+      .group-buttons
+        a.btn.btn-outline(href='#') delete
+        a.btn.btn-color(href='#') upload
+  .group-buttons.group-buttons__object
+    a.btn.btn-outline__object(href='#') cancel
+    a.btn.btn-color__object(href='#') save
